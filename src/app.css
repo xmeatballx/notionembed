@@ -1,0 +1,13 @@
+@import 'https://unpkg.com/open-props';
+@import 'https://unpkg.com/open-props/normalize.min.css';
+@import 'https://unpkg.com/open-props/buttons.min.css';
+
+h1 {
+	font-size: 2.5em;
+}
+
+p,
+blockquote,
+li {
+	font-size: 14px;
+}
