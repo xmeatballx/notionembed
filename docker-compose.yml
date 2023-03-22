@@ -1,0 +1,32 @@
+services:
+    redis:
+        image: redis
+        environment:
+          # ALLOW_EMPTY_PASSWORD is recommended only for development.
+          - ALLOW_EMPTY_PASSWORD=yes
+          - REDIS_DISABLE_COMMANDS=FLUSHDB,FLUSHALL
+        ports:
+          - 6379:6379
+        volumes:
+          - .db:/data
+        restart: always
+        entrypoint: redis-server --appendonly yes
+    app:
+        build: .
+        command: npm run dev
+        ports:
+            - "3000:3000"
+        environment: 
+            VITE_NOTION_CLIENT_ID: 882d6a58-d120-4254-bc23-5d0be961890e
+            VITE_NOTION_CLIENT_SECRET: secret_iItFx0gpVRV3GrhTkt1zbY6Cwq4ghGKly9qKm7Xnjvu
+            VITE_REDIS_PORT: 6379
+            VITE_REDIS_URL: redis
+        volumes:
+            - ./:/src
+            - nodemodules:/src/node_modules
+        depends_on:
+            - redis
+        links:
+            - redis
+volumes:
+    nodemodules: {}

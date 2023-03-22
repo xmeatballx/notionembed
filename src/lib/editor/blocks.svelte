@@ -9,26 +9,30 @@
 	const properties: any = Object.entries($state.page_properties);
 
 	function propertyHandler(e: any) {
-		console.log(properties[e.target.selectedIndex]);
-		if (e.target.value == 'cover' || e.target.value == 'icon') {
-			$state.blocks[index].propertyId = '';
-		} else {
+		const data = e.target.value.split("|||");
+		const id = data[0];
+		const type = data[1];
+		console.log(type)
+		if (e.target.value != 'cover' && e.target.value != 'icon') {
 			$state.blocks[index].propertyId = encodeURIComponent(
-				properties[e.target.selectedIndex][1].id
-			);
+				id
+				);
+				$state.blocks[index].propertyType = type;
+			} else {
+			$state.blocks[index].propertyType = e.target.value;
+			$state.blocks[index].propertyId = '';
 		}
-		$state.blocks[index].propertyType = e.target.value;
-		$state.blocks[index].previewElement = getDefaultBlockType(e.target.value);
+		$state.blocks[index].previewElement = getDefaultBlockType(type ?? e.target.value);
+		propertyType = type ?? e.target.value;
 	}
 </script>
 
 <div class="block">
 	<div class="field">
 		<label for="property" class="label">Property</label>
-		<select class="select" id="property" bind:value={propertyType} on:change={propertyHandler}>
+		<select class="select" id="property" on:change={propertyHandler}>
 			{#each properties as [name, value]}
-				{console.log(name, value)}
-				<option value={value.type} data-id={value.id}>{name ?? 'Untitled'}</option>
+				<option value={value.id+"|||"+value.type}>{name ?? 'Untitled'}</option>
 			{/each}
 			<option value="cover">Cover</option>
 			<option value="icon">Icon</option>

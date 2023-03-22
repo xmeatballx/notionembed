@@ -11,3 +11,8 @@ blockquote,
 li {
 	font-size: 14px;
 }
+
+img {
+	width: 50ch;
+	height: auto;
+}
