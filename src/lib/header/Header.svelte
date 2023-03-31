@@ -1,0 +1,12 @@
+<header>
+    <div>
+        <h1>NotionEmbed</h1>
+    </div>
+    <nav>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </nav>
+</header>

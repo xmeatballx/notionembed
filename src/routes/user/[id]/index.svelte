@@ -10,16 +10,33 @@
 	<div class="controls">
 		<Editor {databases} {pages}/>
 	</div>
-	<div>
+	<div class="preview-container">
 		<Preview />
 	</div>
 </section>
 
 <style>
 
+	.preview-container {
+		background-color: white;
+		color: black;
+		min-height: 20rem;
+		max-width: 100vw;
+		display: flex;
+		flex-direction: column;
+		height: 100vh;
+		display: grid;
+		place-items: center;
+	}
+
+	.preview-container * {
+		color: var(--gray-10);
+		/* max-inline-size: var(--size-content-2); */
+	}
+
 	.page {
 		display: grid;
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: 1fr 4fr;
 		width: 100%;
 	}
 
@@ -29,5 +46,20 @@
 		grid-template-rows: repeat(3, min-content);
 		gap: 1em;
 		height: 100vh;
+	}
+
+	@media(max-width: 820px) {
+		.page {
+			grid-template-columns: 1fr;
+		}
+
+		.controls {
+			grid-row: 2
+		}
+
+		.preview-container {
+			height: auto;
+			padding: 10%;
+		}
 	}
 </style>
