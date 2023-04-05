@@ -72,17 +72,19 @@
 
 	.block {
 		padding: 0.5em;
-		border: 1px solid var(--gray-8);
+		border: 1px solid var(--surface-1);
 		display: flex;
 		gap: 0.5em;
 	}
 
-	.block:nth-child(even) {
-		background-color: var(--gray-8);
+	.block:first-child {
+		border: 1px solid var(--surface-2);
 	}
 
-	.block:nth-child(odd) {
-		background-color: var(--gray-9);
+	.block:not(:first-child) {
+		border-bottom: 1px solid var(--surface-2);
+		border-left: 1px solid var(--surface-2);
+		border-right: 1px solid var(--surface-2);
 	}
 
 	.label {

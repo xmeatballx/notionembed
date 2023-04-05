@@ -17,14 +17,16 @@ function auth(method: string, resource: string, headers: Headers, data?: Record<
 	});
 }
 
-async function getDatabase(userId: string, databaseId: string) {
+async function getPagesForDatabase(userId: string, databaseId: string) {
 	// updateState('database_id', databaseId as StateValue);
 	//prettier-ignore
 	const response = await fetch(
 		`/user/${userId}/database/${databaseId}`,
 		{ headers: { 'Accepts': 'application/json' } }
 	);
-	return (await response.json()).results;
+	const data = await response.json();
+	console.log(data)
+	return data.results;
 }
 
 async function getPage(userId: string, databaseId: string, pageId: string) {
@@ -100,7 +102,7 @@ async function getEmbed(url: string) {
 
 export {
 	auth,
-	getDatabase,
+	getPagesForDatabase,
 	getPage,
 	getTitle,
 	getPageProperties,

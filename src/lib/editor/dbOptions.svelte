@@ -6,8 +6,12 @@
 	export let pages: any;
 
 	async function resetDB(e: any) {
-		$state.page_properties = pages[0].properties;
+		pages = [];
+		$state.page_properties;
 		$state.blocks = [];
+		pages = await api.getPagesForDatabase($state.user_id, $state.database_id);
+		$state.preview_as_id = pages[0].id;
+		$state.page_properties = pages[0].properties;
 	}
 
 	async function randomizePage(e: any) {
@@ -18,8 +22,8 @@
 </script>
 <div>
 	<div class="database_select--container">
-		<p>Pick a database</p>
-		<select bind:value={$state.database_id} class="select" on:change={resetDB}>
+		<label for="database">Pick a database</label>
+		<select bind:value={$state.database_id} class="select" on:change={resetDB} name="database">
 			{#await databases}
 				<option value="">loading</option>
 			{:then res}
@@ -35,10 +39,10 @@
 			{/await}
 		</select>
 	</div>
-	<div>
-		<p>Preview As</p>
+	<div class="page_select--container">
+		<label for="page">Preview As</label>
 		<div class="preview_as">
-			<select bind:value={$state.preview_as_id} class="select">
+			<select bind:value={$state.preview_as_id} class="select" name="page">
 				{#await pages then pages}
 				{#each pages as item, i}
 				{#if i == 0}
@@ -61,5 +65,14 @@
 	.preview_as {
 		display: flex;
 		gap: 1em;
+	}
+	label {
+		font-weight: 700;
+	}
+
+	.database_select--container, .page_select--container {
+		display: grid;
+		gap: 8px;
+		margin-bottom: 8px;
 	}
 </style>

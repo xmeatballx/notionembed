@@ -18,8 +18,8 @@
 <style>
 
 	.preview-container {
-		background-color: white;
-		color: black;
+		background-color: var(--surface-1);
+		color: var(--text-1);
 		min-height: 20rem;
 		max-width: 100vw;
 		display: flex;
@@ -27,6 +27,7 @@
 		height: 100vh;
 		display: grid;
 		place-items: center;
+		border: 1px solid var(--surface-3);
 	}
 
 	.preview-container * {
@@ -41,11 +42,13 @@
 	}
 
 	.controls {
-		padding: 1em;
+		/* background-color: var(--surface-2); */
+		padding: var(--size-4);
 		display: grid;
 		grid-template-rows: repeat(3, min-content);
 		gap: 1em;
 		height: 100vh;
+		border-top: 1px solid var(--surface-3);
 	}
 
 	@media(max-width: 820px) {
