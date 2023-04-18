@@ -1,7 +1,6 @@
 FROM node:16
 WORKDIR /src
 COPY package.json package-lock.json ./
-RUN npm ci
+RUN npm install
 ADD . .
-RUN npm run build
-CMD npm start
+RUN npx prisma generate

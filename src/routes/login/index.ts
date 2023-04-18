@@ -2,6 +2,10 @@ import * as api from '../../lib/_api';
 import type { RequestHandler } from './__types';
 import * as db from '../../lib/_db';
 import type { UserData } from './types';
+import btoa from "btoa"
+import { PrismaClient } from '@prisma/client';
+
+const prismaClient = new PrismaClient();
 
 export const get: RequestHandler = async ({ url }) => {
 	const code = url.searchParams.get('code');
@@ -26,6 +30,26 @@ export const get: RequestHandler = async ({ url }) => {
 			value: JSON.stringify(userData)
 		};
 		await db.set(entry);
+		const duplicateUser = await prismaClient.user.findFirst({
+			where: {
+				name: userData.owner.user.name
+			}
+		})
+		console.log(duplicateUser)
+		if (!duplicateUser) {
+			await prismaClient.user.create({
+				data: {
+					bot_id: userData.bot_id,
+					access_token: userData.access_token,
+					name: userData.owner.user.name
+				}
+			})
+		} else {
+			return {
+				status: 500,
+				data: "user already exists"
+			};
+		}
 		if (response.ok) {
 			return {
 				status: 200
