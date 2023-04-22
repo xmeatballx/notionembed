@@ -10,6 +10,7 @@
 		$state.page_properties;
 		$state.blocks = [];
 		pages = await api.getPagesForDatabase($state.user_id, $state.database_id);
+		console.log(pages)
 		$state.preview_as_id = pages[0].id;
 		$state.page_properties = pages[0].properties;
 	}
@@ -64,6 +65,7 @@
 	}
 	.preview_as {
 		display: flex;
+		flex-direction: column;
 		gap: 1em;
 	}
 	label {

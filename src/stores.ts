@@ -6,7 +6,7 @@ const defaultState: State = {
 	database_id: 'not set',
 	preview_as_id: 'not set',
 	page_properties: [],
-	blocks: []
+	blocks: [] as Block[]
 };
 
 const state: Writable<State> = writable(defaultState);
@@ -20,5 +20,6 @@ function updateState(key: keyof State, value: StateValue) {
 	}
 	state.set(temp);
 }
+
 
 export { state, updateState };

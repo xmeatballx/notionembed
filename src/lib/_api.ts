@@ -1,5 +1,6 @@
 import type { StateValue } from 'src/types';
 import { updateState } from '../stores';
+// import * as db from './_db'
 
 const base = 'https://api.notion.com';
 
@@ -52,10 +53,11 @@ async function getPageImage(userId: string, databaseId: string, pageId: string, 
 		headers: { Accepts: 'application/json' }
 	});
 	const page = await response.json();
-	if (type == 'cover' && page.cover.type == 'external') {
+	// console.log(page)
+	if (type == 'cover' && page.cover?.type == 'external') {
 		return page.cover.external.url;
 	}
-	if (type == 'icon' && page.icon.type == 'emoji') {
+	if (type == 'icon' && page.icon?.type == 'emoji') {
 		return {
 			type: 'emoji',
 			icon: page.icon.emoji
@@ -64,13 +66,21 @@ async function getPageImage(userId: string, databaseId: string, pageId: string, 
 }
 
 async function getContent(userId: string, pageId: string, propertyId: string) {
-	const response = await fetch(
-		`/user/${userId}/content/?page_id=${pageId}&property_id=${propertyId}`,
-		{
-			headers: { Accepts: 'application/json' }
-		}
-	);
-	return await response.json();
+	// console.log(pageId)
+    // const cachedData = await db.get({ key: propertyId });
+	// if (!cachedData) {
+		const response = await fetch(
+			`/user/${userId}/content/?page_id=${pageId}&property_id=${propertyId}`,
+			{
+				headers: { Accepts: 'application/json' }
+			}
+		);
+		const result = await response.json();
+		// await db.set({ key: propertyId, value: result })
+		return result;
+	// } else {
+	// 	return cachedData;
+	// }
 }
 
 function getTitle(items: any) {

@@ -15,19 +15,19 @@ services:
             - postgres-data:/var/lib/postgresql/data
         restart: unless-stopped
   prisma-migrate:
-        stdin_open: true 
-        tty: true
         container_name: prisma-migrate
         build: 
           context: ./prisma
-          dockerfile: ./Dockerfile 
-        command: bash -c "npx prisma migrate reset && npx prisma migrate dev && npx prisma generate"
+          dockerfile: Dockerfile 
+        command: bash -c "cd ./prisma/prisma && npx prisma generate && npx prisma migrate dev --name=init"
+        stdin_open: true 
+        tty: true
         environment:
             DATABASE_URL: postgresql://postgres:postgres@postgres:5432/notionembed?schema=public&connect_timeout=300
         depends_on:
             - postgres
         volumes:
-          - ./:/src
+          - .:/prisma
 
 volumes:
     postgres-data:

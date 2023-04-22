@@ -12,7 +12,7 @@
 		const data = e.target.value.split("|||");
 		const id = data[0];
 		const type = data[1];
-		console.log(type)
+		// console.log(data)
 		if (e.target.value != 'cover' && e.target.value != 'icon') {
 			$state.blocks[index].propertyId = encodeURIComponent(
 				id
@@ -27,12 +27,13 @@
 	}
 </script>
 
+{#key properties}
 <div class="block">
 	<div class="field">
 		<label for="property" class="label">Property</label>
 		<select class="select" id="property" on:change={propertyHandler}>
 			{#each properties as [name, value]}
-				<option value={value.id+"|||"+value.type}>{name ?? 'Untitled'}</option>
+				<option value={(value.id != "title" ? value.id : "title-"+value.title[0]?.text?.content)+"|||"+value.type}>{name ?? 'Untitled'}</option>
 			{/each}
 			<option value="cover">Cover</option>
 			<option value="icon">Icon</option>
@@ -64,6 +65,7 @@
 		</select>
 	</div>
 </div>
+{/key}
 
 <style>
 	.select {
@@ -72,29 +74,29 @@
 
 	.block {
 		padding: 0.5em;
-		border: 1px solid var(--surface-1);
 		display: flex;
-		gap: 0.5em;
+		flex-direction: column;
+		/* gap: 0.25em; */
 	}
 
-	.block:first-child {
-		border: 1px solid var(--surface-2);
+	.block:first-of-type {
+		border-top: 1px solid var(--surface-3);
+		border-bottom: 1px solid var(--surface-3);
 	}
 
-	.block:not(:first-child) {
-		border-bottom: 1px solid var(--surface-2);
-		border-left: 1px solid var(--surface-2);
-		border-right: 1px solid var(--surface-2);
+	.block:not(:first-of-type) {
+		border-bottom: 1px solid var(--surface-3);
 	}
 
 	.label {
+		font-size: var(--font-size-0);
 		font-weight: 700;
 		/* margin-bottom: 1rem; */
 	}
 
 	.field {
 		display: grid;
-		gap: 8px;
+		/* gap: 8px; */
 		margin-bottom: 8px;
 		width: 100%;
 	}

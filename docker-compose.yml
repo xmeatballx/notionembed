@@ -42,31 +42,37 @@ services:
             VITE_REDIS_PORT: 6379
             VITE_REDIS_URL: redis
         volumes:
-            - ./:/src
+            - .:/src
             - nodemodules:/src/node_modules
         depends_on:
             - redis
+        healthcheck:
+            test: ["CMD-SHELL", "curl --fail http://localhost:3000/login || exit 1"]
+            interval: 10s
+            timeout: 10s
+            retries: 5
         links:
             - redis
 
     studio:
         container_name: studio
-        command: bash -c "cd ./prisma && npx prisma generate && npx prisma migrate deploy && npx prisma studio"
         build: 
             context: ./prisma
             dockerfile: ./Dockerfile
+        command: bash -c "cd ./prisma && npx prisma generate && npx prisma migrate deploy && npx prisma studio"
         environment:
             DATABASE_URL: postgresql://postgres:postgres@postgres:5432/notionembed?schema=public&connect_timeout=300
         ports:
             - "5555:5555"
         depends_on:
             - postgres
+            - app
         links:
             - postgres
         volumes: 
-            - ./:/src
+            - .:/prisma
 
         
 volumes:
-    nodemodules: {}
+    nodemodules:
     postgres-data:

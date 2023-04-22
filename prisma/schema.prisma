@@ -16,7 +16,6 @@ model User {
   access_token String
   name         String
   Embeds       Embed[]
-  hi           String
 }
 
 model Embed {

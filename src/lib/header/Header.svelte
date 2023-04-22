@@ -18,7 +18,9 @@
     .site-header {
         display: flex;
         justify-content: space-between;
-        padding: var(--size-2) var(--size-6);
+        padding: var(--size-2);
+		border-bottom: 1px solid var(--surface-3);
+        box-shadow: var(--shadow-2);
     }
 
     .site-header nav {

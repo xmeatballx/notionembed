@@ -704,3 +704,844 @@ $36
 03864f8f-3486-41b7-94d1-d47857c5d4af
 $464
 {"access_token":"secret_wJ2OplKuWQskJ6G8eYnIPmM8Y9UzHZdWmbeqq2LDCyu","token_type":"bearer","bot_id":"d9b6b404-358b-439c-965a-8a99ea83f22e","workspace_name":"Erik's Notion","workspace_icon":null,"workspace_id":"f4545750-edd9-4e2d-9d65-8ce16427d25e","owner":{"type":"user","user":{"object":"user","id":"84793a01-5551-40e4-b876-9c0dff909db2","name":"Erik","avatar_url":null,"type":"person","person":{"email":"ejensen@moreseconds.com"}}},"duplicated_template_id":null}
+*2
+$6
+SELECT
+$1
+0
+*3
+$3
+SET
+$4
+jzvR
+$148
+{"object":"property_item","type":"status","id":"jzvR","status":{"id":"364187e4-f700-48f9-8640-9f1aed843577","name":"Not started","color":"default"}}
+*3
+$3
+SET
+$5
+title
+$447
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Add dragability","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Add dragability","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}}}
+*3
+$3
+SET
+$4
+JAqY
+$117
+{"object":"property_item","type":"url","id":"JAqY","url":"https://roarsongs.bandcamp.com/album/i-cant-handle-change"}
+*3
+$3
+SET
+$4
+pNEp
+$232
+{"object":"property_item","type":"multi_select","id":"pNEp","multi_select":[{"id":"40c61ca1-b650-45bf-986a-720c4e307d5e","name":"punk","color":"brown"},{"id":"9459d759-754e-4001-8baa-bd5520ec2add","name":"skramz","color":"yellow"}]}
+*3
+$3
+SET
+$21
+title-Add dragability
+$447
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Add dragability","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Add dragability","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}}}
+*3
+$3
+SET
+$4
+yroX
+$78
+{"object":"property_item","type":"multi_select","id":"yroX","multi_select":[]}
+*3
+$3
+SET
+$25
+title-Integration testing
+$463
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"I can’t handle change","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"I can’t handle change","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}}}
+*3
+$3
+SET
+$6
+N%5Dt_
+$171
+{"object":"list","results":[],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"N%5Dt_","next_url":null,"type":"rich_text","rich_text":{}}}
+*3
+$3
+SET
+$4
+hgQx
+$443
+{"object":"list","results":[{"object":"property_item","type":"rich_text","id":"hgQx","rich_text":{"type":"text","text":{"content":"Orchid","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Orchid","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"hgQx","next_url":null,"type":"rich_text","rich_text":{}}}
+*3
+$3
+SET
+$57
+5a90cb90-bbc3-40f4-abed-f1165473523dtitle-Add dragability
+$451
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Implement caching","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Implement caching","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}}}
+*3
+$3
+SET
+$57
+ea894a7c-73c2-442b-be76-69960e3cb588title-Add dragability
+$463
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Set up dynamic displays","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Set up dynamic displays","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}}}
+*3
+$3
+SET
+$40
+57ab7ecd-a665-4bb8-bf1f-9d984b66baa2jzvR
+$148
+{"object":"property_item","type":"status","id":"jzvR","status":{"id":"364187e4-f700-48f9-8640-9f1aed843577","name":"Not started","color":"default"}}
+*3
+$3
+SET
+$57
+57ab7ecd-a665-4bb8-bf1f-9d984b66baa2title-Add dragability
+$447
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Add dragability","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Add dragability","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}}}
+*3
+$3
+SET
+$57
+ea1b7a81-c93d-4661-b831-fbed2575625etitle-Add dragability
+$445
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Dynamic embeds","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Dynamic embeds","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}}}
+*3
+$3
+SET
+$57
+aca79ff9-bc65-47f6-9520-beca4e0e54edtitle-Add dragability
+$455
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Create basic header","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Create basic header","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}}}
+*3
+$3
+SET
+$40
+be93e49b-b13d-4ae2-8585-aac97faa1167JAqY
+$117
+{"object":"property_item","type":"url","id":"JAqY","url":"https://roarsongs.bandcamp.com/album/i-cant-handle-change"}
+*3
+$3
+SET
+$65
+be93e49b-b13d-4ae2-8585-aac97faa1167title-I can’t handle change
+$463
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"I can’t handle change","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"I can’t handle change","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}}}
+*3
+$3
+SET
+$65
+ac153c5b-10f3-42b5-95ee-0dbd428caaeftitle-I can’t handle change
+$437
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Some Blood","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Some Blood","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}}}
+*3
+$3
+SET
+$65
+bbae9d65-fe1d-49b9-a57f-7fa61a7bd38etitle-I can’t handle change
+$429
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Teethe","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Teethe","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}}}
+*3
+$3
+SET
+$65
+7185a917-1932-42b3-8d66-0111c07bc02dtitle-I can’t handle change
+$439
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"The Feeling","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"The Feeling","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}}}
+*3
+$3
+SET
+$40
+7185a917-1932-42b3-8d66-0111c07bc02dJAqY
+$110
+{"object":"property_item","type":"url","id":"JAqY","url":"https://naomipunkct.bandcamp.com/album/the-feeling"}
+*3
+$3
+SET
+$40
+7185a917-1932-42b3-8d66-0111c07bc02dhgQx
+$451
+{"object":"list","results":[{"object":"property_item","type":"rich_text","id":"hgQx","rich_text":{"type":"text","text":{"content":"Naomi Punk","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Naomi Punk","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"hgQx","next_url":null,"type":"rich_text","rich_text":{}}}
+*3
+$3
+SET
+$40
+bef8ba65-ad1a-43f6-a3ac-84c78e201c9bJAqY
+$143
+{"object":"property_item","type":"url","id":"JAqY","url":"https://toe-music.bandcamp.com/album/the-book-about-my-idle-plot-on-a-vague-anxiety"}
+*3
+$3
+SET
+$40
+bef8ba65-ad1a-43f6-a3ac-84c78e201c9bhgQx
+$437
+{"object":"list","results":[{"object":"property_item","type":"rich_text","id":"hgQx","rich_text":{"type":"text","text":{"content":"Toe","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Toe","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"hgQx","next_url":null,"type":"rich_text","rich_text":{}}}
+*3
+$3
+SET
+$65
+bef8ba65-ad1a-43f6-a3ac-84c78e201c9btitle-I can’t handle change
+$508
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"the book about my idle plot on a vague anxiety","link":null},"annotations":{"bold":true,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"the book about my idle plot on a vague anxiety","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}}}
+*3
+$3
+SET
+$40
+4e0a0ec8-50d7-4187-b44f-245678c90a52hgQx
+$451
+{"object":"list","results":[{"object":"property_item","type":"rich_text","id":"hgQx","rich_text":{"type":"text","text":{"content":"Madvillain","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Madvillain","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"hgQx","next_url":null,"type":"rich_text","rich_text":{}}}
+*3
+$3
+SET
+$40
+4e0a0ec8-50d7-4187-b44f-245678c90a52JAqY
+$103
+{"object":"property_item","type":"url","id":"JAqY","url":"https://www.youtube.com/watch?v=A7_0vcjN-4c"}
+*3
+$3
+SET
+$65
+4e0a0ec8-50d7-4187-b44f-245678c90a52title-I can’t handle change
+$439
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Madvillainy","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Madvillainy","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}}}
+*3
+$3
+SET
+$40
+bbae9d65-fe1d-49b9-a57f-7fa61a7bd38ehgQx
+$443
+{"object":"list","results":[{"object":"property_item","type":"rich_text","id":"hgQx","rich_text":{"type":"text","text":{"content":"Teethe","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Teethe","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"hgQx","next_url":null,"type":"rich_text","rich_text":{}}}
+*3
+$3
+SET
+$40
+bbae9d65-fe1d-49b9-a57f-7fa61a7bd38eJAqY
+$100
+{"object":"property_item","type":"url","id":"JAqY","url":"https://teethe.bandcamp.com/album/teethe"}
+*3
+$3
+SET
+$42
+bbae9d65-fe1d-49b9-a57f-7fa61a7bd38eN%5Dt_
+$461
+{"object":"list","results":[{"object":"property_item","type":"rich_text","id":"N%5Dt_","rich_text":{"type":"text","text":{"content":"Self Released","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Self Released","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"N%5Dt_","next_url":null,"type":"rich_text","rich_text":{}}}
+*3
+$3
+SET
+$40
+bbae9d65-fe1d-49b9-a57f-7fa61a7bd38epNEp
+$230
+{"object":"property_item","type":"multi_select","id":"pNEp","multi_select":[{"id":"b060a088-006e-487f-b5dc-ab3afea20f7d","name":"slowcore","color":"blue"},{"id":"8b318201-8562-485a-8ec2-8370c71e7589","name":"emo","color":"gray"}]}
+*3
+$3
+SET
+$40
+54f37998-bcf9-4184-91ed-1c516e53c889pNEp
+$231
+{"object":"property_item","type":"multi_select","id":"pNEp","multi_select":[{"id":"40c61ca1-b650-45bf-986a-720c4e307d5e","name":"punk","color":"brown"},{"id":"c6f71a68-dce7-4dc1-a59a-eee9e903a6d1","name":"crust","color":"purple"}]}
+*3
+$3
+SET
+$65
+54f37998-bcf9-4184-91ed-1c516e53c889title-I can’t handle change
+$463
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Fifteen Counts of Arson","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Fifteen Counts of Arson","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}}}
+*3
+$3
+SET
+$40
+54f37998-bcf9-4184-91ed-1c516e53c889JAqY
+$103
+{"object":"property_item","type":"url","id":"JAqY","url":"https://www.youtube.com/watch?v=346c4Dt1gmg"}
+*3
+$3
+SET
+$40
+54f37998-bcf9-4184-91ed-1c516e53c889hgQx
+$463
+{"object":"list","results":[{"object":"property_item","type":"rich_text","id":"hgQx","rich_text":{"type":"text","text":{"content":"His Hero is Gone","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"His Hero is Gone","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"hgQx","next_url":null,"type":"rich_text","rich_text":{}}}
+*3
+$3
+SET
+$40
+5deb696d-8bfc-47bc-9ab5-f7091837369bpNEp
+$237
+{"object":"property_item","type":"multi_select","id":"pNEp","multi_select":[{"id":"40c61ca1-b650-45bf-986a-720c4e307d5e","name":"punk","color":"brown"},{"id":"24f6625a-8f58-464b-b7d3-eccde81b8aae","name":"noise-rock","color":"default"}]}
+*3
+$3
+SET
+$65
+5deb696d-8bfc-47bc-9ab5-f7091837369btitle-I can’t handle change
+$453
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"The Future of What","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"The Future of What","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}}}
+*3
+$3
+SET
+$40
+5deb696d-8bfc-47bc-9ab5-f7091837369bJAqY
+$113
+{"object":"property_item","type":"url","id":"JAqY","url":"https://unwound.bandcamp.com/album/the-future-of-what"}
+*3
+$3
+SET
+$40
+5deb696d-8bfc-47bc-9ab5-f7091837369bhgQx
+$445
+{"object":"list","results":[{"object":"property_item","type":"rich_text","id":"hgQx","rich_text":{"type":"text","text":{"content":"Unwound","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Unwound","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"hgQx","next_url":null,"type":"rich_text","rich_text":{}}}
+*3
+$3
+SET
+$40
+ac153c5b-10f3-42b5-95ee-0dbd428caaefJAqY
+$111
+{"object":"property_item","type":"url","id":"JAqY","url":"https://www.youtube.com/watch?v=d6QGc5jH5GA&t=1226s"}
+*3
+$3
+SET
+$40
+ac153c5b-10f3-42b5-95ee-0dbd428caaefhgQx
+$449
+{"object":"list","results":[{"object":"property_item","type":"rich_text","id":"hgQx","rich_text":{"type":"text","text":{"content":"Off Minor","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Off Minor","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"hgQx","next_url":null,"type":"rich_text","rich_text":{}}}
+*3
+$3
+SET
+$40
+ac153c5b-10f3-42b5-95ee-0dbd428caaefpNEp
+$237
+{"object":"property_item","type":"multi_select","id":"pNEp","multi_select":[{"id":"8b318201-8562-485a-8ec2-8370c71e7589","name":"emo","color":"gray"},{"id":"b96b51f1-79d5-496e-9075-82423bb2dd16","name":"post-hardcore","color":"yellow"}]}
+*3
+$3
+SET
+$40
+5f12f296-d949-4bd0-bea0-4d03a763c542JAqY
+$103
+{"object":"property_item","type":"url","id":"JAqY","url":"https://www.youtube.com/watch?v=7k8n7X96qvg"}
+*3
+$3
+SET
+$65
+5f12f296-d949-4bd0-bea0-4d03a763c542title-I can’t handle change
+$449
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Solve Et Coagula","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Solve Et Coagula","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}}}
+*3
+$3
+SET
+$40
+5f12f296-d949-4bd0-bea0-4d03a763c542hgQx
+$451
+{"object":"list","results":[{"object":"property_item","type":"rich_text","id":"hgQx","rich_text":{"type":"text","text":{"content":"The Secret","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"The Secret","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"hgQx","next_url":null,"type":"rich_text","rich_text":{}}}
+*3
+$3
+SET
+$40
+5f12f296-d949-4bd0-bea0-4d03a763c542pNEp
+$231
+{"object":"property_item","type":"multi_select","id":"pNEp","multi_select":[{"id":"40c61ca1-b650-45bf-986a-720c4e307d5e","name":"punk","color":"brown"},{"id":"c6f71a68-dce7-4dc1-a59a-eee9e903a6d1","name":"crust","color":"purple"}]}
+*3
+$3
+SET
+$40
+dcc8f149-a509-4b08-80b7-8ad9c6547049pNEp
+$318
+{"object":"property_item","type":"multi_select","id":"pNEp","multi_select":[{"id":"40c61ca1-b650-45bf-986a-720c4e307d5e","name":"punk","color":"brown"},{"id":"24f6625a-8f58-464b-b7d3-eccde81b8aae","name":"noise-rock","color":"default"},{"id":"fdc737a8-1e9b-45d4-b7cc-08966e2b6660","name":"math-rock","color":"green"}]}
+*3
+$3
+SET
+$40
+dcc8f149-a509-4b08-80b7-8ad9c6547049hgQx
+$453
+{"object":"list","results":[{"object":"property_item","type":"rich_text","id":"hgQx","rich_text":{"type":"text","text":{"content":"Lil Dowager","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Lil Dowager","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"hgQx","next_url":null,"type":"rich_text","rich_text":{}}}
+*3
+$3
+SET
+$40
+dcc8f149-a509-4b08-80b7-8ad9c6547049JAqY
+$120
+{"object":"property_item","type":"url","id":"JAqY","url":"https://lildowager.bandcamp.com/album/never-too-late-to-hate"}
+*3
+$3
+SET
+$65
+dcc8f149-a509-4b08-80b7-8ad9c6547049title-I can’t handle change
+$461
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Never Too Late To Hate","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Never Too Late To Hate","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}}}
+*3
+$3
+SET
+$40
+4be881a5-c18d-4633-b7cb-62e18b2a0fa6pNEp
+$155
+{"object":"property_item","type":"multi_select","id":"pNEp","multi_select":[{"id":"5a9405c4-066e-49b4-b913-0540455170d0","name":"shoegaze","color":"red"}]}
+*3
+$3
+SET
+$40
+4be881a5-c18d-4633-b7cb-62e18b2a0fa6JAqY
+$124
+{"object":"property_item","type":"url","id":"JAqY","url":"https://theyareguttingabodyofwater.bandcamp.com/album/destiny-xl"}
+*3
+$3
+SET
+$40
+4be881a5-c18d-4633-b7cb-62e18b2a0fa6hgQx
+$495
+{"object":"list","results":[{"object":"property_item","type":"rich_text","id":"hgQx","rich_text":{"type":"text","text":{"content":"They Are Gutting a Body of Water","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"They Are Gutting a Body of Water","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"hgQx","next_url":null,"type":"rich_text","rich_text":{}}}
+*3
+$3
+SET
+$65
+4be881a5-c18d-4633-b7cb-62e18b2a0fa6title-I can’t handle change
+$437
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Destiny XL","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Destiny XL","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}}}
+*3
+$3
+SET
+$40
+616e7e43-8a96-4fc6-9d08-6455d099c558hgQx
+$449
+{"object":"list","results":[{"object":"property_item","type":"rich_text","id":"hgQx","rich_text":{"type":"text","text":{"content":"Broadcast","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Broadcast","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"hgQx","next_url":null,"type":"rich_text","rich_text":{}}}
+*3
+$3
+SET
+$65
+616e7e43-8a96-4fc6-9d08-6455d099c558title-I can’t handle change
+$445
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Tender Buttons","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Tender Buttons","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}}}
+*3
+$3
+SET
+$40
+616e7e43-8a96-4fc6-9d08-6455d099c558pNEp
+$155
+{"object":"property_item","type":"multi_select","id":"pNEp","multi_select":[{"id":"084d2ee4-b4f8-440a-98a6-38ce7a0d9b9c","name":"indie","color":"purple"}]}
+*3
+$3
+SET
+$40
+616e7e43-8a96-4fc6-9d08-6455d099c558JAqY
+$111
+{"object":"property_item","type":"url","id":"JAqY","url":"https://broadcast.bandcamp.com/album/tender-buttons"}
+*3
+$3
+SET
+$65
+c703a5a2-2ac5-40ab-b3d6-8d8fa69640fctitle-I can’t handle change
+$441
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Shellfire EP","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Shellfire EP","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}}}
+*3
+$3
+SET
+$40
+c703a5a2-2ac5-40ab-b3d6-8d8fa69640fcpNEp
+$238
+{"object":"property_item","type":"multi_select","id":"pNEp","multi_select":[{"id":"40c61ca1-b650-45bf-986a-720c4e307d5e","name":"punk","color":"brown"},{"id":"26c0e935-bc7e-48e9-8637-4595fa7ffe04","name":"powerviolence","color":"green"}]}
+*3
+$3
+SET
+$40
+c703a5a2-2ac5-40ab-b3d6-8d8fa69640fchgQx
+$457
+{"object":"list","results":[{"object":"property_item","type":"rich_text","id":"hgQx","rich_text":{"type":"text","text":{"content":"Water Torture","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Water Torture","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"hgQx","next_url":null,"type":"rich_text","rich_text":{}}}
+*3
+$3
+SET
+$40
+c703a5a2-2ac5-40ab-b3d6-8d8fa69640fcJAqY
+$88
+{"object":"property_item","type":"url","id":"JAqY","url":"https://youtu.be/EFjXVGFvb6U"}
+*3
+$3
+SET
+$40
+7185a917-1932-42b3-8d66-0111c07bc02dpNEp
+$153
+{"object":"property_item","type":"multi_select","id":"pNEp","multi_select":[{"id":"40c61ca1-b650-45bf-986a-720c4e307d5e","name":"punk","color":"brown"}]}
+*3
+$3
+SET
+$40
+4e0a0ec8-50d7-4187-b44f-245678c90a52pNEp
+$155
+{"object":"property_item","type":"multi_select","id":"pNEp","multi_select":[{"id":"7ca8b68f-9ebe-4bf5-bd11-f57f6f05b1b5","name":"hip-hop","color":"pink"}]}
+*3
+$3
+SET
+$46
+5f12f296-d949-4bd0-bea0-4d03a763c542x%3F%5C%40
+$116
+{"object":"property_item","type":"date","id":"x%3F%5C%40","date":{"start":"2010-09-28","end":null,"time_zone":null}}
+*3
+$3
+SET
+$42
+5f12f296-d949-4bd0-bea0-4d03a763c542N%5Dt_
+$461
+{"object":"list","results":[{"object":"property_item","type":"rich_text","id":"N%5Dt_","rich_text":{"type":"text","text":{"content":"Southern Lord","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Southern Lord","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"N%5Dt_","next_url":null,"type":"rich_text","rich_text":{}}}
+*3
+$3
+SET
+$40
+be93e49b-b13d-4ae2-8585-aac97faa1167hgQx
+$439
+{"object":"list","results":[{"object":"property_item","type":"rich_text","id":"hgQx","rich_text":{"type":"text","text":{"content":"Roar","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Roar","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"hgQx","next_url":null,"type":"rich_text","rich_text":{}}}
+*3
+$3
+SET
+$42
+be93e49b-b13d-4ae2-8585-aac97faa1167N%5Dt_
+$457
+{"object":"list","results":[{"object":"property_item","type":"rich_text","id":"N%5Dt_","rich_text":{"type":"text","text":{"content":"Independent","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Independent","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"N%5Dt_","next_url":null,"type":"rich_text","rich_text":{}}}
+*3
+$3
+SET
+$42
+c703a5a2-2ac5-40ab-b3d6-8d8fa69640fcN%5Dt_
+$463
+{"object":"list","results":[{"object":"property_item","type":"rich_text","id":"N%5Dt_","rich_text":{"type":"text","text":{"content":"Diseased Audio","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Diseased Audio","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"N%5Dt_","next_url":null,"type":"rich_text","rich_text":{}}}
+*3
+$3
+SET
+$42
+4e0a0ec8-50d7-4187-b44f-245678c90a52N%5Dt_
+$459
+{"object":"list","results":[{"object":"property_item","type":"rich_text","id":"N%5Dt_","rich_text":{"type":"text","text":{"content":"Stones Throw","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Stones Throw","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"N%5Dt_","next_url":null,"type":"rich_text","rich_text":{}}}
+*3
+$3
+SET
+$40
+7b4ec140-4502-4f23-8a49-909923adea56JAqY
+$103
+{"object":"property_item","type":"url","id":"JAqY","url":"https://www.youtube.com/watch?v=TrEr8sPw2J0"}
+*3
+$3
+SET
+$42
+7b4ec140-4502-4f23-8a49-909923adea56N%5Dt_
+$471
+{"object":"list","results":[{"object":"property_item","type":"rich_text","id":"N%5Dt_","rich_text":{"type":"text","text":{"content":"Ebullition Records","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Ebullition Records","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"N%5Dt_","next_url":null,"type":"rich_text","rich_text":{}}}
+*3
+$3
+SET
+$65
+7b4ec140-4502-4f23-8a49-909923adea56title-I can’t handle change
+$439
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Chaos Is Me","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Chaos Is Me","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}}}
+*3
+$3
+SET
+$40
+7b4ec140-4502-4f23-8a49-909923adea56hgQx
+$443
+{"object":"list","results":[{"object":"property_item","type":"rich_text","id":"hgQx","rich_text":{"type":"text","text":{"content":"Orchid","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Orchid","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"hgQx","next_url":null,"type":"rich_text","rich_text":{}}}
+*3
+$3
+SET
+$65
+ab295ef0-e24f-470f-80e8-0378036a9a3atitle-I can’t handle change
+$429
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Fourth","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Fourth","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}}}
+*3
+$3
+SET
+$40
+ab295ef0-e24f-470f-80e8-0378036a9a3aJAqY
+$103
+{"object":"property_item","type":"url","id":"JAqY","url":"https://www.youtube.com/watch?v=fro_YPTQM5c"}
+*3
+$3
+SET
+$42
+ab295ef0-e24f-470f-80e8-0378036a9a3aN%5Dt_
+$459
+{"object":"list","results":[{"object":"property_item","type":"rich_text","id":"N%5Dt_","rich_text":{"type":"text","text":{"content":"CBS/Columbia","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"CBS/Columbia","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"N%5Dt_","next_url":null,"type":"rich_text","rich_text":{}}}
+*3
+$3
+SET
+$40
+ab295ef0-e24f-470f-80e8-0378036a9a3ahgQx
+$455
+{"object":"list","results":[{"object":"property_item","type":"rich_text","id":"hgQx","rich_text":{"type":"text","text":{"content":"Soft Machine","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Soft Machine","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"hgQx","next_url":null,"type":"rich_text","rich_text":{}}}
+*3
+$3
+SET
+$42
+f7d836ed-d564-48c7-bd5d-9eab6b2d3bcdN%5Dt_
+$465
+{"object":"list","results":[{"object":"property_item","type":"rich_text","id":"N%5Dt_","rich_text":{"type":"text","text":{"content":"Gravity Records","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Gravity Records","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"N%5Dt_","next_url":null,"type":"rich_text","rich_text":{}}}
+*3
+$3
+SET
+$65
+f7d836ed-d564-48c7-bd5d-9eab6b2d3bcdtitle-I can’t handle change
+$439
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Thoughtless","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Thoughtless","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}}}
+*3
+$3
+SET
+$40
+f7d836ed-d564-48c7-bd5d-9eab6b2d3bcdJAqY
+$103
+{"object":"property_item","type":"url","id":"JAqY","url":"https://www.youtube.com/watch?v=cafh3ObGZ50"}
+*3
+$3
+SET
+$40
+f7d836ed-d564-48c7-bd5d-9eab6b2d3bcdhgQx
+$467
+{"object":"list","results":[{"object":"property_item","type":"rich_text","id":"hgQx","rich_text":{"type":"text","text":{"content":"Man is the Bastard","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Man is the Bastard","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"hgQx","next_url":null,"type":"rich_text","rich_text":{}}}
+*3
+$3
+SET
+$42
+4be881a5-c18d-4633-b7cb-62e18b2a0fa6N%5Dt_
+$473
+{"object":"list","results":[{"object":"property_item","type":"rich_text","id":"N%5Dt_","rich_text":{"type":"text","text":{"content":"Citrus City Records","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Citrus City Records","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"N%5Dt_","next_url":null,"type":"rich_text","rich_text":{}}}
+*3
+$3
+SET
+$42
+7185a917-1932-42b3-8d66-0111c07bc02dN%5Dt_
+$465
+{"object":"list","results":[{"object":"property_item","type":"rich_text","id":"N%5Dt_","rich_text":{"type":"text","text":{"content":"Captured Tracks","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Captured Tracks","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"N%5Dt_","next_url":null,"type":"rich_text","rich_text":{}}}
+*3
+$3
+SET
+$40
+f7d836ed-d564-48c7-bd5d-9eab6b2d3bcdpNEp
+$238
+{"object":"property_item","type":"multi_select","id":"pNEp","multi_select":[{"id":"40c61ca1-b650-45bf-986a-720c4e307d5e","name":"punk","color":"brown"},{"id":"26c0e935-bc7e-48e9-8637-4595fa7ffe04","name":"powerviolence","color":"green"}]}
+*2
+$6
+SELECT
+$1
+0
+*3
+$3
+SET
+$40
+150df0ed-6096-4826-b95b-7478f8f756e4FDJ~
+$143
+{"object":"property_item","type":"select","id":"FDJ~","select":{"id":"58dcbbdb-eeb6-4ad0-a2c3-8c9ee74d2f81","name":"Jacket","color":"default"}}
+*3
+$3
+SET
+$55
+150df0ed-6096-4826-b95b-7478f8f756e4title-worker jacket
+$443
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"worker jacket","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"worker jacket","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}}}
+*3
+$3
+SET
+$55
+5484239e-ba95-4d7b-b6c6-3685875c6f57title-worker jacket
+$461
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Textured Striped Shirt","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Textured Striped Shirt","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}}}
+*3
+$3
+SET
+$55
+d89ce4ba-eb4d-4f6a-b7a0-ee961291da4ctitle-worker jacket
+$468
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Fecke Baggy Fit Denim Jean","link":null},"annotations":{"bold":true,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Fecke Baggy Fit Denim Jean","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}}}
+*3
+$3
+SET
+$55
+f474d53a-22cb-402a-bebb-eaabe8113d99title-worker jacket
+$466
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Heavyweight T-Shirt Black","link":null},"annotations":{"bold":true,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Heavyweight T-Shirt Black","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}}}
+*3
+$3
+SET
+$55
+74cc3705-a3fd-46d1-a56d-d925661fb925title-worker jacket
+$538
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Colorblock Stitching Knitted Revere Collar Short Sleeve Shirt","link":null},"annotations":{"bold":true,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Colorblock Stitching Knitted Revere Collar Short Sleeve Shirt","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}}}
+*3
+$3
+SET
+$55
+9ef439b7-6ab5-43ca-b25c-43274d4f7245title-worker jacket
+$518
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Asymmetric Color Matching Casual Short Sleeve Shirt","link":null},"annotations":{"bold":true,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Asymmetric Color Matching Casual Short Sleeve Shirt","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}}}
+*3
+$3
+SET
+$40
+9ef439b7-6ab5-43ca-b25c-43274d4f7245FDJ~
+$141
+{"object":"property_item","type":"select","id":"FDJ~","select":{"id":"88c7835f-41e0-4852-947c-cd8a642a348f","name":"Shirt","color":"yellow"}}
+*3
+$3
+SET
+$55
+57ab7ecd-a665-4bb8-bf1f-9d984b66baa2title-worker jacket
+$447
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Add dragability","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Add dragability","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}}}
+*3
+$3
+SET
+$40
+49cd225f-3da3-4f6d-8ed1-19f88625f74aFDJ~
+$107
+{"object":"property_item","type":"select","id":"FDJ~","select":{"id":"_ho\\","name":"Shoes","color":"red"}}
+*3
+$3
+SET
+$40
+a4129520-4d78-4c8f-9b32-85852d960e78FDJ~
+$143
+{"object":"property_item","type":"select","id":"FDJ~","select":{"id":"58dcbbdb-eeb6-4ad0-a2c3-8c9ee74d2f81","name":"Jacket","color":"default"}}
+*3
+$3
+SET
+$55
+0db5e415-368d-484d-857c-4fbce64b9868title-worker jacket
+$490
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"LEVI'S® WELLTHREAD® VINTAGE T-SHIRT","link":null},"annotations":{"bold":true,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"LEVI'S® WELLTHREAD® VINTAGE T-SHIRT","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}}}
+*3
+$3
+SET
+$55
+8ec2f5d2-18ef-4854-aed6-7021880bb571title-worker jacket
+$444
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"SKATE HALF CAB","link":null},"annotations":{"bold":true,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"SKATE HALF CAB","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}}}
+*3
+$3
+SET
+$55
+e908c932-3f0e-418a-962b-646b9267b274title-worker jacket
+$486
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"RELAXED FIT TWILL UTILITY WORK PANT","link":null},"annotations":{"bold":true,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"RELAXED FIT TWILL UTILITY WORK PANT","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}}}
+*3
+$3
+SET
+$55
+d9f94a9f-111c-4f5b-af82-54745b2bcf23title-worker jacket
+$458
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Greaser Garage Jacket","link":null},"annotations":{"bold":true,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Greaser Garage Jacket","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}}}
+*3
+$3
+SET
+$40
+d9f94a9f-111c-4f5b-af82-54745b2bcf23FDJ~
+$143
+{"object":"property_item","type":"select","id":"FDJ~","select":{"id":"58dcbbdb-eeb6-4ad0-a2c3-8c9ee74d2f81","name":"Jacket","color":"default"}}
+*3
+$3
+SET
+$40
+e64483c9-603a-41aa-976c-9a7f4db6d6c2FDJ~
+$141
+{"object":"property_item","type":"select","id":"FDJ~","select":{"id":"88c7835f-41e0-4852-947c-cd8a642a348f","name":"Shirt","color":"yellow"}}
+*3
+$3
+SET
+$40
+4a46cfaa-f38c-4f76-9585-f4af8f1c5ebcFDJ~
+$108
+{"object":"property_item","type":"select","id":"FDJ~","select":{"id":"rYht","name":"Hoodie","color":"pink"}}
+*3
+$3
+SET
+$40
+c1081f0a-a0d8-4b44-8d47-a40157b2e011FDJ~
+$143
+{"object":"property_item","type":"select","id":"FDJ~","select":{"id":"58dcbbdb-eeb6-4ad0-a2c3-8c9ee74d2f81","name":"Jacket","color":"default"}}
+*2
+$6
+SELECT
+$1
+0
+*3
+$3
+SET
+$40
+57ab7ecd-a665-4bb8-bf1f-9d984b66baa2yroX
+$78
+{"object":"property_item","type":"multi_select","id":"yroX","multi_select":[]}
+*3
+$3
+SET
+$40
+8a5db93f-a16c-45b3-b558-3f2c9a78e142jzvR
+$148
+{"object":"property_item","type":"status","id":"jzvR","status":{"id":"364187e4-f700-48f9-8640-9f1aed843577","name":"Not started","color":"default"}}
+*3
+$3
+SET
+$57
+8a5db93f-a16c-45b3-b558-3f2c9a78e142title-Add dragability
+$455
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Design landing page","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Design landing page","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}}}
+*3
+$3
+SET
+$61
+8a5db93f-a16c-45b3-b558-3f2c9a78e142title-Design landing page
+$455
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Design landing page","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Design landing page","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}}}
+*3
+$3
+SET
+$40
+8a5db93f-a16c-45b3-b558-3f2c9a78e142yroX
+$78
+{"object":"property_item","type":"multi_select","id":"yroX","multi_select":[]}
+*3
+$3
+SET
+$46
+be93e49b-b13d-4ae2-8585-aac97faa1167x%3F%5C%40
+$116
+{"object":"property_item","type":"date","id":"x%3F%5C%40","date":{"start":"2010-03-14","end":null,"time_zone":null}}
+*3
+$3
+SET
+$40
+be93e49b-b13d-4ae2-8585-aac97faa1167pNEp
+$229
+{"object":"property_item","type":"multi_select","id":"pNEp","multi_select":[{"id":"8b318201-8562-485a-8ec2-8370c71e7589","name":"emo","color":"gray"},{"id":"084d2ee4-b4f8-440a-98a6-38ce7a0d9b9c","name":"indie","color":"purple"}]}
+*3
+$3
+SET
+$40
+ea894a7c-73c2-442b-be76-69960e3cb588yroX
+$78
+{"object":"property_item","type":"multi_select","id":"yroX","multi_select":[]}
+*3
+$3
+SET
+$40
+ea894a7c-73c2-442b-be76-69960e3cb588jzvR
+$148
+{"object":"property_item","type":"status","id":"jzvR","status":{"id":"364187e4-f700-48f9-8640-9f1aed843577","name":"Not started","color":"default"}}
+*3
+$3
+SET
+$40
+cf1d9666-9b3d-4344-92c6-701373f4e2f8JAqY
+$103
+{"object":"property_item","type":"url","id":"JAqY","url":"https://www.youtube.com/watch?v=0eGALf5Rp1M"}
+*3
+$3
+SET
+$40
+34d2fd86-7284-45ef-87b1-0f4a41debc95<cpm
+$131
+{"object":"property_item","type":"date","id":"%3Ccpm","date":{"start":"2023-04-20T12:00:00.000-04:00","end":null,"time_zone":null}}
+*3
+$3
+SET
+$50
+be93e49b-b13d-4ae2-8585-aac97faa1167title-move car
+$463
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"I can’t handle change","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"I can’t handle change","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}}}
+*3
+$3
+SET
+$40
+5d82c051-6fc1-4bbe-8d9f-2555c8ef6474XACZ
+$68
+{"object":"property_item","type":"select","id":"XACZ","select":null}
