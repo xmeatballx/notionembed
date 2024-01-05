@@ -1,6 +1,8 @@
 <script lang="ts">
+	import { page } from '$app/stores';
 	import Editor from '$lib/editor/editor.svelte';
 	import Preview from '$lib/editor/preview.svelte';
+
 	export let databases: any;
 	export let pages: any;
 </script>
@@ -8,7 +10,7 @@
 <section class="page">
 	<!-- {JSON.stringify($state.blocks[0])} -->
 	<div class="controls">
-		<Editor {databases} {pages}/>
+		<Editor {databases} {pages} />
 	</div>
 	<div class="preview-container">
 		<Preview />
@@ -16,7 +18,6 @@
 </section>
 
 <style>
-
 	.preview-container {
 		background-color: var(--surface-1);
 		color: var(--text-1);
@@ -28,11 +29,11 @@
 		display: grid;
 		place-items: center;
 		/* border: 1px solid var(--surface-3); */
-		position: sticky;
-		top: 0px;
-		left: 20%;
+		position: relative;
+		top: 0;
+		left: 0;
 		right: 0;
-        box-shadow: var(--shadow-4);
+		/* box-shadow: var(--shadow-4); */
 		align-self: start;
 	}
 
@@ -52,19 +53,19 @@
 		display: flex;
 		flex-direction: column;
 		/* grid-template-rows: repeat(3, min-content); */
-		gap: 1em;
+		gap: 0.5em;
 		/* height: 100vh; */
 		border-right: 1px solid var(--surface-3);
 		/* max-height: calc(100vh - 66px); */
 	}
 
-	@media(max-width: 820px) {
+	@media (max-width: 820px) {
 		.page {
 			grid-template-columns: 1fr;
 		}
 
 		.controls {
-			grid-row: 2
+			grid-row: 2;
 		}
 
 		.preview-container {

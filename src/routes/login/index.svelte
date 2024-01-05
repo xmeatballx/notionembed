@@ -1,15 +1,22 @@
-<script>
+<script lang="ts">
 	import { page } from '$app/stores';
+	import type { StateValue } from 'src/types';
+	import { state, updateState } from '../../stores';
+	import type { User } from '@prisma/client';
 	import { onMount } from 'svelte';
+	export let redirectURL: string;
+	export let user: User;
+	// console.log(data);
 	onMount(() => {
-		const queryCode = $page.url.searchParams.get('code');
-		if (queryCode) {
-			window.localStorage.setItem('notion code', queryCode);
+		// const queryCode = $page.url.searchParams.get('code');
+		if (user) {
+			window.localStorage.setItem('user', JSON.stringify(user));
+			updateState('user_id', user.id as StateValue);
 		}
-
-		const storedCode = window.localStorage.getItem('notion code');
-		if (storedCode) {
-			window.location.replace(`/user/${storedCode}`);
+		const storedUser = window.localStorage.getItem('user');
+		if (storedUser) {
+			const userObj = JSON.parse(storedUser);
+			window.location.replace(`/user/${userObj.id}`);
 		}
 	});
 </script>

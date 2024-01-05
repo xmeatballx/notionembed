@@ -19,19 +19,37 @@ model User {
 }
 
 model Embed {
-  id      String  @id @default(cuid())
-  user    User    @relation(fields: [forUser], references: [id])
-  forUser String
-  blocks  Block[]
+  id               String  @id @default(cuid())
+  name             String  @default("Untitled")
+  user             User    @relation(fields: [forUser], references: [id])
+  forUser          String
+  databaseId       String
+  pageIds          String[]
+  layout           EmbedLayouts @default(SINGLE)
+  columns          Int @default(1)
+  autoplay Boolean @default(true)
+  autoplayInterval Int @default(3)
+  autoplayOrder    AutoplayOrder @default(RANDOM) 
+  blocks           Block[]
+}
+
+enum EmbedLayouts {
+  SINGLE
+  CAROUSEL
+}
+
+enum AutoplayOrder {
+  RANDOM
+  ASC
+  DESC
 }
 
 model Block {
   id             String @id @default(cuid())
-  databaseId     String
-  pageId         String
   propertyType   String
   previewElement String
   propertyId     String
-  staticEmbedId  String @unique
-  StaticEmbed    Embed  @relation(fields: [staticEmbedId], references: [id])
+  order          Int
+  staticEmbedId  String
+  StaticEmbed    Embed  @relation(fields: [staticEmbedId], references: [id], onDelete: Cascade)
 }

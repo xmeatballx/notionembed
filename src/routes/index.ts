@@ -10,8 +10,8 @@ export const get: RequestHandler = async ({ params }) => {
 };
 
 export const post: RequestHandler = async ({ params }) => {
-	console.log(params);
-	console.log('hi');
+	// console.log(params);
+	// console.log('hi');
 
 	return { status: 200 };
 };

@@ -10,23 +10,26 @@ type Headers = {
 	'Content-Type'?: string;
 };
 
-function auth(method: string, resource: string, headers: Headers, data?: Record<string, unknown>) {
-	return fetch(`${base}/${resource}`, {
+async function auth(
+	method: string,
+	resource: string,
+	headers: Headers,
+	data?: Record<string, unknown>
+) {
+	return await fetch(`${base}/${resource}`, {
 		method,
 		headers: headers,
-		body: data && JSON.stringify(data)
+		body: JSON.stringify(data)
 	});
 }
 
 async function getPagesForDatabase(userId: string, databaseId: string) {
 	// updateState('database_id', databaseId as StateValue);
 	//prettier-ignore
-	const response = await fetch(
-		`/user/${userId}/database/${databaseId}`,
-		{ headers: { 'Accepts': 'application/json' } }
-	);
+	const resource = `/user/${userId}/database/${databaseId}`
+	const response = await fetch(resource, { headers: { Accepts: 'application/json' } });
 	const data = await response.json();
-	console.log(data)
+	// console.log(data)
 	return data.results;
 }
 
@@ -49,7 +52,9 @@ async function getPageProperties(userId: string, databaseId: string, pageId: str
 }
 
 async function getPageImage(userId: string, databaseId: string, pageId: string, type: string) {
-	const response = await fetch(`/user/${userId}/database/${databaseId}/?page=${pageId}`, {
+	const resource = `/user/${userId}/database/${databaseId}/?page=${pageId}`;
+	console.log('RESOURCE', resource);
+	const response = await fetch(resource, {
 		headers: { Accepts: 'application/json' }
 	});
 	const page = await response.json();
@@ -67,17 +72,17 @@ async function getPageImage(userId: string, databaseId: string, pageId: string, 
 
 async function getContent(userId: string, pageId: string, propertyId: string) {
 	// console.log(pageId)
-    // const cachedData = await db.get({ key: propertyId });
+	// const cachedData = await db.get({ key: propertyId });
 	// if (!cachedData) {
-		const response = await fetch(
-			`/user/${userId}/content/?page_id=${pageId}&property_id=${propertyId}`,
-			{
-				headers: { Accepts: 'application/json' }
-			}
-		);
-		const result = await response.json();
-		// await db.set({ key: propertyId, value: result })
-		return result;
+	const response = await fetch(
+		`/user/${encodeURIComponent(userId)}/content/?page_id=${pageId}&property_id=${propertyId}`,
+		{
+			headers: { Accepts: 'application/json' }
+		}
+	);
+	const result = await response.json();
+	// await db.set({ key: propertyId, value: result })
+	return result;
 	// } else {
 	// 	return cachedData;
 	// }

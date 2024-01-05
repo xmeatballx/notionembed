@@ -1,35 +1,67 @@
 @import 'https://unpkg.com/open-props';
 @import 'https://unpkg.com/open-props/normalize.min.css';
 @import 'https://unpkg.com/open-props/buttons.min.css';
-
-
+html {
+	--surface-1: white;
+}
 
 h1 {
-	font-size: var(--font-size-7);
-	max-inline-size: 20ch;
+	font-size: var(--font-size-5);
+	/* max-inline-size: 20ch; */
+	font-weight: 500;
+	color: var(--text-1);
+	text-wrap: pretty;
+	max-width: var(--size-content-3);
 }
 
 h2 {
-	max-inline-size: 20ch;
+	color: var(--text-1);
+	font-weight: 500;
+	font-size: var(--font-size-4);
+	max-width: var(--size-content-3);
 }
 
 h3 {
-	font-size: var(--font-size-4)
+	color: var(--text-1);
+	font-size: var(--font-size-fluid-1);
 }
 
 p,
 blockquote,
 li {
-	font-size: 14px;
+	color: var(--text-1);
+	font-size: var(--font-size-1);
+}
+
+blockquote {
+	color: var(--text-1);
+	border-color: var(--text-1);
+	border-left-width: var(--size-0);
+}
+
+a {
+	font-size: var(--font-size-fluid-0);
 }
 
 select {
-	background-color: var(--surface-2)
+	background-color: var(--surface-2);
+}
+
+iframe {
+	width: var(--size-content-3);
+	height: var(--size-content-3);
+}
+
+@media (prefers-color-scheme: light) {
+	html {
+		--text-1: rgb(55, 53, 47);
+	}
 }
 
 @media (prefers-color-scheme: dark) {
 	html {
-			--surface-1: #181818;
-			--surface-2: #222;
-		}
+		--surface-1: #181818;
+		--surface-2: #222;
+		--text-1: rgba(255, 255, 255, 0.81);
+	}
 }

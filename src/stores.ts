@@ -4,6 +4,8 @@ import type { Block, State, StateValue } from './types';
 const defaultState: State = {
 	user_id: 'not set',
 	database_id: 'not set',
+	database_name: 'not set',
+	page_ids: [],
 	preview_as_id: 'not set',
 	page_properties: [],
 	blocks: [] as Block[]
@@ -20,6 +22,5 @@ function updateState(key: keyof State, value: StateValue) {
 	}
 	state.set(temp);
 }
-
 
 export { state, updateState };

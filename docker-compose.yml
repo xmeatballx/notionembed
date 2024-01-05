@@ -1,78 +1,76 @@
-version: "3.3"
-
+version: '3.3'
 
 services:
-    redis:
-        image: redis
-        environment:
-          # ALLOW_EMPTY_PASSWORD is recommended only for development.
-          - ALLOW_EMPTY_PASSWORD=yes
-          - REDIS_DISABLE_COMMANDS=FLUSHDB,FLUSHALL
-        ports:
-          - 6379:6379
-        volumes:
-          - .db:/data
-        restart: always
-        entrypoint: redis-server --appendonly yes
+  redis:
+    image: redis
+    environment:
+      # ALLOW_EMPTY_PASSWORD is recommended only for development.
+      - ALLOW_EMPTY_PASSWORD=yes
+      - REDIS_DISABLE_COMMANDS=FLUSHDB,FLUSHALL
+    ports:
+      - 6379:6379
+    volumes:
+      - .db:/data
+    restart: always
+    entrypoint: redis-server --appendonly yes
 
-    postgres:
-        image: postgres:latest
-        container_name: postgres
-        ports:
-            - "5432:5432"
-        expose:
-            - "5432"
-        environment:
-            POSTGRES_USER: postgres
-            POSTGRES_PASSWORD: postgres
-            POSTGRES_DB: notionembed
-        volumes:
-            - postgres-data:/var/lib/postgresql/data
-        restart: unless-stopped
+  postgres:
+    image: postgres:latest
+    container_name: postgres
+    ports:
+      - '5432:5432'
+    expose:
+      - '5432'
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: notionembed
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    restart: unless-stopped
 
-    app:
-        container_name: app
-        build: .
-        command:  bash -c "npx prisma generate && npx prisma migrate deploy && npm run dev"
-        ports:
-            - "3000:3000"
-        environment: 
-            VITE_NOTION_CLIENT_ID: 882d6a58-d120-4254-bc23-5d0be961890e
-            VITE_NOTION_CLIENT_SECRET: secret_AKyll2p56EloGu4sIQZb04QxhM4UBAtR9pACK43Pqns
-            VITE_REDIS_PORT: 6379
-            VITE_REDIS_URL: redis
-        volumes:
-            - .:/src
-            - nodemodules:/src/node_modules
-        depends_on:
-            - redis
-        healthcheck:
-            test: ["CMD-SHELL", "curl --fail http://localhost:3000/login || exit 1"]
-            interval: 10s
-            timeout: 10s
-            retries: 5
-        links:
-            - redis
+  app:
+    container_name: app
+    build: .
+    command: bash -c "npx prisma generate && npx prisma migrate deploy && npm run dev"
+    ports:
+      - '3000:3000'
+    environment:
+      VITE_NOTION_CLIENT_ID: 882d6a58-d120-4254-bc23-5d0be961890e
+      VITE_NOTION_CLIENT_SECRET: secret_ataYdJOBnD1DGhVoLStOiuioDLznd0G0abYSEyvGfEX
+      VITE_REDIS_PORT: 6379
+      VITE_REDIS_URL: redis
+    volumes:
+      - .:/src
+      - nodemodules:/src/node_modules
+    depends_on:
+      - redis
+    healthcheck:
+      test: ['CMD-SHELL', 'curl --fail http://localhost:3000/login || exit 1']
+      interval: 10s
+      timeout: 10s
+      retries: 5
+    links:
+      - redis
 
-    studio:
-        container_name: studio
-        build: 
-            context: ./prisma
-            dockerfile: ./Dockerfile
-        command: bash -c "cd ./prisma && npx prisma generate && npx prisma migrate deploy && npx prisma studio"
-        environment:
-            DATABASE_URL: postgresql://postgres:postgres@postgres:5432/notionembed?schema=public&connect_timeout=300
-        ports:
-            - "5555:5555"
-        depends_on:
-            - postgres
-            - app
-        links:
-            - postgres
-        volumes: 
-            - .:/prisma
+  studio:
+    container_name: studio
+    build:
+      context: ./prisma
+      dockerfile: ./Dockerfile
+    command: bash -c "cd ./prisma && npx prisma generate && npx prisma migrate deploy && npx prisma studio"
+    environment:
+      DATABASE_URL: postgresql://postgres:postgres@postgres:5432/notionembed?schema=public&connect_timeout=300
+    ports:
+      - '5555:5555'
+    depends_on:
+      - postgres
+      - app
+    links:
+      - postgres
+    volumes:
+      - .:/prisma
 
-        
 volumes:
-    nodemodules:
-    postgres-data:
+  nodemodules:
+  postgres-data:

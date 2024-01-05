@@ -1,9 +1,13 @@
 <script lang="ts">
 	import Header from '$lib/header/Header.svelte';
 	import '../app.css';
+	import { page } from '$app/stores';
+	const hideHeader = $page.url.pathname.startsWith('/embed/');
 </script>
 
-<Header />
+{#if !hideHeader}
+	<Header />
+{/if}
 
 <main>
 	<slot />
@@ -12,7 +16,6 @@
 <!-- <footer>
 	<p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
 </footer> -->
-
 <style>
 	main {
 		flex: 1;
@@ -25,7 +28,7 @@
 		box-sizing: border-box;
 	}
 
-	footer {
+	/* footer {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -37,5 +40,5 @@
 		footer {
 			padding: 40px 0;
 		}
-	}
+	} */
 </style>
