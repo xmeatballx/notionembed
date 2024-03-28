@@ -32,7 +32,6 @@
 	$state.page_properties = pages[0].properties;
 	let dbOpen = true;
 	let blocksOpen = true;
-	console.log('PAGES 0: ', pages[0].properties);
 	addBlock();
 </script>
 

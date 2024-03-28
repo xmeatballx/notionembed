@@ -10,7 +10,6 @@
 	let currentPath: string;
 
 	$: {
-		console.log('HERE');
 		currentPath = $page.url.pathname;
 	}
 

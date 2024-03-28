@@ -13,7 +13,7 @@
 		const selectedOption = e.target.options[e.target.selectedIndex];
 		const type = selectedOption.getAttribute('data-type');
 		const id = e.target.value;
-		console.log('VALUE ID', encodeURIComponent(id));
+		console.log('property: ', $state.blocks[index]);
 		if (type == 'cover') {
 			$state.blocks[index].propertyId = 'cover';
 			$state.blocks[index].propertyType = type;
@@ -95,6 +95,8 @@
 				{:else if propertyType == 'url'}
 					<option value="a">Link</option>
 					<option value="object">Embed</option>
+				{:else if propertyType == 'relation'}
+					<option value="a">Link</option>
 				{:else if propertyType == 'cover' || propertyType == 'icon'}
 					<option value="img">Image</option>
 				{/if}

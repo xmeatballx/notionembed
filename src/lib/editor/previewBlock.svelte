@@ -20,7 +20,7 @@
 	}
 	async function getData(propertyType: any, propertyId: any) {
 		try {
-			const userIdStringified = window.localStorage.getItem('user');
+			const userIdStringified = window?.localStorage?.getItem('user');
 			const user = JSON.parse(userIdStringified ?? '{}');
 			if (embed && blocks) {
 				if (propertyType == 'cover') {
@@ -37,6 +37,9 @@
 						embed.pageIds[page],
 						'icon'
 					);
+				} else if (propertyType == 'relation') {
+					const content = await api.getRelation(embed.forUser, embed.databaseId, embed.pageIds[page], propertyId);
+					return content;
 				} else {
 					const content = await api.getContent(embed.forUser, embed.pageIds[page], propertyId);
 					return content;
@@ -48,6 +51,9 @@
 					return await api.getPageImage(user.id, $state.database_id, $state.preview_as_id, 'cover');
 				} else if (propertyType == 'icon') {
 					return await api.getPageImage(user.id, $state.database_id, $state.preview_as_id, 'icon');
+				} else if (propertyType == 'relation') {
+					const content = await api.getRelation(user.id, $state.database_id, $state.preview_as_id, propertyId);
+					return content;
 				} else {
 					const content = await api.getContent(user.id, $state.preview_as_id, propertyId);
 					return content;
@@ -134,6 +140,14 @@
 				<li>{tag.name}</li>
 			{/each}
 		</ul>
+	{/if}
+	{#if block.propertyType == 'relation'}
+		{#each content as relation}
+		<a href={relation.url}>{relation.content}</a>
+		{/each}
+	{/if}
+	{#if block.propertyType == 'date'}
+		<p>{content.date.start}</p>	
 	{/if}
 {/await}
 

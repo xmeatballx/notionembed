@@ -9,7 +9,6 @@ const prismaClient = new PrismaClient();
 
 export const get: RequestHandler = async ({ url }) => {
 	const code = url.searchParams.get('code');
-	console.log('CODE: ', code);
 	if (code) {
 		console.log('CLIENT ID: ', import.meta.env.VITE_NOTION_CLIENT_ID);
 		console.log('CLIENT SECRET: ', import.meta.env.VITE_NOTION_CLIENT_SECRET);
@@ -50,10 +49,15 @@ export const get: RequestHandler = async ({ url }) => {
 				}
 			});
 		} else {
-			return {
-				status: 500,
-				error: 'user already exists'
-			};
+			user = await prismaClient.user.update({
+				where: {
+					id: duplicateUser.id
+				},
+				data: {
+					bot_id: userData.bot_id,
+					access_token: userData.access_token,
+				}
+			});
 		}
 		return {
 			status: 200,

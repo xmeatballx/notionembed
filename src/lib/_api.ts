@@ -39,7 +39,7 @@ async function getPage(userId: string, databaseId: string, pageId: string) {
 	const response = await fetch(
 		`/user/${userId}/database/${databaseId}/?page=${pageId}`,
 		{ headers: { 'Accepts': 'application/json' } }
-		);
+	);
 	return await response.json();
 }
 
@@ -81,8 +81,40 @@ async function getContent(userId: string, pageId: string, propertyId: string) {
 		}
 	);
 	const result = await response.json();
+	console.log(result);
 	// await db.set({ key: propertyId, value: result })
 	return result;
+	// } else {
+	// 	return cachedData;
+	// }
+}
+
+async function getRelation(userId: string, databaseId: string, pageId: string, propertyId: string) {
+	// console.log(pageId)
+	// const cachedData = await db.get({ key: propertyId });
+	// if (!cachedData) {
+	const response = await fetch(
+		`/user/${encodeURIComponent(userId)}/content/?page_id=${pageId}&property_id=${propertyId}`,
+		{
+			headers: { Accepts: 'application/json' }
+		}
+	);
+	const result = await response.json();
+	console.log("relation: ", result);
+	const content = await Promise.all(result.results.map(async (relation: any) => {
+		const page = await fetch(
+			`/user/${encodeURIComponent(userId)}/database/${databaseId}?page=${relation.relation.id}`,
+			{
+				headers: { Accepts: 'application/json' }
+			}
+		);
+		const result = await page.json();
+		console.log(result);
+		console.log(getTitle(result.properties));
+		return { content: getTitle(result.properties), url: result.url };
+	}));
+	return content;
+	// await db.set({ key: propertyId, value: result })
 	// } else {
 	// 	return cachedData;
 	// }
@@ -123,5 +155,6 @@ export {
 	getPageProperties,
 	getPageImage,
 	getContent,
-	getEmbed
+	getEmbed,
+	getRelation
 };

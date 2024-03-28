@@ -4925,3 +4925,870 @@ $50
 0a158c63-376e-4718-810b-466a316684a9title-Tracking
 $505
 {"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"The Digital Reader","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"The Digital Reader","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"af68cbcb-e132-4ebd-816a-01d0aed1b670"}
+*2
+$6
+SELECT
+$1
+0
+*3
+$3
+SET
+$73
+a87047dc-a130-4f68-8051-58de3be673d8title-Whats the deal with powershell?
+$531
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Whats the deal with powershell?","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Whats the deal with powershell?","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"18e8db6e-e9ce-4433-9d91-23402d14d7c8"}
+*3
+$3
+SET
+$42
+a87047dc-a130-4f68-8051-58de3be673d8Zu%3ED
+$132
+{"object":"property_item","type":"multi_select","id":"Zu%3ED","multi_select":[],"request_id":"25c5d088-8b84-4460-ba83-42bce345710d"}
+*3
+$3
+SET
+$55
+a9ac8508-977d-4ac4-bd4b-7e7fb8ab274ctitle-Work on music
+$495
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Work on music","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Work on music","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"0d42d95c-cae5-4645-a16f-b5b50f07ee2a"}
+*3
+$3
+SET
+$58
+25007e86-924c-49e6-9b9e-8c7a42fb5e79title-Put laundry away
+$501
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Put laundry away","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Put laundry away","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"5e228c2a-46c3-4e54-a02a-d35a79ff9b61"}
+*3
+$3
+SET
+$52
+6386dadf-4858-448f-8867-86e1f4fa291etitle-Japan Trip
+$489
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Japan Trip","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Japan Trip","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"f3df53ae-98d3-4d01-94b4-808391a9e017"}
+*3
+$3
+SET
+$52
+a0ecc1cf-8043-4d24-8132-58d246524eb9title-Japan Trip
+$503
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Apartment upgrade","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Apartment upgrade","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"ae02a253-8f89-4157-a2ce-c6e6d2d9a573"}
+*3
+$3
+SET
+$52
+b56f39c7-2d03-4251-8612-ed36a2c898batitle-Japan Trip
+$491
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"PrintWizard","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"PrintWizard","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"7429a575-518a-4ae8-ba8e-3767ed48194f"}
+*3
+$3
+SET
+$52
+47d4eb78-944c-4675-9a88-cc6e15a7b49ftitle-Japan Trip
+$487
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"mutepoint","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"mutepoint","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"2ca11acf-ccae-4ee4-8b35-d7375b3c9ad6"}
+*3
+$3
+SET
+$52
+03c15c12-a3d8-40ba-ad87-5abd5d211afftitle-Japan Trip
+$483
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"HomeLab","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"HomeLab","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"16a26fd3-a492-4a8e-af38-c3d9f0e9c3cd"}
+*3
+$3
+SET
+$52
+1f0dd924-d42d-4770-a359-783c60622f7dtitle-Japan Trip
+$491
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"NotionEmbed","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"NotionEmbed","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"17472eef-018c-4be0-8a93-1e1a1bd8bf33"}
+*3
+$3
+SET
+$53
+b56f39c7-2d03-4251-8612-ed36a2c898batitle-PrintWizard
+$491
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"PrintWizard","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"PrintWizard","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"b59dea4b-a1f2-464c-8b84-ae778f21997d"}
+*3
+$3
+SET
+$42
+b56f39c7-2d03-4251-8612-ed36a2c898ba_aG%3C
+$916
+{"object":"list","results":[{"object":"property_item","type":"relation","id":"_aG%3C","relation":{"id":"9f252df6-3277-4e3d-8182-23a436c5a1b0"}},{"object":"property_item","type":"relation","id":"_aG%3C","relation":{"id":"6d248afe-bc19-49cc-914c-bcaebd568dd5"}},{"object":"property_item","type":"relation","id":"_aG%3C","relation":{"id":"910bf870-58fc-4dae-81c7-3e8968a5a2a9"}},{"object":"property_item","type":"relation","id":"_aG%3C","relation":{"id":"e01aa0ac-24bd-4e17-8259-95abadcd84ca"}},{"object":"property_item","type":"relation","id":"_aG%3C","relation":{"id":"f25f0a7b-7a9c-40fb-b9ec-f4ee270468e3"}},{"object":"property_item","type":"relation","id":"_aG%3C","relation":{"id":"73a03313-a762-4455-a262-801ac0ead823"}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"_aG%3C","next_url":null,"type":"relation","relation":{}},"request_id":"812422ff-adae-4ce7-8641-b98bc91a5de5"}
+*3
+$3
+SET
+$40
+b56f39c7-2d03-4251-8612-ed36a2c898banNOI
+$114
+{"object":"property_item","type":"url","id":"nNOI","url":null,"request_id":"5d70751d-f026-4731-b6cb-82ab2fd0f8a7"}
+*3
+$3
+SET
+$40
+b56f39c7-2d03-4251-8612-ed36a2c898bapRqx
+$1155
+{"object":"list","results":[{"object":"property_item","type":"status","id":"jzvR","status":{"id":"e2d0237b-2118-4928-aa4e-7c9f61a33cbd","name":"Done","color":"green"}},{"object":"property_item","type":"status","id":"jzvR","status":{"id":"364187e4-f700-48f9-8640-9f1aed843577","name":"Not started","color":"default"}},{"object":"property_item","type":"status","id":"jzvR","status":{"id":"364187e4-f700-48f9-8640-9f1aed843577","name":"Not started","color":"default"}},{"object":"property_item","type":"status","id":"jzvR","status":{"id":"4e91c66d-c060-40a8-b640-b69b3cdd1e5b","name":"In progress","color":"blue"}},{"object":"property_item","type":"status","id":"jzvR","status":{"id":"e2d0237b-2118-4928-aa4e-7c9f61a33cbd","name":"Done","color":"green"}},{"object":"property_item","type":"status","id":"jzvR","status":{"id":"364187e4-f700-48f9-8640-9f1aed843577","name":"Not started","color":"default"}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"pRqx","next_url":null,"type":"rollup","rollup":{"type":"unsupported","unsupported":{},"function":"percent_per_group"}},"request_id":"9763cbc5-3eb6-46ad-a04b-bd05a212ab09"}
+*3
+$3
+SET
+$51
+97851193-8807-4b22-94fa-0bfa0871ab8dtitle-undefined
+$509
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Playlisting Overview","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Playlisting Overview","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"0a7fc37d-9546-4f29-94aa-bce95f25b11d"}
+*3
+$3
+SET
+$42
+97851193-8807-4b22-94fa-0bfa0871ab8d%3AjoF
+$221
+{"object":"list","results":[],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"%3AjoF","next_url":null,"type":"relation","relation":{}},"request_id":"ac82c4b2-9ab3-4ee0-b587-eee4c593de4a"}
+*3
+$3
+SET
+$40
+97851193-8807-4b22-94fa-0bfa0871ab8dAb_g
+$162
+{"object":"property_item","type":"last_edited_time","id":"Ab_g","last_edited_time":"2024-01-29T05:57:00.000Z","request_id":"d0d13110-3e9c-4f13-8296-cf140c1b2355"}
+*3
+$3
+SET
+$42
+97851193-8807-4b22-94fa-0bfa0871ab8d%5BtxQ
+$116
+{"object":"property_item","type":"url","id":"%5BtxQ","url":null,"request_id":"93a2e8c0-0678-48a8-a016-368cf36c1489"}
+*3
+$3
+SET
+$42
+97851193-8807-4b22-94fa-0bfa0871ab8dgVK%3A
+$221
+{"object":"list","results":[],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"gVK%3A","next_url":null,"type":"relation","relation":{}},"request_id":"8596628e-b0e5-431c-aeb1-dc508ef6bfd3"}
+*3
+$3
+SET
+$40
+97851193-8807-4b22-94fa-0bfa0871ab8dmVDZ
+$372
+{"object":"property_item","type":"multi_select","id":"mVDZ","multi_select":[{"id":"3e8fa45b-7383-4268-87ce-8e42590775b2","name":"Spotify","color":"blue"},{"id":"9aebac07-d08c-40ad-88c0-8d84d36cf76f","name":"Distribution","color":"yellow"},{"id":"08d391b6-9f3d-450c-b426-56305e2a0f88","name":"Marketing","color":"gray"}],"request_id":"d0a4e40f-6a6d-4c7f-b52c-011d0fc298ee"}
+*3
+$3
+SET
+$62
+97851193-8807-4b22-94fa-0bfa0871ab8dtitle-Playlisting Overview
+$509
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Playlisting Overview","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Playlisting Overview","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"8d5aef6b-668e-46aa-b9f7-1eccdf847844"}
+*3
+$3
+SET
+$72
+97851193-8807-4b22-94fa-0bfa0871ab8dnotion%3A%2F%2Fwiki%2Fowner_property
+$404
+{"object":"list","results":[{"object":"property_item","type":"people","id":"notion%3A%2F%2Fwiki%2Fowner_property","people":{"object":"user","id":"84793a01-5551-40e4-b876-9c0dff909db2"}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"notion%3A%2F%2Fwiki%2Fowner_property","next_url":null,"type":"people","people":{}},"request_id":"88fde093-c1b4-489c-a35b-68d076e684f3"}
+*3
+$3
+SET
+$62
+c088c8ee-971f-4105-8424-1346710deb8etitle-Playlisting Overview
+$517
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Spotify URI Looker Upper","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Spotify URI Looker Upper","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"be125ac2-ee27-4b4f-b75e-4a73faf4f93a"}
+*3
+$3
+SET
+$62
+16d50fa4-2d51-4187-b44e-ddd0b7d58419title-Playlisting Overview
+$523
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"DistroKid Artist Page Fixer","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"DistroKid Artist Page Fixer","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"f3a9cb70-c952-4b65-9ef7-808c6dec8e77"}
+*3
+$3
+SET
+$62
+c3b00442-52c9-4af7-bed2-021741c96be9title-Playlisting Overview
+$487
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Slaps.com","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Slaps.com","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"cf0e86b0-bedf-42b2-9098-fea2082859d2"}
+*3
+$3
+SET
+$62
+8eb30924-aa84-4b8a-9318-7d1ecfd03e9etitle-Playlisting Overview
+$539
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Pitching music to spotify playlists","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Pitching music to spotify playlists","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"9e770536-4dae-439d-8b44-82d675a6763e"}
+*3
+$3
+SET
+$62
+5db2f6bb-2d2e-4547-84ae-29c0dea22695title-Playlisting Overview
+$513
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Apple URI Looker Upper","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Apple URI Looker Upper","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"8a62cab6-6ea8-445d-9276-342e484f8f2f"}
+*3
+$3
+SET
+$62
+630b0616-3d5e-4486-99b2-dec480cfccfctitle-Playlisting Overview
+$481
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"LOGINS","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"LOGINS","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"1b57a0a9-7f9f-4388-9715-a7f7ddebe7ba"}
+*3
+$3
+SET
+$62
+6ccef816-a388-445d-a685-2a1366f1cc8etitle-Playlisting Overview
+$517
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"DistroKid Playlist Wheel","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"DistroKid Playlist Wheel","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"79dc5def-f073-4778-a5b8-6687e320cd80"}
+*2
+$6
+SELECT
+$1
+0
+*3
+$3
+SET
+$62
+4cdd0015-62d3-4fda-baf0-b95b628895d9title-Go to U-Arts (tokyo)
+$509
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Go to U-Arts (tokyo)","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Go to U-Arts (tokyo)","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"b5cc9f0d-374d-41e1-81d1-cf2c863b0012"}
+*3
+$3
+SET
+$62
+13dea50a-eb9f-4fb6-ac1d-233c274e372ctitle-Go to U-Arts (tokyo)
+$509
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Make embeds editable","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Make embeds editable","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"912084cd-d3b6-4f7e-a5ae-6dfc175844cb"}
+*3
+$3
+SET
+$62
+196184e9-6415-4a4f-ac7a-28643ad90bc7title-Go to U-Arts (tokyo)
+$511
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Add support for phone","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Add support for phone","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"3989bd1d-2034-4b22-a174-3ee47fb4a4c8"}
+*3
+$3
+SET
+$62
+fe410692-cfa7-4206-b26c-a08d7841b9a5title-Go to U-Arts (tokyo)
+$583
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Figure out whats going on with workstation display/docker","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Figure out whats going on with workstation display/docker","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"8e000f6a-4504-41d2-af7b-409c83c1235a"}
+*3
+$3
+SET
+$62
+bafc3e2e-04c4-431f-b731-af7d92b15703title-Go to U-Arts (tokyo)
+$513
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Add support for select","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Add support for select","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"39c4e0b3-2dcc-4902-9fe7-793c7a5c1548"}
+*3
+$3
+SET
+$62
+4eafb0a4-eb13-4965-8267-0a75337f3b51title-Go to U-Arts (tokyo)
+$533
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Go to Travellers Factory (tokyo)","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Go to Travellers Factory (tokyo)","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"6d33980d-6184-47cf-98f6-ceac10b55a24"}
+*3
+$3
+SET
+$62
+3053a5d6-f7cb-4218-aea2-00b14f1b4bf2title-Go to U-Arts (tokyo)
+$495
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Get some pens","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Get some pens","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"8edac94a-3049-4185-9b30-fee466709b22"}
+*3
+$3
+SET
+$62
+593099a7-c542-43d0-8c37-f1d4915229e6title-Go to U-Arts (tokyo)
+$497
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Get a notebook","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Get a notebook","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"f1e0ec1c-90c5-401f-bd88-a3304a663ea8"}
+*3
+$3
+SET
+$62
+ff4338e5-7771-48fe-99b4-fcb8e3222955title-Go to U-Arts (tokyo)
+$521
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Get Rid of clutter on desk","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Get Rid of clutter on desk","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"f780e64d-102e-4d47-ac42-11641d56c7b2"}
+*3
+$3
+SET
+$62
+e1e73223-25cb-4f0b-b4a5-61348d0ec484title-Go to U-Arts (tokyo)
+$545
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Find a better place for stuff on floor","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Find a better place for stuff on floor","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"c22cdb45-1c6e-4d65-81b3-24ba5a1020cb"}
+*3
+$3
+SET
+$62
+706f9c0f-7c4f-450a-a9ac-f319b0fbb2e7title-Go to U-Arts (tokyo)
+$489
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"bring home","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"bring home","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"973034d8-ad68-43e3-be81-227833e62634"}
+*3
+$3
+SET
+$62
+1a4d1aee-8c8c-4e9a-9cda-3887006511b4title-Go to U-Arts (tokyo)
+$489
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Get chairs","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Get chairs","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"48470f66-050d-47f6-ae2e-4adda1469d99"}
+*3
+$3
+SET
+$62
+a34de25c-5c74-4e86-ae20-ac2e60285d7atitle-Go to U-Arts (tokyo)
+$491
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Get a table","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Get a table","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"90ae7cac-9157-406d-bf7e-25784672c639"}
+*3
+$3
+SET
+$62
+8866c5b6-621f-499d-8a8f-d9758eef2b57title-Go to U-Arts (tokyo)
+$509
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"get rid of old couch","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"get rid of old couch","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"ccd1fa80-24fb-49e1-901c-23d5081aa6fb"}
+*3
+$3
+SET
+$62
+f70d764d-0a0e-41a8-8724-18f266e8db85title-Go to U-Arts (tokyo)
+$507
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"get couch delivered","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"get couch delivered","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"a5b8538f-3aa1-441b-81f9-0c4cf0f9a8d4"}
+*3
+$3
+SET
+$62
+181274b0-3f81-4df7-894d-e785034bb6b0title-Go to U-Arts (tokyo)
+$501
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"pick a new couch","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"pick a new couch","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"f8bb79d9-4cb2-48e5-ad92-ce1775bb6ff5"}
+*3
+$3
+SET
+$62
+ab3f9867-085f-4b2d-9cff-f53b5f1212eftitle-Go to U-Arts (tokyo)
+$527
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"figure out how delivery works","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"figure out how delivery works","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"67ddff2f-3def-4f57-a595-f9fc13a77ffd"}
+*3
+$3
+SET
+$62
+22e718f6-141d-4248-93de-97af19d8abfetitle-Go to U-Arts (tokyo)
+$519
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Get rid of kitchen island","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Get rid of kitchen island","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"615526bd-0b9f-40a7-8411-984eb1d4c03b"}
+*3
+$3
+SET
+$62
+f15e43e9-7680-4b3d-8416-3f2b7b2fa635title-Go to U-Arts (tokyo)
+$491
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Get a couch","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Get a couch","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"c9ba14ed-9a0c-484e-8f8f-9a895a5cf940"}
+*3
+$3
+SET
+$62
+9c8e833c-a076-43a3-8004-c9ab1b20c3b5title-Go to U-Arts (tokyo)
+$505
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Get a dining table","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Get a dining table","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"32d0ae0d-2508-4d82-88e8-2241aaa7ce68"}
+*3
+$3
+SET
+$62
+f73d8c9b-fdbd-464a-a0ea-9d8e2baa6342title-Go to U-Arts (tokyo)
+$525
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Finish organizing desk space","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Finish organizing desk space","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"0308d10a-2524-4ab2-ad97-3d868693b9bb"}
+*3
+$3
+SET
+$62
+8e93eb68-fad8-4bab-9486-3a24bcd843d8title-Go to U-Arts (tokyo)
+$525
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Look for gifts for the house","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Look for gifts for the house","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"a28c4613-a2d9-4309-a8c2-c8e7716a0f76"}
+*3
+$3
+SET
+$62
+1ac2494d-1902-4337-aabd-916d7b96061etitle-Go to U-Arts (tokyo)
+$501
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Decorate bedroom","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Decorate bedroom","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"cbbef614-a9d4-44bc-b1c2-c646b6d4efdf"}
+*3
+$3
+SET
+$62
+366f6444-da85-4111-a895-2b6c80c14dc1title-Go to U-Arts (tokyo)
+$527
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Add saving to editable embeds","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Add saving to editable embeds","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"95108b98-758d-49fe-a454-174bbf8848fb"}
+*3
+$3
+SET
+$62
+a70ffd7e-8b8d-49e7-880c-b8999fa769e2title-Go to U-Arts (tokyo)
+$503
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"make a visualizer","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"make a visualizer","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"26b92434-129a-4297-97aa-e6590c39a150"}
+*3
+$3
+SET
+$62
+2846cb99-57d5-452f-95ef-7668a3bd8b30title-Go to U-Arts (tokyo)
+$533
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Refactor duplicate account check","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Refactor duplicate account check","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"b5962279-5c4a-43fd-891c-563390395c2e"}
+*3
+$3
+SET
+$62
+61a78ed3-523d-4fc8-ac13-2ba90becb196title-Go to U-Arts (tokyo)
+$527
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Write a caption for 3021 post","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Write a caption for 3021 post","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"8cae7fd0-1c6b-4055-8601-dd5d3c57fa7e"}
+*3
+$3
+SET
+$62
+73a03313-a762-4455-a262-801ac0ead823title-Go to U-Arts (tokyo)
+$535
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Add support for canvas background","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Add support for canvas background","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"bed2ea06-5ba9-4a1d-ad42-1d183b2be896"}
+*3
+$3
+SET
+$62
+f25f0a7b-7a9c-40fb-b9ec-f4ee270468e3title-Go to U-Arts (tokyo)
+$541
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Add toggle for image color inversion","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Add toggle for image color inversion","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"926ce4ea-1faf-4186-8358-8aede6dec72d"}
+*3
+$3
+SET
+$62
+910bf870-58fc-4dae-81c7-3e8968a5a2a9title-Go to U-Arts (tokyo)
+$525
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Rethink crosshatching shader","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Rethink crosshatching shader","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"52a7d1df-80ca-4c99-bf44-bd2d497a1742"}
+*3
+$3
+SET
+$62
+38d24f8e-d39e-48ea-8312-f4fd08f9634atitle-Go to U-Arts (tokyo)
+$567
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Finish assigning static IP’s for LXC containers","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Finish assigning static IP’s for LXC containers","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"ba573409-04ee-422e-aa37-b6b30dfbe9f7"}
+*3
+$3
+SET
+$62
+6d248afe-bc19-49cc-914c-bcaebd568dd5title-Go to U-Arts (tokyo)
+$501
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Add image saving","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Add image saving","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"fc52241c-4c25-46fd-954c-06c753ee13a4"}
+*3
+$3
+SET
+$62
+de96b768-0f51-4fa7-a070-ec44ebded9a7title-Go to U-Arts (tokyo)
+$559
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Finish setting up Spotify artist profile page","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Finish setting up Spotify artist profile page","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"78ff3ea5-6ac6-4ebb-9a6d-3906331d2ef6"}
+*3
+$3
+SET
+$62
+e01aa0ac-24bd-4e17-8259-95abadcd84catitle-Go to U-Arts (tokyo)
+$513
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Scope out text support","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Scope out text support","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"67aa69e2-52da-402a-bfe4-5cb4492ddda2"}
+*3
+$3
+SET
+$62
+7f456c4d-39bc-4e24-addf-163842f3f2f3title-Go to U-Arts (tokyo)
+$529
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Submit tpainremix to playlists","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Submit tpainremix to playlists","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"817b5728-8736-44fb-864b-1f116a264a16"}
+*3
+$3
+SET
+$62
+fc158b2c-f442-4865-a1e1-884018b2e5b3title-Go to U-Arts (tokyo)
+$491
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Distro 3021","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Distro 3021","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"d601662b-3916-409a-b63e-c9ef898acacf"}
+*3
+$3
+SET
+$62
+045552b4-c1c2-4de2-9d7a-2a87fc4597c2title-Go to U-Arts (tokyo)
+$503
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Distro tpainremix","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Distro tpainremix","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"ff362c9c-002d-4c10-9671-caf955eb0bfb"}
+*3
+$3
+SET
+$62
+c7889eec-e69c-4283-bc61-bbd5efb273detitle-Go to U-Arts (tokyo)
+$529
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"turn big strings into an intro","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"turn big strings into an intro","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"b292bf44-0673-4031-96fa-668ab1305559"}
+*3
+$3
+SET
+$62
+7459bb89-bdfd-472c-9289-6f639a0064dctitle-Go to U-Arts (tokyo)
+$501
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"finish angelfire","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"finish angelfire","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"f4861c6f-9ba8-49ad-9820-e79be5fc6b33"}
+*3
+$3
+SET
+$62
+0099c092-4eb0-4f70-9f72-e8cd513d273atitle-Go to U-Arts (tokyo)
+$509
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Research playlisting","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Research playlisting","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"58c24391-fd2e-429d-a969-5e7b4259e768"}
+*3
+$3
+SET
+$62
+7c184927-2620-487c-84d8-c4733886bd53title-Go to U-Arts (tokyo)
+$513
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Distro nightcoresample","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Distro nightcoresample","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"3059caa8-d5e9-4834-ae8b-56efba1b6969"}
+*3
+$3
+SET
+$62
+a145e523-66d9-4653-83d1-c3cbc892351etitle-Go to U-Arts (tokyo)
+$567
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Create users for gill and ryan on Homarr and ombi","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Create users for gill and ryan on Homarr and ombi","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"dcf5baa9-3e99-4620-b42d-540eab5c6312"}
+*3
+$3
+SET
+$62
+73674cc6-b97f-468a-b79f-67fec0dc1912title-Go to U-Arts (tokyo)
+$511
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Figure out login flow","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Figure out login flow","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"aea24716-c8e8-45f1-8cc0-f7f5772771b6"}
+*3
+$3
+SET
+$62
+a31edf3b-0823-4b19-8c0c-a0dd4da36727title-Go to U-Arts (tokyo)
+$515
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Add support for rollups","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Add support for rollups","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"3671a27f-1342-4a46-912f-2a5f1a712d63"}
+*3
+$3
+SET
+$62
+b5392832-8213-46c6-abe2-65c0768a0134title-Go to U-Arts (tokyo)
+$509
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Add support for file","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Add support for file","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"31850c81-13b8-495d-bfcd-a1ce13d10f93"}
+*3
+$3
+SET
+$62
+9b4bbdbf-f8d4-4da1-8f6b-3153a20388fetitle-Go to U-Arts (tokyo)
+$509
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Add support for time","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Add support for time","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"0d6bedbe-bc5f-4055-9ce5-0f40e83fa5b6"}
+*3
+$3
+SET
+$62
+859e4d83-4163-4e35-b10d-4a45837fb0b5title-Go to U-Arts (tokyo)
+$587
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Create Spotify for Artists account when distro goes through","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Create Spotify for Artists account when distro goes through","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"396dabfd-1f06-4e8c-97a4-83c7a25f9560"}
+*3
+$3
+SET
+$62
+0264fefb-fd05-43a1-9457-aba844dc029dtitle-Go to U-Arts (tokyo)
+$511
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Add support for email","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Add support for email","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"0827d138-ff82-4e66-bcd1-5da286f26d1c"}
+*3
+$3
+SET
+$62
+98d1873c-d884-499b-a9df-cc11c2e28a16title-Go to U-Arts (tokyo)
+$517
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"fix DB select menu issue","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"fix DB select menu issue","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"73b0b9cd-d890-4d3d-af17-45a77c9dabe2"}
+*3
+$3
+SET
+$62
+f56366f3-9560-4ea0-9e75-e0556cfd10dctitle-Go to U-Arts (tokyo)
+$517
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Add support for formulas","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Add support for formulas","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"0eb696fd-a678-47de-b225-da4d732b1d4d"}
+*3
+$3
+SET
+$62
+fa290770-6dda-41a1-a0a0-2ac0ff833a45title-Go to U-Arts (tokyo)
+$509
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Add support for user","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Add support for user","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"8fc94e75-f8b5-4df1-a59e-38875ca18bcd"}
+*3
+$3
+SET
+$62
+2c11fc06-fc0c-40f9-bee0-502718b6c6d8title-Go to U-Arts (tokyo)
+$519
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Add support for relations","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Add support for relations","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"d975434f-82a7-4c64-8cd6-3f294482eefa"}
+*3
+$3
+SET
+$62
+382f2b63-090c-4468-916e-8a04253f73a4title-Go to U-Arts (tokyo)
+$527
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Make announcement reddit post","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Make announcement reddit post","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"e276cbac-04a4-4896-a2b3-ec45c7e357ab"}
+*3
+$3
+SET
+$62
+1df4b68d-1bd7-42fc-a761-ba2db1998fc1title-Go to U-Arts (tokyo)
+$523
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Upgrade RAM in host machine","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Upgrade RAM in host machine","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"e7a0ecc1-21d1-40d5-a5a3-3f7e1cb04e4a"}
+*3
+$3
+SET
+$62
+cfb0a52f-e064-41cf-a494-1b7450f95fb6title-Go to U-Arts (tokyo)
+$503
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Reassess progress","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Reassess progress","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"d969a677-33ea-4c00-b516-305c2bcb784b"}
+*3
+$3
+SET
+$62
+b12ee8fc-a93a-4593-aeb5-8aac8d536a81title-Go to U-Arts (tokyo)
+$513
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Set up basic analytics","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Set up basic analytics","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"e8f615a1-9b3c-4f55-bb1d-05ff4b867bac"}
+*3
+$3
+SET
+$62
+95518bf8-73dc-44ae-b01d-c40e1e2e07c5title-Go to U-Arts (tokyo)
+$509
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Add support for date","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Add support for date","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"c8b1f1df-cb54-4048-a255-bb8edcd31ce3"}
+*3
+$3
+SET
+$62
+9f252df6-3277-4e3d-8182-23a436c5a1b0title-Go to U-Arts (tokyo)
+$503
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Reassess progress","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Reassess progress","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"b0f48618-9784-415c-913b-fb632650bd07"}
+*3
+$3
+SET
+$62
+1bcc5d77-2aef-417e-9d19-333b6aff0210title-Go to U-Arts (tokyo)
+$541
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Set up a dashboard app for Arr suite","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Set up a dashboard app for Arr suite","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"adf8bef1-514b-4ce4-9381-b2038b2de5ca"}
+*3
+$3
+SET
+$62
+1ca58afa-b9b6-434c-a47f-5dfb11800278title-Go to U-Arts (tokyo)
+$501
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Remove SMB share","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Remove SMB share","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"7024cb4c-06be-4fd0-ae49-65bb6fb36567"}
+*3
+$3
+SET
+$62
+17a14fdf-099a-4f5b-a30f-c4dfdb8c3d2etitle-Go to U-Arts (tokyo)
+$549
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Figure out GPU passthrough compatibility","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Figure out GPU passthrough compatibility","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"07d2edf9-fcc0-4fa5-968b-b345adeeb6de"}
+*3
+$3
+SET
+$62
+343ebda5-9c60-4c0a-8ef3-10410da36597title-Go to U-Arts (tokyo)
+$523
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Finish editor functionality","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Finish editor functionality","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"c2c3e357-4d8c-4ae5-8c91-c76eba10375f"}
+*3
+$3
+SET
+$62
+ea894a7c-73c2-442b-be76-69960e3cb588title-Go to U-Arts (tokyo)
+$515
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Set up dynamic displays","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Set up dynamic displays","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"5d11c996-14b3-4b4e-a950-f94a49f7308e"}
+*3
+$3
+SET
+$62
+b05247d9-5e2f-4eed-a652-953bf2c262adtitle-Go to U-Arts (tokyo)
+$507
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Integration testing","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Integration testing","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"0d706ee9-fbd4-4b13-a86d-0bea300e5c1b"}
+*3
+$3
+SET
+$62
+8a5db93f-a16c-45b3-b558-3f2c9a78e142title-Go to U-Arts (tokyo)
+$507
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Design landing page","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Design landing page","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"71b65d88-a0c7-4d9f-8fbc-588e91ad1dd7"}
+*3
+$3
+SET
+$62
+57ab7ecd-a665-4bb8-bf1f-9d984b66baa2title-Go to U-Arts (tokyo)
+$499
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Add dragability","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Add dragability","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"62104fcc-340c-43f4-bc99-6f0f1bf51cfb"}
+*3
+$3
+SET
+$62
+5a90cb90-bbc3-40f4-abed-f1165473523dtitle-Go to U-Arts (tokyo)
+$503
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Implement caching","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Implement caching","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"6545e6f8-a823-48c8-9f42-4ef490090c81"}
+*3
+$3
+SET
+$62
+56024e68-54fe-477c-830c-2fca909dea94title-Go to U-Arts (tokyo)
+$539
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Submit nightcoresample to playlists","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Submit nightcoresample to playlists","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"601554a4-3d23-4d62-93f7-fc96dd7cdb70"}
+*3
+$3
+SET
+$62
+fa525598-b92d-4b9f-9a4b-f5c6d7664243title-Go to U-Arts (tokyo)
+$487
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Set up db","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Set up db","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"88596e97-4e3b-4e80-a89a-94b741106614"}
+*3
+$3
+SET
+$62
+aca79ff9-bc65-47f6-9520-beca4e0e54edtitle-Go to U-Arts (tokyo)
+$507
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Create basic header","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Create basic header","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"25b08de9-e55a-4310-a2ec-a639cff67a03"}
+*3
+$3
+SET
+$62
+ea1b7a81-c93d-4661-b831-fbed2575625etitle-Go to U-Arts (tokyo)
+$497
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Dynamic embeds","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Dynamic embeds","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"d2de16f0-ced5-40fc-9886-c338afa287e7"}
+*2
+$6
+SELECT
+$1
+0
+*3
+$3
+SET
+$73
+1edfb837-b8f1-4791-83de-feeebb657d1btitle-Whats the deal with powershell?
+$545
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"5 ways home assistant improved my life","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"5 ways home assistant improved my life","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"29de4c9b-bb7c-4a83-bc1d-8324af28948f"}
+*3
+$3
+SET
+$73
+6ea92caf-4d81-4948-9c92-ad4cb404f1abtitle-Whats the deal with powershell?
+$623
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"How to use NixOS to share your ideal dev environment across all your machines","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"How to use NixOS to share your ideal dev environment across all your machines","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"cf1f5272-ae74-4d8d-a601-1e94ed17c934"}
+*3
+$3
+SET
+$46
+4cdd0015-62d3-4fda-baf0-b95b628895d9%3C%3F%60G
+$344
+{"object":"list","results":[{"object":"property_item","type":"relation","id":"%3C%3F%60G","relation":{"id":"6386dadf-4858-448f-8867-86e1f4fa291e"}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"%3C%3F%60G","next_url":null,"type":"relation","relation":{}},"request_id":"eb98a590-52db-4495-9ce1-e2258fdcae1d"}
+*3
+$3
+SET
+$42
+4cdd0015-62d3-4fda-baf0-b95b628895d9%3DHyF
+$221
+{"object":"list","results":[],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"%3DHyF","next_url":null,"type":"relation","relation":{}},"request_id":"1847705b-8368-4397-bc6c-3382ab2cc3d6"}
+*2
+$6
+SELECT
+$1
+0
+*3
+$3
+SET
+$66
+d453ef9b-9a6f-4abf-addc-16d55fb02a65title-On the shortness of Life
+$517
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"On the shortness of Life","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"On the shortness of Life","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"e3e06ef4-ad1b-459f-a8d8-321381f52c92"}
+*3
+$3
+SET
+$98
+b66dca93-984f-4d06-97b0-4e305d0aa816title-Men's Washed Heavy Weight Crew Neck Short Sleeve T-Shirt
+$580
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Men's Washed Heavy Weight Crew Neck Short Sleeve T-Shirt","link":null},"annotations":{"bold":true,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Men's Washed Heavy Weight Crew Neck Short Sleeve T-Shirt","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"4b7bf658-d75f-4e82-9197-3b5d7ed74959"}
+*3
+$3
+SET
+$65
+ab3e2b9d-896b-4d25-b656-6e8b5a87ff38title-Air fryer potato wedges
+$515
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Air fryer potato wedges","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Air fryer potato wedges","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"958a8c60-ca57-4610-8440-4a38ff457735"}
+*3
+$3
+SET
+$42
+4cdd0015-62d3-4fda-baf0-b95b628895d9E%7Cxx
+$221
+{"object":"list","results":[],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"E%7Cxx","next_url":null,"type":"relation","relation":{}},"request_id":"214de0ca-c1b1-43cb-9a94-602a0a5564a9"}
+*3
+$3
+SET
+$42
+4cdd0015-62d3-4fda-baf0-b95b628895d9NjB%3E
+$118
+{"object":"property_item","type":"date","id":"NjB%3E","date":null,"request_id":"a4f2abaa-703d-4669-8235-18b605786b58"}
+*3
+$3
+SET
+$42
+4cdd0015-62d3-4fda-baf0-b95b628895d9ZZs%40
+$221
+{"object":"list","results":[],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"ZZs%40","next_url":null,"type":"relation","relation":{}},"request_id":"1e59b8f9-e245-470c-a7b1-42111443eff3"}
+*3
+$3
+SET
+$44
+4cdd0015-62d3-4fda-baf0-b95b628895d9Mw%5B%3D
+$124
+{"object":"property_item","type":"number","id":"Mw%5B%3D","number":null,"request_id":"8cc3e30d-d817-4202-8bc3-937305b75e7e"}
+*3
+$3
+SET
+$42
+bafc3e2e-04c4-431f-b731-af7d92b15703NjB%3E
+$118
+{"object":"property_item","type":"date","id":"NjB%3E","date":null,"request_id":"4ad439e7-f6f0-4997-8b81-fb8557e4adb3"}
+*3
+$3
+SET
+$42
+17a14fdf-099a-4f5b-a30f-c4dfdb8c3d2eNjB%3E
+$118
+{"object":"property_item","type":"date","id":"NjB%3E","date":null,"request_id":"3d401487-a60e-492a-89a6-c6ef5e72d583"}
+*3
+$3
+SET
+$42
+7f456c4d-39bc-4e24-addf-163842f3f2f3NjB%3E
+$118
+{"object":"property_item","type":"date","id":"NjB%3E","date":null,"request_id":"c43e2f3a-aa85-4f1b-b541-38f93a6b2a1c"}
+*3
+$3
+SET
+$42
+f70d764d-0a0e-41a8-8724-18f266e8db85NjB%3E
+$118
+{"object":"property_item","type":"date","id":"NjB%3E","date":null,"request_id":"9dc4ed4c-9be5-4c1d-83d3-ca03076c752a"}
+*3
+$3
+SET
+$42
+1ca58afa-b9b6-434c-a47f-5dfb11800278NjB%3E
+$118
+{"object":"property_item","type":"date","id":"NjB%3E","date":null,"request_id":"e5f5ace4-c6aa-4eb4-8437-18a8efbb96a4"}
+*3
+$3
+SET
+$44
+1ca58afa-b9b6-434c-a47f-5dfb11800278o%3Bj%5D
+$120
+{"object":"property_item","type":"date","id":"o%3Bj%5D","date":null,"request_id":"a357f07d-2623-46d0-9533-a70bb8f8f59b"}
+*3
+$3
+SET
+$44
+1ca58afa-b9b6-434c-a47f-5dfb11800278Mw%5B%3D
+$122
+{"object":"property_item","type":"number","id":"Mw%5B%3D","number":10,"request_id":"64a0d412-3a77-48fb-aee8-395b9f71d9bf"}
+*3
+$3
+SET
+$42
+5a90cb90-bbc3-40f4-abed-f1165473523dNjB%3E
+$164
+{"object":"property_item","type":"date","id":"NjB%3E","date":{"start":"2024-03-30","end":null,"time_zone":null},"request_id":"8a82ff74-6d0b-417c-9b65-0da7b020b1ed"}
+*3
+$3
+SET
+$44
+5a90cb90-bbc3-40f4-abed-f1165473523dMw%5B%3D
+$124
+{"object":"property_item","type":"number","id":"Mw%5B%3D","number":null,"request_id":"90f4e43b-9012-4b14-ac70-668de2b1e773"}
+*3
+$3
+SET
+$44
+5a90cb90-bbc3-40f4-abed-f1165473523d%5EhT%5E
+$348
+{"object":"list","results":[{"object":"property_item","type":"people","id":"%5EhT%5E","people":{"object":"user","id":"84793a01-5551-40e4-b876-9c0dff909db2"}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"%5EhT%5E","next_url":null,"type":"people","people":{}},"request_id":"9628203f-e0cc-4228-adc2-c8f6ba045535"}

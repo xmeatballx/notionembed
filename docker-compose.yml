@@ -36,13 +36,13 @@ services:
     ports:
       - '3000:3000'
     environment:
+      DATABASE_URL: postgresql://postgres:postgres@postgres:5432/notionembed?schema=public&connect_timeout=300
       VITE_NOTION_CLIENT_ID: 882d6a58-d120-4254-bc23-5d0be961890e
-      VITE_NOTION_CLIENT_SECRET: secret_ataYdJOBnD1DGhVoLStOiuioDLznd0G0abYSEyvGfEX
+      VITE_NOTION_CLIENT_SECRET: secret_nYo04cVi1BTVi6eJ7HH8qz5XQXraNyV55GvxPSlZugt
       VITE_REDIS_PORT: 6379
       VITE_REDIS_URL: redis
     volumes:
       - .:/src
-      - nodemodules:/src/node_modules
     depends_on:
       - redis
     healthcheck:
@@ -58,7 +58,7 @@ services:
     build:
       context: ./prisma
       dockerfile: ./Dockerfile
-    command: bash -c "cd ./prisma && npx prisma generate && npx prisma migrate deploy && npx prisma studio"
+    command: bash -c "cd ./prisma && npx prisma studio"
     environment:
       DATABASE_URL: postgresql://postgres:postgres@postgres:5432/notionembed?schema=public&connect_timeout=300
     ports:

@@ -8,13 +8,11 @@ import { PrismaClient } from '@prisma/client';
 const prismaClient = new PrismaClient();
 
 export const get: RequestHandler = async ({ params, url }) => {
-	console.log('PARAMS: ', params);
 	const user = await prismaClient.user.findUnique({
 		where: {
 			id: params.id
 		}
 	});
-	console.log('USER CONTENT: ', user);
 	const notion = new Client({ auth: user?.access_token });
 	const query = url.searchParams;
 	const propertyId = query.get('property_id') ?? '';
@@ -37,7 +35,6 @@ export const get: RequestHandler = async ({ params, url }) => {
 		}
 
 		await db.set({ key: pageId + propertyId, value: JSON.stringify(response) });
-
 		return {
 			status: 200,
 			body: response

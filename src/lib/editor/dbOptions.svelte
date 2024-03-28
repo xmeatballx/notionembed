@@ -11,14 +11,14 @@
 	let pagesOpen = false;
 
 	async function resetDB(e: any) {
-		const selectedOption = e.options[e.selectedIndex];
+		const selectedOption = e.target.options[e.target.selectedIndex];
 		pages = [];
 		$state.database_name = selectedOption.getAttribute('data-name');
 		$state.blocks = [];
-		pages = await api.getPagesForDatabase($state.user_id, $state.database_id);
-		// console.log(pages)
+		pages = await api.getPagesForDatabase($state.user_id, e.target.value);
 		$state.preview_as_id = pages[0].id;
 		$state.page_properties = pages[0].properties;
+		console.log(pages);
 		$state.page_ids = [pages[0].id];
 		addBlock();
 	}
