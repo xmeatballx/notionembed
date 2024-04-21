@@ -15,7 +15,6 @@
         devShell = pkgs.mkShell {
           buildInputs = with pkgs; [
             nodejs_18
-            nodePackages_latest.vercel
             nodePackages_latest.prisma
             openssl
           ];

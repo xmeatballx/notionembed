@@ -1,6 +1,6 @@
 import * as api from '$lib/_api';
 import type { UserData } from './types';
-import { PrismaClient, type User } from '@prisma/client';
+import { PrismaClient } from '$lib/prisma';
 import type { PageServerLoad } from './$types';
 
 const prismaClient = new PrismaClient();
@@ -37,7 +37,7 @@ export async function load({ url }: any): PageServerLoad {
 				name: userData.owner.user?.name
 			}
 		});
-		let user: User;
+		let user;
 		// console.log(duplicateUser)
 		if (!duplicateUser) {
 			user = await prismaClient.user.create({

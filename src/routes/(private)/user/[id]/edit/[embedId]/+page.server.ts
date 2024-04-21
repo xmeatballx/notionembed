@@ -1,6 +1,6 @@
 import type { PageServerLoad } from './$types';
 import { Client } from '@notionhq/client';
-import { PrismaClient } from '@prisma/client';
+import { PrismaClient } from '$lib/prisma';
 
 const prismaClient = new PrismaClient();
 

@@ -2,7 +2,7 @@ import * as db from '$lib/_db';
 import { Client } from '@notionhq/client';
 import type { RequestHandler } from './$types';
 
-import { PrismaClient } from '@prisma/client';
+import { PrismaClient } from '$lib/prisma';
 import { json } from '@sveltejs/kit';
 
 const prismaClient = new PrismaClient();

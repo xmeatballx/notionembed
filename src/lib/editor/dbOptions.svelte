@@ -6,10 +6,9 @@
 	import type { Block, StateValue } from '../../types';
 	import { onMount } from 'svelte';
 	import { getDefaultBlockType, getFirstProp } from '$lib/utils';
-	import type { Embed } from '@prisma/client';
 	export let databases: any;
 	export let pages: any;
-	export let embed: Embed | undefined = undefined;
+	export let embed: any | undefined = undefined;
 	let pagesOpen = false;
 
 	console.log('STATE: ', $state);

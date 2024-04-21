@@ -2,7 +2,7 @@ import type { PageServerLoad } from './$types';
 import { Client } from '@notionhq/client';
 import { updateState } from '_src/stores';
 import type { StateValue } from '_src/types';
-import { PrismaClient } from '@prisma/client';
+import { PrismaClient } from '$lib/prisma';
 
 const prismaClient = new PrismaClient();
 

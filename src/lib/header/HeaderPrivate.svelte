@@ -2,11 +2,10 @@
 	import { page } from '$app/stores';
 	import SaveEmbedForm from '$lib/embed/saveEmbedForm.svelte';
 	import { onMount } from 'svelte';
-	import type { User } from '@prisma/client';
 	import Modal from '$lib/modal.svelte';
 
 	let saveFormOpen = false;
-	let user: User;
+	let user: any;
 	let currentPath: string;
 	let mobileNavOpen = false;
 

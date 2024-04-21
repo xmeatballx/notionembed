@@ -1,10 +1,9 @@
 <script lang="ts">
 	import type { StateValue } from '_src/types';
 	import { state, updateState } from '_src/stores';
-	import type { User } from '@prisma/client';
 	import { onMount } from 'svelte';
 	export let data;
-	let user: User = data.user;
+	let user = data.user;
 	// console.log(data);
 	onMount(() => {
 		// const queryCode = $page.url.searchParams.get('code');

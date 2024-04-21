@@ -2,11 +2,10 @@
 	import { state } from '../../stores';
 	import * as api from '../_api';
 	import PreviewBlocks from './preview_blocks/index.svelte';
-	import type { Block, Embed } from '@prisma/client';
 
 	export let block: any = '';
-	export let embed: Embed | undefined = undefined;
-	export let blocks: Block[] | undefined = undefined;
+	export let embed: any | undefined = undefined;
+	export let blocks: any[] | undefined = undefined;
 	export let page: number = 0;
 	let contentData = getData(block.propertyType, block.propertyId);
 

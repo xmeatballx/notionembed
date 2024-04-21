@@ -8,7 +8,6 @@
 	import * as api from '../../lib/_api';
 	import ExpandButton from '$lib/expand button/ExpandButton.svelte';
 	import { onMount } from 'svelte';
-	import type { Embed } from '@prisma/client';
 
 	function addBlock() {
 		let blocks = $state.blocks as Array<Block>;
@@ -28,7 +27,7 @@
 
 	export let databases: any;
 	export let pages: any;
-	export let embed: Embed | undefined = undefined;
+	export let embed: any = undefined;
 	export let userId: string;
 	// console.log(pages)
 	onMount(() => {

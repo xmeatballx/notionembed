@@ -1,12 +1,11 @@
 <script lang="ts">
-	import type { Embed, User } from '@prisma/client';
 	import { state } from '_src/stores';
 	import DeleteEmbedWarning from '$lib/embed/deleteEmbedWarning.svelte';
 	import Modal from '$lib/modal.svelte';
 
 	export let data;
-	let user: User = data.user;
-	let embeds: Embed[] = data.embeds
+	let user: any = data.user;
+	let embeds: any[] = data.embeds
 
 	async function deleteEmbed(id: string) {
 		await fetch(`/embed/${id}`, { method: 'DELETE' });

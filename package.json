@@ -2,6 +2,7 @@
 	"name": "notionembed",
 	"version": "0.0.1",
 	"scripts": {
+		"generate": "prisma generate",
 		"dev": "vite dev --host",
 		"build": "vite build",
 		"package": "svelte-kit package",
@@ -23,7 +24,6 @@
 		"@types/cookie": "^0.5.4",
 		"@types/luxon": "^3.4.2",
 		"btoa": "^1.2.1",
-		"luxon": "^3.4.4",
 		"prettier": "^2.8.8",
 		"prettier-plugin-svelte": "^2.10.1",
 		"svelte": "^4.0.0",
@@ -40,7 +40,8 @@
 		"redis": "^4.6.13",
 		"svelte-forms": "^2.3.1",
 		"svelte-previous": "^2.1.4",
-		"prisma": "^5svelte-kit.12.1"
+		"prisma": "^5svelte-kit.12.1",
+		"luxon": "^3.4.4"
 	},
 	"exports": {
 		"./package.json": "./package.json",

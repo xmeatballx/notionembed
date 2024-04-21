@@ -1,13 +1,12 @@
 <script lang="ts">
-	import type { Block, Embed } from '@prisma/client';
 	import { onDestroy } from 'svelte';
 	import * as api from '../../../lib/_api';
 	import Spinner from '$lib/spinner.svelte';
 	import PreviewBlocks from '$lib/editor/preview_blocks/index.svelte';
 
 	export let data;
-	let embed: Embed = data.embed;
-	let blocks: Block[] = data.blocks;
+	let embed: any = data.embed;
+	let blocks: any[] = data.blocks;
 
 	export const layout = null;
 	let page = 0;
