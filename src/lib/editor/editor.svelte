@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { Block } from 'src/types';
+	import type { Block } from '../../types';
 	import { state } from '../../stores';
 	import BlockEditor from './blocks.svelte';
 	import { getDefaultBlockType, getFirstProp } from '$lib/utils';
@@ -51,7 +51,7 @@
 		<ExpandButton clicked={() => (dbOpen = !dbOpen)} />
 	</div>
 	{#if dbOpen}
-		<DbOptions {databases} {pages} {embed} />
+		<DbOptions databases={databases} pages={pages} embed={embed} />
 	{/if}
 </div>
 <div class="container">

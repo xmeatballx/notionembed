@@ -14,7 +14,6 @@ export const load: PageServerLoad = async ({ params }: { params: { id: string } 
 				id: params.id
 			}
 		});
-		console.log('USER: ', user, params);
 		const notion = new Client({ auth: user?.access_token });
 		const response = await notion.search({
 			query: '',

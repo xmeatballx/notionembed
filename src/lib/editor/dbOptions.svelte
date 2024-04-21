@@ -3,7 +3,7 @@
 	import { page } from '$app/stores';
 	import { state, updateState } from '../../stores';
 	import ExpandButton from '$lib/expand button/ExpandButton.svelte';
-	import type { Block, StateValue } from 'src/types';
+	import type { Block, StateValue } from '../../types';
 	import { onMount } from 'svelte';
 	import { getDefaultBlockType, getFirstProp } from '$lib/utils';
 	import type { Embed } from '@prisma/client';
@@ -86,6 +86,7 @@
 			$state.database_name = databases[0]?.title[0]?.text?.content;
 			currentPageTitle = api.getTitle(pages[0].properties);
 		} else {
+			
 			const blocks = embed.blocks.map((block: any) => {
 				const { propertyType, previewElement, propertyId, order } = block;
 				return {
@@ -107,7 +108,7 @@
 		}
 	});
 
-	$: if ($state.preview_as_id) {
+	$: if ($state.preview_as_id && pages) {
 		// console.log('HERE');
 		const currentPage = pages.filter((page: any) => page.id == $state.preview_as_id)[0];
 		currentPageTitle = currentPage?.properties ? api.getTitle(currentPage.properties) : '';
@@ -144,8 +145,8 @@
 					<input type="checkbox" on:change={selectAllPages} />
 					<label class="page_check--label">Select All</label>
 				</div>
-				{#await pages then pages}
-					{#each pages as item, i}
+				{#await pages then _pages}
+					{#each _pages as item, i}
 						<div class="page_check--container">
 							<input
 								type="checkbox"
