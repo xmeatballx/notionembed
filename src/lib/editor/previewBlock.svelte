@@ -87,9 +87,9 @@
 <!-- {#key block} -->
 {#await contentData}
 	{#if block.propertyType == 'cover'}
-		<div class="image-placeholder" />
+		<div class="image-placeholder"></div>
 	{:else}
-		<div class="text-placeholder" />
+		<div class="text-placeholder"></div>
 	{/if}
 {:then content}
 	<PreviewBlocks block={block} content={content} />
