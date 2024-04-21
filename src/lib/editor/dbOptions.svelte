@@ -6,9 +6,13 @@
 	import type { Block, StateValue } from 'src/types';
 	import { onMount } from 'svelte';
 	import { getDefaultBlockType, getFirstProp } from '$lib/utils';
+	import type { Embed } from '@prisma/client';
 	export let databases: any;
 	export let pages: any;
+	export let embed: Embed | undefined = undefined;
 	let pagesOpen = false;
+
+	console.log('STATE: ', $state);
 
 	async function resetDB(e: any) {
 		const selectedOption = e.target.options[e.target.selectedIndex];
@@ -74,12 +78,33 @@
 	}
 
 	onMount(() => {
-		const newPageIdArray: string[] = [pages[0].id];
-		$state.preview_as_id = pages[0].id;
-		updateState('preview_as_id', pages[0].id);
-		updateState('page_ids', newPageIdArray as StateValue);
-		$state.database_name = databases[0]?.title[0]?.text?.content;
-		currentPageTitle = api.getTitle(pages[0].properties);
+		if (!embed) {
+			const newPageIdArray: string[] = [pages[0].id];
+			$state.preview_as_id = pages[0].id;
+			updateState('preview_as_id', pages[0].id);
+			updateState('page_ids', newPageIdArray as StateValue);
+			$state.database_name = databases[0]?.title[0]?.text?.content;
+			currentPageTitle = api.getTitle(pages[0].properties);
+		} else {
+			const blocks = embed.blocks.map((block: any) => {
+				const { propertyType, previewElement, propertyId, order } = block;
+				return {
+					propertyType,
+					previewElement,
+					propertyId,
+					order
+				};
+			});
+			const defaultPage = pages.filter((page) => page.id == embed.pageIds[0])[0];
+			const { properties } = defaultPage as any;
+			const defaultDatabase = databases.filter((db: any) => db.id == embed.databaseId)[0];
+			updateState('page_properties', properties as StateValue);
+			updateState('database_id', defaultDatabase.id as StateValue);
+			updateState('database_name', defaultDatabase.title[0].plain_text as StateValue);
+			updateState('preview_as_id', embed.pageIds[0] as StateValue);
+			updateState('blocks', blocks as StateValue);
+			updateState('page_ids', embed?.pageIds as StateValue);
+		}
 	});
 
 	$: if ($state.preview_as_id) {
@@ -89,7 +114,7 @@
 	}
 </script>
 
-<div>
+<div class="db_options--container">
 	<div class="database_select--container">
 		<label for="database">Pick a database</label>
 		<select bind:value={$state.database_id} class="select" on:change={resetDB} name="database">
@@ -108,6 +133,34 @@
 			{/await}
 		</select>
 	</div>
+	<div class="page_select--container">
+		<div class="page_select--label">
+			<label for="page">Pages To Include</label>
+			<ExpandButton clicked={() => (pagesOpen = !pagesOpen)} small={true} open={pagesOpen} />
+		</div>
+		<div class="preview_as">
+			{#if pagesOpen}
+				<div class="page_check--container">
+					<input type="checkbox" on:change={selectAllPages} />
+					<label class="page_check--label">Select All</label>
+				</div>
+				{#await pages then pages}
+					{#each pages as item, i}
+						<div class="page_check--container">
+							<input
+								type="checkbox"
+								name="page"
+								bind:group={$state.page_ids}
+								id={item.id}
+								value={item.id}
+							/>
+							<label class="page_check--label" for={item.id}>{api.getTitle(item.properties)}</label>
+						</div>
+					{/each}
+				{/await}
+			{/if}
+		</div>
+	</div>
 	<div class="current_page">
 		<label for="">Current Page</label>
 		<div class="current_page--title">{currentPageTitle}</div>
@@ -121,48 +174,19 @@
 			<button class="page_controls--random" on:click={randomizePage}>Random</button>
 		</div>
 	</div>
-	<div class="page_select--container">
-		<div class="page_select--label">
-			<label for="page">Pages To Include</label>
-			<ExpandButton clicked={() => (pagesOpen = !pagesOpen)} small={true} open={pagesOpen} />
-		</div>
-		<div class="preview_as">
-			{#if pagesOpen}
-				<div class="page_check--container">
-					<input type="checkbox" on:change={selectAllPages} />
-					<label class="page_check--label">Select All</label>
-				</div>
-				<!-- <select bind:value={$state.preview_as_id} class="select" name="page"> -->
-				{#await pages then pages}
-					{#each pages as item, i}
-						<div class="page_check--container">
-							<input
-								type="checkbox"
-								name="page"
-								bind:group={$state.page_ids}
-								id={item.id}
-								value={item.id}
-							/>
-							<label class="page_check--label" for={item.id}>{api.getTitle(item.properties)}</label>
-						</div>
-						<!-- {#if i == 0}
-							<option value={item.id}>{api.getTitle(item.properties)}</option>
-						{:else}
-							<option value={item.id}>{api.getTitle(item.properties)}</option>
-						{/if} -->
-					{/each}
-				{/await}
-				<!-- <p>Selected values: {$state.page_ids.join(', ')}</p> -->
-			{/if}
-			<!-- </select> -->
-			<!-- <button type="button" on:click={randomizePage}>Randomize</button> -->
-		</div>
-	</div>
 </div>
 
 <style>
+	.db_options--container {
+		display: grid;
+		gap: var(--size-4);
+		margin-bottom: 8px;
+	}
+
 	.select {
 		width: 100%;
+		background-color: var(--surface-1);
+		border: 1px solid var(--surface-3);
 	}
 	/* .preview_as {
 		display: flex;
@@ -189,17 +213,17 @@
 		font-weight: 700;
 	}
 
-	.database_select--container,
-	.page_select--container {
-		display: grid;
-		gap: 8px;
-		margin-bottom: 8px;
-	}
-
 	.page_controls {
 		display: flex;
 		gap: var(--size-1);
 		margin-bottom: 1em;
+	}
+
+	.page_controls--next,
+	.page_controls--last,
+	.page_controls--random {
+		background-color: var(--surface-1);
+		border: 1px solid var(--surface-3);
 	}
 
 	.page_controls--next .next {
@@ -224,9 +248,24 @@
 		font-size: var(--font-size-0);
 	}
 
+	.current_page {
+		display: flex;
+		flex-direction: column;
+	}
+
 	.current_page--title {
 		font-size: var(--font-size-4);
 		font-weight: 500;
 		margin-bottom: 0.5rem;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		max-width: 25vw;
+	}
+
+	@media(max-width: 820px) {
+		.current_page--title {
+			min-width: 100%;	
+		}
 	}
 </style>

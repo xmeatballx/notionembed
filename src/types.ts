@@ -13,6 +13,7 @@ export interface State {
 	preview_as_id: string;
 	page_properties: any;
 	blocks: Array<Block> | [];
+	deleteWarningOpen: boolean;
 }
 
 export type StateValue = string & (Array<Block> | []);

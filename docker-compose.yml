@@ -34,11 +34,11 @@ services:
     build: .
     command: bash -c "npx prisma generate && npx prisma migrate deploy && npm run dev"
     ports:
-      - '3000:3000'
+      - '3002:3002'
     environment:
       DATABASE_URL: postgresql://postgres:postgres@postgres:5432/notionembed?schema=public&connect_timeout=300
       VITE_NOTION_CLIENT_ID: 882d6a58-d120-4254-bc23-5d0be961890e
-      VITE_NOTION_CLIENT_SECRET: secret_nYo04cVi1BTVi6eJ7HH8qz5XQXraNyV55GvxPSlZugt
+      VITE_NOTION_CLIENT_SECRET: secret_REPNTY38OQvXFOThAnbTsnPHxBRmuABXJFEJ37iEa3M
       VITE_REDIS_PORT: 6379
       VITE_REDIS_URL: redis
     volumes:
@@ -46,7 +46,7 @@ services:
     depends_on:
       - redis
     healthcheck:
-      test: ['CMD-SHELL', 'curl --fail http://localhost:3000/login || exit 1']
+      test: ['CMD-SHELL', 'curl --fail http://localhost:3002/login || exit 1']
       interval: 10s
       timeout: 10s
       retries: 5

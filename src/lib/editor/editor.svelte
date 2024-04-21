@@ -8,31 +8,41 @@
 	import * as api from '../../lib/_api';
 	import ExpandButton from '$lib/expand button/ExpandButton.svelte';
 	import { onMount } from 'svelte';
+	import type { Embed } from '@prisma/client';
 
 	function addBlock() {
 		let blocks = $state.blocks as Array<Block>;
-		console.log($state.page_properties);
 		const currentProp = $state.page_properties.Name ?? getFirstProp($state.page_properties);
-		let block: Block = {
-			propertyId: `title-${$state.page_properties.Name?.title[0].text.content}`,
-			propertyType: currentProp.type,
-			previewElement: getDefaultBlockType(currentProp.type),
-			order: blocks.length
-		};
-		blocks.push(block);
-		$state.blocks = blocks;
+		console.log('PROP: ', $state.page_properties);
+		if (currentProp) {
+			let block: Block = {
+				propertyId: `title-${$state.page_properties.Name?.title[0].text.content}`,
+				propertyType: currentProp.type,
+				previewElement: getDefaultBlockType(currentProp.type),
+				order: blocks.length
+			};
+			blocks.push(block);
+			$state.blocks = blocks;
+		}
 	}
 
 	export let databases: any;
 	export let pages: any;
+	export let embed: Embed | undefined = undefined;
 	// console.log(pages)
 	$state.user_id = $page.params.id;
-	$state.database_id = databases[0].id;
-	$state.preview_as_id = pages[0].id;
-	$state.page_properties = pages[0].properties;
+	onMount(() => {
+		console.log("STATE: ", $state);
+		if ($state.database_id == "not set") {
+			$state.database_id = databases[0].id;
+			$state.preview_as_id = pages[0].id;
+			$state.page_properties = pages[0].properties;
+			$state.blocks = [];
+		}
+		addBlock();
+	});
 	let dbOpen = true;
 	let blocksOpen = true;
-	addBlock();
 </script>
 
 <div class="container">
@@ -41,10 +51,9 @@
 		<ExpandButton clicked={() => (dbOpen = !dbOpen)} />
 	</div>
 	{#if dbOpen}
-		<DbOptions {databases} {pages} />
+		<DbOptions {databases} {pages} {embed} />
 	{/if}
 </div>
-<hr />
 <div class="container">
 	<div class="section--label">
 		<h3 class="blocks-heading">Blocks</h3>
@@ -76,8 +85,14 @@
 		align-items: center;
 		justify-content: center;
 	}
+	.add_block_button--container button {
+		width: 100%;
+		margin: 0 var(--size-4);
+		background-color: var(--surface-1);
+		border: 1px solid var(--surface-3);
+	}
 	.container {
-		padding: var(--size-2);
+		padding: var(--size-4) var(--size-4) 0 var(--size-4);
 	}
 	.section--label {
 		display: flex;

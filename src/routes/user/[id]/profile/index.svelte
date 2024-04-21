@@ -1,7 +1,10 @@
 <script lang="ts">
-	import type { Embed } from '@prisma/client';
+	import type { Embed, User } from '@prisma/client';
+	import { state } from '../../../../stores';
+	import DeleteEmbedWarning from '$lib/embed/deleteEmbedWarning.svelte';
+	import Modal from '$lib/modal.svelte';
 
-	export let user;
+	export let user: User;
 	export let embeds: Embed[];
 
 	async function deleteEmbed(id: string) {
@@ -11,6 +14,16 @@
 		const embedsCopy = [...embeds];
 		embedsCopy.splice(indexToRemove, 1);
 		embeds = embedsCopy;
+		$state.deleteWarningOpen = false;
+	}
+
+	function goToEditPage(id: string): void {
+		window.location.replace(`/user/${user.id}/edit/${id}`);
+	}
+
+	function logout() {
+		window.localStorage.removeItem('user');
+		window.location.replace(`/login`);
 	}
 </script>
 
@@ -25,12 +38,17 @@
 						<button type="button">
 							<img src="/icons/link.png" alt="copy link" />
 						</button>
-						<button type="button">
+						<button type="button" on:click={() => goToEditPage(embed.id)}>
 							<img src="/icons/edit.png" alt="edit" />
 						</button>
-						<button type="button" on:click={() => deleteEmbed(embed.id)}>
+						<button type="button" on:click={() => ($state.deleteWarningOpen = true)}>
 							<img src="/icons/trash.png" alt="delete" />
 						</button>
+						{#if $state.deleteWarningOpen}
+							<Modal>
+								<DeleteEmbedWarning onDelete={() => deleteEmbed(embed.id)} />
+							</Modal>
+						{/if}
 					</div>
 				</li>
 			{/each}
@@ -38,6 +56,9 @@
 			<p>No Embeds yet...</p>
 		{/if}
 	</ul>
+</section>
+<section class="logout">
+	<button class="" on:click={logout}>Log Out</button>
 </section>
 
 <style>
@@ -80,5 +101,21 @@
 	ul {
 		list-style: none;
 		padding: 0;
+	}
+	@media (max-width: 820px) {
+		.embeds {
+			justify-content: flex-start;
+			padding: var(--size-4);
+			width: 100%;
+			height: auto;
+			margin-bottom: var(--size-2);
+		}
+		.embeds .controls {
+			gap: var(--size-2);
+		}
+		.logout {
+			display: flex;
+			justify-content: center;
+		}
 	}
 </style>

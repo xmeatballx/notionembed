@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { state } from '../../stores';
+	import { page } from '$app/stores';
 	export let closed: any;
 	let previewLink: string;
 	let formValues = {
@@ -37,9 +38,41 @@
 		previewLink = url.origin + `/embed/${result.embed.id}`;
 	}
 
+	async function updateEmbed() {
+		const storedUser = window.localStorage.getItem('user');
+		const userObj = JSON.parse(storedUser ?? '{}');
+		const { name, autoplay, autoplayInterval, autoplayOrder } = formValues;
+		const data = {
+			userId: userObj.id,
+			databaseId: $state.database_id,
+			pageIds: $state.page_ids,
+			blocks: $state.blocks,
+			name,
+			autoplay,
+			autoplayInterval,
+			autoplayOrder
+		};
+		console.log("PAGE: ", $page);
+		const response = await fetch(`/embed/${$page.params.embedId}/update`, {
+			method: 'POST',
+			headers: {
+				'Content-Type': 'application/json'
+			},
+			body: JSON.stringify(data)
+		});
+		const result = await response.json();
+		const url = new URL(window.location.href);
+		console.log(url);
+		previewLink = url.origin + `/embed/${result.embed.id}`;
+	}
+
 	function handleSubmit(e: SubmitEvent): any {
 		e.preventDefault();
-		createEmbed();
+		if ($page.params.embedId) {
+			updateEmbed();
+		} else {
+			createEmbed();
+		}
 	}
 
 	let isCopied = false;

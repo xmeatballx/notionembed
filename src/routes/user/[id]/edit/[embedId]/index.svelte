@@ -2,15 +2,17 @@
 	import { page } from '$app/stores';
 	import Editor from '$lib/editor/editor.svelte';
 	import Preview from '$lib/editor/preview.svelte';
+	import type { Embed } from '@prisma/client';
 
 	export let databases: any;
 	export let pages: any;
+	export let embed: Embed;
 </script>
 
 <section class="page">
 	<!-- {JSON.stringify($state.blocks[0])} -->
 	<div class="controls">
-		<Editor {databases} {pages} />
+		<Editor {databases} {pages} {embed} />
 	</div>
 	<div class="preview-container">
 		<Preview />
@@ -70,7 +72,7 @@
 
 		.preview-container {
 			height: auto;
-			padding: var(--size-2);
+			padding: 10%;
 		}
 	}
 </style>

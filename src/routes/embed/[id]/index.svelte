@@ -1,12 +1,9 @@
 <script lang="ts">
-	import PreviewBlock from '$lib/editor/previewBlock.svelte';
-	import { getDatabase } from '@notionhq/client/build/src/api-endpoints';
 	import type { Block, Embed } from '@prisma/client';
 	import { onDestroy } from 'svelte';
-	import { state } from '../../../stores';
 	import * as api from '../../../lib/_api';
-	import EmbedBlock from '$lib/embed/embedBlock.svelte';
 	import Spinner from '$lib/spinner.svelte';
+	import PreviewBlocks from '$lib/editor/preview_blocks/index.svelte';
 
 	export let embed: Embed;
 	export let blocks: Block[];
@@ -20,7 +17,7 @@
 			if (embed?.autoplayOrder == 'RANDOM') {
 				page = Math.floor(Math.random() * embed.pageIds.length);
 			}
-		}, 10000);
+		}, embed.autoplayInterval*1000);
 	}
 	let contentArrayPromise: Promise<any[]> = Promise.all(
 		embed.pageIds.map(
@@ -34,13 +31,18 @@
 	async function getData(propertyType: any, propertyId: any, pageId: string) {
 		try {
 			if (embed && blocks) {
-				if (propertyType == 'cover') {
-					return await api.getPageImage(embed.forUser, embed.databaseId, pageId, 'cover');
-				} else if (propertyType == 'icon') {
-					return await api.getPageImage(embed.forUser, embed.databaseId, pageId, 'icon');
-				} else {
-					const content = await api.getContent(embed.forUser, pageId, propertyId);
-					return content;
+				switch (propertyType) {
+					default:
+						return await api.getContent(embed.forUser, pageId, propertyId);
+
+					case 'cover':
+						return await api.getPageImage(embed.forUser, embed.databaseId, pageId, 'cover');
+					case 'icon':
+						return await api.getPageImage(embed.forUser, embed.databaseId, pageId, 'icon');
+					case 'relation':
+						return await api.getRelation(embed.forUser, embed.databaseId, pageId, propertyId);
+					case 'people':
+						return await api.getPerson(embed.forUser, embed.databaseId, pageId);
 				}
 			}
 		} catch (error) {
@@ -60,11 +62,7 @@
 		{#each contentArray as slide, i}
 			<div class={`content ${i == page ? 'active' : ''}`}>
 				{#each blocks as block, j}
-					{#if i == page}
-						<EmbedBlock {block} content={slide[j]} />
-					{:else}
-						<EmbedBlock {block} content={slide[j]} />
-					{/if}
+					<PreviewBlocks {block} content={slide[j]} />
 				{/each}
 			</div>
 		{/each}

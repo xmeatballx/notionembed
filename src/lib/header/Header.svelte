@@ -2,12 +2,13 @@
 	import { page } from '$app/stores';
 	import SaveEmbedForm from '$lib/embed/saveEmbedForm.svelte';
 	import { onMount } from 'svelte';
-	import { state } from '../../stores';
 	import type { User } from '@prisma/client';
+	import Modal from '$lib/modal.svelte';
 
 	let saveFormOpen = false;
 	let user: User;
 	let currentPath: string;
+	let mobileNavOpen = false;
 
 	$: {
 		currentPath = $page.url.pathname;
@@ -23,13 +24,18 @@
 
 <header class="site-header">
 	<div>
-		<h1>NotionEmbed</h1>
+		<a href="/" class="home_link"><h1 class="header-name">NotionEmbed</h1></a>
 	</div>
-	<nav>
+	<button class="hamburger" on:click={() => mobileNavOpen = !mobileNavOpen}>
+		<div class="1" />
+		<div class="2" />
+		<div class="3" />
+	</button>
+	<nav class={mobileNavOpen ? '' : 'hidden'}>
 		<ul>
 			{#if currentPath.startsWith('/user/') && !currentPath.includes('profile')}
 				<li>
-					<button on:click={() => (saveFormOpen = true)}> Save </button>
+					<button class="save" on:click={() => (saveFormOpen = true)}> Save </button>
 				</li>
 			{/if}
 			<li>
@@ -54,46 +60,34 @@
 	</nav>
 </header>
 {#if saveFormOpen}
-	<div class="fullscreen">
-		<div class="modal">
-			<SaveEmbedForm closed={() => (saveFormOpen = false)} />
-		</div>
-	</div>
+	<Modal>
+		<SaveEmbedForm closed={() => (saveFormOpen = false)} />
+	</Modal>
 {/if}
 
 <style>
-	.fullscreen {
-		width: 100vw;
-		height: 100vh;
-		position: absolute;
-		inset: 0;
-		display: grid;
-		place-items: center;
-		z-index: 1;
-	}
-
-	.modal {
-		background-color: var(--surface-1);
-		outline: 2px var(--text-1) solid;
-		border-radius: 1ch;
-		padding: 1em;
-	}
 	.site-header {
 		display: flex;
 		justify-content: space-between;
-		padding: var(--size-2);
-		border-bottom: 1px solid var(--surface-3);
+		padding: var(--size-3);
 		box-shadow: var(--shadow-2);
+		background-color: var(--header);
 	}
 
 	.site-header h1 {
 		font-size: var(--font-size-5);
+		text-shadow: 0 1px 0 var(--surface-1);
+		font-weight: bold;
 	}
 
 	.site-header button {
 		padding: 0.5em 1em;
 		line-height: 1em;
 		font-size: var(--font-size-3);
+		background-color: transparent;
+		box-shadow: none;
+		border: none;
+		text-shadow: none;
 	}
 
 	.site-header nav {
@@ -107,9 +101,63 @@
 		list-style: none;
 	}
 
-	.site-header nav a {
+	.site-header nav a:not(.home_link) {
 		font-size: var(--size-4);
 		color: var(--text-1);
 		font-weight: 600;
+	}
+
+	.home_link {
+		display: flex;
+		padding: 0;
+	}
+
+	nav.hidden {
+		top: 0;
+		bottom: 100%;
+	}
+
+	.hamburger {
+		display: none;
+	}
+
+	@media (max-width: 740px) {
+		.site-header nav {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			z-index: 10;
+			overflow: hidden;
+			transition: all .5s;
+		}
+		.site-header nav ul {
+			display: flex;
+			flex-direction: column;
+			padding-top: var(--size-8);
+			background-color: var(--header);
+			padding: var(--size-8) 0 var(--size-4) 0;
+			height: auto;
+		}
+		.site-header button.hamburger {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+			gap: var(--size-relative-2);
+			width: var(--size-6);
+			padding: 0;
+			z-index: 20;
+		}
+		
+		.hamburger div {
+			width: 100%;
+			height: 2px;
+			background-color: var(--text-1);
+		}
+
+		button.save {
+			padding: var(--size-1);
+		}
 	}
 </style>

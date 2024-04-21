@@ -22,9 +22,9 @@
 	.plus {
 		width: 1em;
 		height: 2px;
-		background-color: var(--text-2);
 		position: absolute;
 		border-radius: 10px;
+		background-color: var(--text-2);
 	}
 
 	.plus.small {
@@ -35,6 +35,11 @@
 	.plus--button {
 		width: 2em;
 		height: 2em;
+		background-color: var(--surface-1);
+		/*border: 1px solid var(--surface-3);*/
+		border: none;
+		box-shadow: var(--shadow-2), 0 1px var(--surface-2),
+		0 0 0 var(--_highlight-size) var(--_highlight);
 	}
 
 	.plus--button.small {

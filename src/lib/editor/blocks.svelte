@@ -6,7 +6,7 @@
 	export let block: Block;
 	export let index: number;
 	let propertyType = block.propertyType;
-	let propertyId = block.propertyId;
+	let propertyId = decodeURI(block.propertyId);
 	const properties: any = Object.entries($state.page_properties);
 
 	function propertyHandler(e: any) {
@@ -61,21 +61,23 @@
 
 {#key properties}
 	<div class="block">
-		<div class="field">
+		<div class="field property">
 			<label for="property" class="label">Property</label>
 			<select class="select" id="property" on:change={propertyHandler} bind:value={propertyId}>
 				{#each properties as [name, value]}
-					<option
-						value={value.id != 'title' ? value.id : 'title-' + value.title[0]?.text?.content}
-						data-type={value.type}
-						>{name ?? 'Untitled'}
-					</option>
+					{#if value.type != 'formula'}
+						<option
+							value={value.id != 'title' ? value.id : 'title-' + value.title[0]?.text?.content}
+							data-type={value.type}
+							>{name ?? 'Untitled'}
+						</option>
+					{/if}
 				{/each}
 				<option value="cover" data-type="cover">Cover</option>
 				<option value="icon" data-type="icon">Icon</option>
 			</select>
 		</div>
-		<div class="field">
+		<div class="field element">
 			<label class="label" for="element">As</label>
 			<select
 				class="select"
@@ -83,22 +85,31 @@
 				id="element"
 				bind:value={$state.blocks[index].previewElement}
 			>
-				{#if propertyType == 'rich_text' || propertyType == 'title' || propertyType == 'select'}
-					<option value="h1" selected>Heading 1</option>
-					<option value="h2">Heading 2</option>
-					<option value="h3">Heading 3</option>
-					<option value="p">Text</option>
-					<option value="blockquote">Blockquote</option>
-				{:else if propertyType == 'multi_select'}
+				{#if propertyType == 'multi_select'}
 					<option value="ul">Bulleted List</option>
 					<option value="ol">Numbered List</option>
 				{:else if propertyType == 'url'}
 					<option value="a">Link</option>
 					<option value="object">Embed</option>
-				{:else if propertyType == 'relation'}
+				{:else if propertyType == 'relation' || propertyType == 'email'}
 					<option value="a">Link</option>
 				{:else if propertyType == 'cover' || propertyType == 'icon'}
 					<option value="img">Image</option>
+				{:else if propertyType == 'status'}
+					<option value="status">Badge</option>
+				{:else if propertyType == 'date' || propertyType == 'created_time' || propertyType == "last_edited_time"}
+					<option value="short">Short</option>
+					<option value="medium">Medium</option>
+					<option value="long">Long</option>
+				{:else if propertyType == 'checkbox'}
+					<option value="checkbox">Checkbox</option>
+					<option value="emoji">Emoji</option>
+				{:else}
+					<option value="h1" selected>Heading 1</option>
+					<option value="h2">Heading 2</option>
+					<option value="h3">Heading 3</option>
+					<option value="p">Text</option>
+					<option value="blockquote">Blockquote</option>
 				{/if}
 			</select>
 		</div>
@@ -129,19 +140,27 @@
 <style>
 	.select {
 		width: 100%;
+		background-color: var(--surface-1);
+		border: 1px solid var(--surface-3);
 	}
 
 	.block {
-		padding: 0.5em;
-		display: flex;
-		flex-direction: column;
+		display: grid;
+		grid-template-areas:
+			'a b'
+			'c c';
+		grid-template-columns: repeat(2, 1fr);
+		gap: var(--size-2);
+		margin-bottom: var(--size-4);
+		margin-top: var(--size-4);
 		/* gap: 0.25em; */
 	}
 
 	.controls {
+		grid-area: c;
 		width: 100%;
 		display: flex;
-		gap: 1px;
+		gap: var(--size-1);
 		/* overflow: hidden; */
 	}
 
@@ -149,6 +168,11 @@
 		width: 100%;
 		border-radius: 0;
 		padding: 6px;
+		background-color: var(--surface-1);
+		border: none;
+		box-shadow: var(--shadow-2), 0 1px var(--surface-2),
+		0 0 0 var(--_highlight-size) var(--_highlight);
+		border: 1px solid var(--surface-3);
 	}
 
 	.controls button:hover {
@@ -217,5 +241,13 @@
 		/* gap: 8px; */
 		margin-bottom: 8px;
 		width: 100%;
+	}
+
+	.field.property {
+		grid-area: a;
+	}
+
+	.field.element {
+		grid-area: b;
 	}
 </style>

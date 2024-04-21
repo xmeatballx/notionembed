@@ -2,7 +2,7 @@
 	"name": "notionembed",
 	"version": "0.0.1",
 	"scripts": {
-		"dev": "svelte-kit dev -o --host",
+		"dev": "svelte-kit dev --host --port 3002",
 		"build": "svelte-kit build",
 		"package": "svelte-kit package",
 		"preview": "svelte-kit preview",
@@ -19,7 +19,9 @@
 		"@sveltejs/kit": "next",
 		"@types/btoa": "^1.2.3",
 		"@types/cookie": "^0.5.1",
+		"@types/luxon": "^3.4.2",
 		"btoa": "^1.2.1",
+		"luxon": "^3.4.4",
 		"prettier": "^2.6.2",
 		"prettier-plugin-svelte": "^2.7.0",
 		"prisma": "^5.1.1",
