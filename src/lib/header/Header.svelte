@@ -11,7 +11,8 @@
 	let mobileNavOpen = false;
 
 	$: {
-		currentPath = $page.url.pathname;
+		console.log("PAGE: ",$page);
+		currentPath = $page.url?.pathname;
 	}
 
 	onMount(() => {
