@@ -4,8 +4,9 @@
 	import DeleteEmbedWarning from '$lib/embed/deleteEmbedWarning.svelte';
 	import Modal from '$lib/modal.svelte';
 
-	export let user: User;
-	export let embeds: Embed[];
+	export let data;
+	let user: User = data.user;
+	let embeds: Embed[] = data.embeds
 
 	async function deleteEmbed(id: string) {
 		await fetch(`/embed/${id}`, { method: 'DELETE' });

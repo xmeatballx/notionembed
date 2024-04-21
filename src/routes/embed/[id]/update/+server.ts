@@ -1,21 +1,13 @@
-import type { RequestHandler } from '@sveltejs/kit';
+import type { RequestHandler } from './$types';
 import { PrismaClient, type User } from '@prisma/client';
 import type { Block } from 'src/types';
 
 const prismaClient = new PrismaClient();
 
-export const post: RequestHandler = async ({ params, request, url }) => {
+export const post: RequestHandler = async ({ params, request }: any) => {
 	const data = JSON.parse(await request.text());
-	const {
-		userId,
-		databaseId,
-		pageIds,
-		blocks,
-		name,
-		autoplay,
-		autoplayInterval,
-		autoplayOrder
-	} = data;
+	const { databaseId, pageIds, blocks, name, autoplay, autoplayInterval, autoplayOrder } =
+		data;
 	console.log('PARAM ID: ', params);
 	const embed = await prismaClient.embed.update({
 		where: {
@@ -27,19 +19,23 @@ export const post: RequestHandler = async ({ params, request, url }) => {
 			name,
 			autoplay,
 			autoplayInterval,
-			autoplayOrder,
+			autoplayOrder
 		}
 	});
-	await prismaClient.block.deleteMany({ 
+	await prismaClient.block.deleteMany({
 		where: {
-			staticEmbedId: params.id 
+			staticEmbedId: params.id
 		}
 	});
-	await Promise.all(blocks.map(async (newBlock: Block) => await prismaClient.block.create({ data: {...newBlock, staticEmbedId: params.id}})));
+	await Promise.all(
+		blocks.map(
+			async (newBlock: Block) =>
+				await prismaClient.block.create({
+					data: { ...newBlock, staticEmbedId: params.id }
+				})
+		)
+	);
 	return {
-		status: 200,
-		body: {
-			embed: embed
-		}
+		embed
 	};
 };

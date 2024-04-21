@@ -1,12 +1,12 @@
 <script lang="ts">
-	import { page } from '$app/stores';
 	import Editor from '$lib/editor/editor.svelte';
 	import Preview from '$lib/editor/preview.svelte';
 	import type { Embed } from '@prisma/client';
 
-	export let databases: any;
-	export let pages: any;
-	export let embed: Embed;
+	export let data;
+	let databases: any = data.databases;
+	let pages: any = data.pages;
+	let embed: Embed = data.embed;
 </script>
 
 <section class="page">

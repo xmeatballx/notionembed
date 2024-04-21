@@ -1,19 +1,21 @@
 import * as api from '../../lib/_api';
-import type { Load, RequestHandler } from './__types';
+import type { Load, RequestHandler } from './$types';
 import * as db from '../../lib/_db';
 import type { UserData } from './types';
 // import btoa from 'btoa';
 import { PrismaClient, type User } from '@prisma/client';
+import { PageServerLoad } from './$types';
 
 const prismaClient = new PrismaClient();
 
-export const get: RequestHandler = async ({ url }) => {
+export async function load({ url }: any): PageServerLoad {
 	const code = url.searchParams.get('code');
 	if (code) {
 		console.log('CLIENT ID: ', import.meta.env.VITE_NOTION_CLIENT_ID);
 		console.log('CLIENT SECRET: ', import.meta.env.VITE_NOTION_CLIENT_SECRET);
 		const encoded = Buffer.from(
-			`${import.meta.env.VITE_NOTION_CLIENT_ID}:${import.meta.env.VITE_NOTION_CLIENT_SECRET}`
+			`${import.meta.env.VITE_NOTION_CLIENT_ID}:${import.meta.env.VITE_NOTION_CLIENT_SECRET
+			}`
 		).toString('base64');
 		const headers = {
 			//prettier-ignore
@@ -55,22 +57,18 @@ export const get: RequestHandler = async ({ url }) => {
 				},
 				data: {
 					bot_id: userData.bot_id,
-					access_token: userData.access_token,
+					access_token: userData.access_token
 				}
 			});
 		}
 		return {
-			status: 200,
-			headers: {},
-			body: {
-				redirectURL: `/user/${user?.id}`,
-				user: user
-			}
+			redirectURL: `/user/${user?.id}`,
+			user: user
 		};
 	}
 
 	return {
-		status: 200
+		message: 'success'
 	};
-};
+}
 export const ssr = true;

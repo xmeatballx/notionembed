@@ -1,11 +1,11 @@
-import * as db from '../../../../lib/_db';
+import * as db from '../../../../../lib/_db';
 import { Client } from '@notionhq/client';
-import type { RequestHandler } from '@sveltejs/kit';
+import type { RequestHandler } from './$types';
 import { PrismaClient } from '@prisma/client';
 
 const prismaClient = new PrismaClient();
 
-export const get: RequestHandler = async ({ params, url }) => {
+export const get: RequestHandler = async ({ params, url }: any) => {
 	const user = await prismaClient.user.findUnique({
 		where: {
 			id: params.id
@@ -26,19 +26,16 @@ export const get: RequestHandler = async ({ params, url }) => {
 		if (!cachedPage) {
 			const page = await notion.pages.retrieve({ page_id: pageId });
 			return {
-				status: 200,
-				body: page
+				page
 			};
 		} else {
 			return {
-				status: 200,
-				body: cachedPage
+				cachedPage
 			};
 		}
 	}
 
 	return {
-		status: 200,
-		body: database
+		database
 	};
 };

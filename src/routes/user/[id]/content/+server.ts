@@ -1,13 +1,12 @@
 import * as db from '../../../../lib/_db';
 import { Client } from '@notionhq/client';
-import type { RequestHandler } from '@sveltejs/kit';
-import { state } from '../../../../stores';
+import { PageServerLoad } from './$types';
 
 import { PrismaClient } from '@prisma/client';
 
 const prismaClient = new PrismaClient();
 
-export const get: RequestHandler = async ({ params, url }) => {
+export async function load({ params, url }: { params: { id: string }; url: any }): PageServerLoad {
 	const user = await prismaClient.user.findUnique({
 		where: {
 			id: params.id
@@ -36,13 +35,12 @@ export const get: RequestHandler = async ({ params, url }) => {
 
 		await db.set({ key: pageId + propertyId, value: JSON.stringify(response) });
 		return {
-			status: 200,
-			body: response
+			response
 		};
 	} else {
+		const data = JSON.parse(cachedData);
 		return {
-			status: 200,
-			body: JSON.parse(cachedData)
+			data
 		};
 	}
-};
+}

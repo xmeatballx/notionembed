@@ -1,10 +1,10 @@
 <script lang="ts">
-	import { page } from '$app/stores';
 	import Editor from '$lib/editor/editor.svelte';
 	import Preview from '$lib/editor/preview.svelte';
 
-	export let databases: any;
-	export let pages: any;
+	export let data: any;
+	let databases = data.datbases;
+	let pages = data.pages;
 </script>
 
 <section class="page">

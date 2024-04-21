@@ -1,12 +1,11 @@
-import type { Load, RequestHandler } from '@sveltejs/kit';
+import { PageServerLoad } from './$types';
 import { Client } from '@notionhq/client';
-import { state, updateState } from '../../../../../stores.ts';
-import type { StateValue } from 'src/types';
+import { updateState } from '../../../../../stores';
 import { PrismaClient } from '@prisma/client';
 
 const prismaClient = new PrismaClient();
 
-export const get: RequestHandler = async ({ params }) => {
+export async function load({ params }: any): PageServerLoad {
 	try {
 		const user = await prismaClient.user.findUnique({
 			where: {
@@ -21,7 +20,7 @@ export const get: RequestHandler = async ({ params }) => {
 				blocks: true
 			}
 		});
-		console.log("EMBED: ",embed," \n END EMBED");
+		console.log('EMBED: ', embed, ' \n END EMBED');
 		updateState();
 		const notion = new Client({ auth: user?.access_token });
 		const response = await notion.search({
@@ -32,23 +31,18 @@ export const get: RequestHandler = async ({ params }) => {
 			}
 		});
 		const databases = response.results;
-		const defaultDatabase = databases.filter(db => db.id == embed?.databaseId)[0];
+		const defaultDatabase = databases.filter((db) => db.id == embed?.databaseId)[0];
 		const pages = await notion.databases.query({ database_id: defaultDatabase.id });
-		console.log("DEFAULT DB: ",defaultDatabase);
+		console.log('DEFAULT DB: ', defaultDatabase);
 
 		return {
-			status: 200,
-			headers: {
-				accept: 'application/json'
-			},
-			body: {
-				databases: databases,
-				pages: pages.results,
-				embed
-			}
+			databases: databases,
+			pages: pages.results,
+			embed
 		};
 	} catch (error: any) {
 		console.log(error.message);
-		return { status: 500, body: { error: error.message } };
+		return { error: error.message };
 	}
-};
+}
+

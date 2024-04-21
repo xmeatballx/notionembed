@@ -5,8 +5,9 @@
 	import Spinner from '$lib/spinner.svelte';
 	import PreviewBlocks from '$lib/editor/preview_blocks/index.svelte';
 
-	export let embed: Embed;
-	export let blocks: Block[];
+	export let data;
+	let embed: Embed = data.embed;
+	let blocks: Block[] = data.blocks;
 
 	export const layout = null;
 	let page = 0;
@@ -21,7 +22,7 @@
 	}
 	let contentArrayPromise: Promise<any[]> = Promise.all(
 		embed.pageIds.map(
-			async (pagedId) =>
+			async (pagedId: string) =>
 				await Promise.all(
 					blocks.map(async (block) => getData(block.propertyType, block.propertyId, pagedId))
 				)

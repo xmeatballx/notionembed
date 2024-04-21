@@ -1,9 +1,9 @@
-import type { RequestHandler } from '@sveltejs/kit';
+import type { PageServerLoad } from './$types';
 import { PrismaClient } from '@prisma/client';
 
 const prismaClient = new PrismaClient();
 
-export const get: RequestHandler = async ({ params }) => {
+export async function load({ params }: { params: { id: string } }): PageServerLoad {
 	const user = await prismaClient.user.findUnique({
 		where: {
 			id: params.id
@@ -11,10 +11,8 @@ export const get: RequestHandler = async ({ params }) => {
 	});
 	const embeds = await prismaClient.embed.findMany({ where: { forUser: params.id } });
 	return {
-		status: 200,
-		body: {
-			user: user,
-			embeds: embeds
-		}
+		user: user,
+		embeds: embeds
 	};
-};
+}
+
