@@ -17,7 +17,7 @@
 			if (embed?.autoplayOrder == 'RANDOM') {
 				page = Math.floor(Math.random() * embed.pageIds.length);
 			}
-		}, embed.autoplayInterval*1000);
+		}, embed.autoplayInterval * 1000);
 	}
 	let contentArrayPromise: Promise<any[]> = Promise.all(
 		embed.pageIds.map(
@@ -42,7 +42,7 @@
 					case 'relation':
 						return await api.getRelation(embed.forUser, embed.databaseId, pageId, propertyId);
 					case 'people':
-						return await api.getPerson(embed.forUser, embed.databaseId, pageId);
+						return await api.getPerson(embed.forUser, pageId, propertyId);
 				}
 			}
 		} catch (error) {
@@ -59,13 +59,17 @@
 	{#await contentArrayPromise}
 		<Spinner />
 	{:then contentArray}
-		{#each contentArray as slide, i}
-			<div class={`content ${i == page ? 'active' : ''}`}>
-				{#each blocks as block, j}
-					<PreviewBlocks {block} content={slide[j]} />
-				{/each}
-			</div>
-		{/each}
+		{#if contentArray}
+			{#each contentArray as slide, i}
+				<div class={`content ${i == page ? 'active' : ''}`}>
+					{#if blocks}
+						{#each blocks as block, j}
+							<PreviewBlocks {block} content={slide[j]} />
+						{/each}
+					{/if}
+				</div>
+			{/each}
+		{/if}
 	{/await}
 </div>
 
