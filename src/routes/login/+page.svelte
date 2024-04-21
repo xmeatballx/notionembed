@@ -23,7 +23,7 @@
 <section class="cta">
 	<h2>Connect your Notion Account</h2>
 	<a
-		href="https://api.notion.com/v1/oauth/authorize?owner=user&client_id=882d6a58-d120-4254-bc23-5d0be961890e&redirect_uri=http%3A%2F%2Flocalhost%3A3002%2Flogin&response_type=code"
+		href={`https://api.notion.com/v1/oauth/authorize?owner=user&client_id=882d6a58-d120-4254-bc23-5d0be961890e&redirect_uri=${encodeURI(import.meta.env.VITE_SITE_URL)}&response_type=code`}
 		class="button">Authorize</a
 	>
 </section>
