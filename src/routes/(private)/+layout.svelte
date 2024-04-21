@@ -1,10 +1,10 @@
 <script lang="ts">
-	import Header from '$lib/header/HeaderPrivate.svelte';
+	import HeaderPrivate from '$lib/header/HeaderPrivate.svelte';
 	import '_src/app.css';
 	import { page } from '$app/stores';
 </script>
 
-<Header />
+<HeaderPrivate />
 
 <main>
 	<slot />
