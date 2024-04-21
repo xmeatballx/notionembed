@@ -11,7 +11,7 @@
 	let mobileNavOpen = false;
 
 	$: {
-		console.log("PAGE: ",$page);
+		console.log('PAGE: ', $page);
 		currentPath = $page.url?.pathname;
 	}
 
@@ -27,34 +27,36 @@
 	<div>
 		<a href="/" class="home_link"><h1 class="header-name">NotionEmbed</h1></a>
 	</div>
-	<button class="hamburger" on:click={() => mobileNavOpen = !mobileNavOpen}>
+	<button class="hamburger" on:click={() => (mobileNavOpen = !mobileNavOpen)}>
 		<div class="1" />
 		<div class="2" />
 		<div class="3" />
 	</button>
 	<nav class={mobileNavOpen ? '' : 'hidden'}>
 		<ul>
-			{#if currentPath && currentPath.startsWith('/user/') && !currentPath.includes('profile')}
-				<li>
-					<button class="save" on:click={() => (saveFormOpen = true)}> Save </button>
-				</li>
-			{/if}
-			<li>
-				<a href="/">Home</a>
-			</li>
-			{#if !currentPath.startsWith('/user/')}
-				<li>
-					<a href="/login">Login</a>
-				</li>
-			{:else if user}
-				{#if currentPath.includes('profile')}
+			{#if currentPath}
+				{#if currentPath.startsWith('/user/') && !currentPath.includes('profile')}
 					<li>
-						<a href={`/user/${user.id}`} data-sveltekit-reload>Create</a>
+						<button class="save" on:click={() => (saveFormOpen = true)}> Save </button>
 					</li>
-				{:else}
+				{/if}
+				<li>
+					<a href="/">Home</a>
+				</li>
+				{#if !currentPath.startsWith('/user/')}
 					<li>
-						<a href={`/user/${user.id}/profile`}>Profile</a>
+						<a href="/login">Login</a>
 					</li>
+				{:else if user}
+					{#if currentPath.includes('profile')}
+						<li>
+							<a href={`/user/${user.id}`} data-sveltekit-reload>Create</a>
+						</li>
+					{:else}
+						<li>
+							<a href={`/user/${user.id}/profile`}>Profile</a>
+						</li>
+					{/if}
 				{/if}
 			{/if}
 		</ul>
@@ -130,7 +132,7 @@
 			right: 0;
 			z-index: 10;
 			overflow: hidden;
-			transition: all .5s;
+			transition: all 0.5s;
 		}
 		.site-header nav ul {
 			display: flex;
@@ -150,7 +152,7 @@
 			padding: 0;
 			z-index: 20;
 		}
-		
+
 		.hamburger div {
 			width: 100%;
 			height: 2px;
