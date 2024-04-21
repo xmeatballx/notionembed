@@ -1,7 +1,8 @@
-import * as db from '../../../../../lib/_db';
+import * as db from '$lib/_db';
 import { Client } from '@notionhq/client';
 import type { RequestHandler } from './$types';
 import { PrismaClient } from '@prisma/client';
+import { json } from '@sveltejs/kit';
 
 const prismaClient = new PrismaClient();
 
@@ -35,7 +36,5 @@ export const GET: RequestHandler = async ({ params, url }: any) => {
 		}
 	}
 
-	return new Response(JSON.stringify({ 
-		database
-	}));
+	return json(database);
 };

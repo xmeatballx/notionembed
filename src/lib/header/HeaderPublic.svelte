@@ -1,25 +1,5 @@
 <script lang="ts">
-	import { page } from '$app/stores';
-	import SaveEmbedForm from '$lib/embed/saveEmbedForm.svelte';
-	import { onMount } from 'svelte';
-	import type { User } from '@prisma/client';
-	import Modal from '$lib/modal.svelte';
-
-	let saveFormOpen = false;
-	let user: User;
-	let currentPath: string;
 	let mobileNavOpen = false;
-
-	$: {
-		currentPath = $page.url?.pathname;
-	}
-
-	onMount(() => {
-		if (typeof window !== 'undefined') {
-			const userStringified = window.localStorage.getItem('user');
-			user = userStringified ? JSON.parse(userStringified) : undefined;
-		}
-	});
 </script>
 
 <header class="site-header">
@@ -33,39 +13,15 @@
 	</button>
 	<nav class={mobileNavOpen ? '' : 'hidden'}>
 		<ul>
-			{#if currentPath}
-				{#if currentPath.startsWith('/user/') && !currentPath.includes('profile')}
-					<li>
-						<button class="save" on:click={() => (saveFormOpen = true)}> Save </button>
-					</li>
-				{/if}
-				<li>
-					<a href="/">Home</a>
-				</li>
-				{#if !currentPath.startsWith('/user/')}
-					<li>
-						<a href="/login">Login</a>
-					</li>
-				{:else if user}
-					{#if currentPath.includes('profile')}
-						<li>
-							<a href={`/user/${user.id}`} data-sveltekit-reload>Create</a>
-						</li>
-					{:else}
-						<li>
-							<a href={`/user/${user.id}/profile`}>Profile</a>
-						</li>
-					{/if}
-				{/if}
-			{/if}
+			<li>
+				<a href="/">Home</a>
+			</li>
+			<li>
+				<a href="/login">Login</a>
+			</li>
 		</ul>
 	</nav>
 </header>
-{#if saveFormOpen}
-	<Modal>
-		<SaveEmbedForm closed={() => (saveFormOpen = false)} />
-	</Modal>
-{/if}
 
 <style>
 	.site-header {

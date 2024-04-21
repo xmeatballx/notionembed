@@ -1,4 +1,4 @@
-import * as api from '../../lib/_api';
+import * as api from '$lib/_api';
 import type { UserData } from './types';
 import { PrismaClient, type User } from '@prisma/client';
 import type { PageServerLoad } from './$types';

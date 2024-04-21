@@ -3,14 +3,13 @@
 	import Preview from '$lib/editor/preview.svelte';
 
 	export let data: any;
-	let databases = data.databases;
-	let pages = data.pages;
+	let { databases, pages, user_id: userId } = data;
 </script>
 
 <section class="page">
 	<!-- {JSON.stringify($state.blocks[0])} -->
 	<div class="controls">
-		<Editor databases={databases} pages={pages} />
+		<Editor databases={databases} pages={pages} {userId} />
 	</div>
 	<div class="preview-container">
 		<Preview />

@@ -29,6 +29,7 @@
 	export let databases: any;
 	export let pages: any;
 	export let embed: Embed | undefined = undefined;
+	export let userId: string;
 	// console.log(pages)
 	onMount(() => {
 		console.log("STATE: ", $state);
@@ -37,9 +38,9 @@
 			$state.preview_as_id = pages[0].id;
 			$state.page_properties = pages[0].properties;
 			$state.blocks = [];
-			$state.user_id = $page.params.id;
+			$state.user_id = userId;
+			addBlock();
 		}
-		addBlock();
 	});
 	let dbOpen = true;
 	let blocksOpen = true;
@@ -47,7 +48,7 @@
 
 <div class="container">
 	<div class="section--label">
-		<h3>Database</h3>
+	<h3>Database</h3>
 		<ExpandButton clicked={() => (dbOpen = !dbOpen)} />
 	</div>
 	{#if dbOpen}

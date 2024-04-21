@@ -122,7 +122,7 @@
 			{#await databases}
 				<!-- <option value="">loading</option> -->
 			{:then res}
-				{#each databases as database, i}
+				{#each databases as database}
 					<option value={database.id} data-name={database.title[0]?.text?.content}>
 						{#if database.icon}
 							{database.icon.emoji ?? ''} {database.title[0].text.content}

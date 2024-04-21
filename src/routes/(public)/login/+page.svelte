@@ -1,6 +1,6 @@
 <script lang="ts">
-	import type { StateValue } from 'src/types';
-	import { state, updateState } from '../../stores';
+	import type { StateValue } from '_src/types';
+	import { state, updateState } from '_src/stores';
 	import type { User } from '@prisma/client';
 	import { onMount } from 'svelte';
 	export let data;

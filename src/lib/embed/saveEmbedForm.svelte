@@ -35,7 +35,7 @@
 		const result = await response.json();
 		const url = new URL(window.location.href);
 		console.log(url);
-		previewLink = url.origin + `/embed/${result.embed.id}`;
+		previewLink = url.origin + `/embed/${result.id}`;
 	}
 
 	async function updateEmbed() {

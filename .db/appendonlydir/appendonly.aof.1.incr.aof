@@ -173699,3 +173699,15 @@ $46
 ca915659-db56-43b9-bfd9-4adaa36a9803%3C%3F%60G
 $344
 {"object":"list","results":[{"object":"property_item","type":"relation","id":"%3C%3F%60G","relation":{"id":"47d4eb78-944c-4675-9a88-cc6e15a7b49f"}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"%3C%3F%60G","next_url":null,"type":"relation","relation":{}},"request_id":"a12204b9-86cd-4305-b5cc-1bfd13b45e01"}
+*2
+$6
+SELECT
+$1
+0
+*3
+$3
+SET
+$40
+a59c7b27-9166-45e3-8f66-8d13a1521abdwbvn
+$162
+{"object":"property_item","type":"date","id":"wbvn","date":{"start":"2024-04-09","end":null,"time_zone":null},"request_id":"7b57c21a-6916-4252-aedb-06682cbb92fb"}

@@ -1,4 +1,4 @@
-import * as db from '../../../../lib/_db';
+import * as db from '$lib/_db';
 import { Client } from '@notionhq/client';
 import type { RequestHandler } from './$types';
 

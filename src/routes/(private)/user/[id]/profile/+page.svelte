@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type { Embed, User } from '@prisma/client';
-	import { state } from '../../../../stores';
+	import { state } from '_src/stores';
 	import DeleteEmbedWarning from '$lib/embed/deleteEmbedWarning.svelte';
 	import Modal from '$lib/modal.svelte';
 

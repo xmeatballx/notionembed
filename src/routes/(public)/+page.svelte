@@ -1,7 +1,6 @@
 <script>
 	import { form, field } from 'svelte-forms';
 	import { required } from 'svelte-forms/validators';
-	import { state, updateState } from '../stores';
 
 	const one = field('one', '', [required()]);
 	const two = field('two', '', [required()]);

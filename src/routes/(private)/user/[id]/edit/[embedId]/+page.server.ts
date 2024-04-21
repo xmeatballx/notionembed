@@ -1,6 +1,5 @@
 import type { PageServerLoad } from './$types';
 import { Client } from '@notionhq/client';
-import { updateState } from '../../../../../stores';
 import { PrismaClient } from '@prisma/client';
 
 const prismaClient = new PrismaClient();

@@ -1,7 +1,7 @@
 import type { PageServerLoad } from './$types';
 import { Client } from '@notionhq/client';
-import { updateState } from '../../../stores';
-import type { StateValue } from '../../../types';
+import { updateState } from '_src/stores';
+import type { StateValue } from '_src/types';
 import { PrismaClient } from '@prisma/client';
 
 const prismaClient = new PrismaClient();
@@ -35,7 +35,8 @@ export const load: PageServerLoad = async ({ params }: { params: { id: string } 
 
 		return {
 			databases: databases,
-			pages: pages.results
+			pages: pages.results,
+			user_id: user.id
 		};
 	} catch (error: any) {
 		console.log(error.message);
