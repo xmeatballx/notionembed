@@ -24,7 +24,7 @@ export async function load({ url }: any): PageServerLoad {
 		const data = {
 			grant_type: 'authorization_code',
 			code: code,
-			redirect_uri: 'http://localhost:3002/login'
+			redirect_uri: import.meta.env.VITE_SITE_URL
 		};
 		console.log(data);
 		const response = await api.auth('post', 'v1/oauth/token', headers, data);
