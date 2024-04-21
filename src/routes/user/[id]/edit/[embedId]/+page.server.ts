@@ -1,4 +1,4 @@
-import { PageServerLoad } from './$types';
+import type { PageServerLoad } from './$types';
 import { Client } from '@notionhq/client';
 import { updateState } from '../../../../../stores';
 import { PrismaClient } from '@prisma/client';
@@ -21,7 +21,6 @@ export async function load({ params }: any): PageServerLoad {
 			}
 		});
 		console.log('EMBED: ', embed, ' \n END EMBED');
-		updateState();
 		const notion = new Client({ auth: user?.access_token });
 		const response = await notion.search({
 			query: '',

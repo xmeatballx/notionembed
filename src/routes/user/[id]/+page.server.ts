@@ -1,12 +1,12 @@
-import type { RequestHandler } from './$types';
+import type { PageServerLoad } from './$types';
 import { Client } from '@notionhq/client';
 import { updateState } from '../../../stores';
-import type { StateValue } from 'src/types';
+import type { StateValue } from '../../../types';
 import { PrismaClient } from '@prisma/client';
 
 const prismaClient = new PrismaClient();
 
-export const get: RequestHandler = async ({ params }: { params: { id: string } }) => {
+export const load: PageServerLoad = async ({ params }: { params: { id: string } }) => {
 	try {
 		console.log('IM IN THE LOAD FUNCTION');
 		const user = await prismaClient.user.findUnique({
@@ -34,19 +34,12 @@ export const get: RequestHandler = async ({ params }: { params: { id: string } }
 		updateState('database_id', defaultDatabase.id as StateValue);
 		updateState('preview_as_id', defaultPage.id as StateValue);
 
-		return new Response(
-			JSON.stringify({
-				databases: databases,
-				pages: pages.results
-			}),
-			{
-				headers: {
-					accept: 'application/json'
-				}
-			}
-		);
+		return {
+			databases: databases,
+			pages: pages.results
+		};
 	} catch (error: any) {
 		console.log(error.message);
-		return new Response(JSON.stringify({ error: error.message }));
+		return { error: error.message };
 	}
 };

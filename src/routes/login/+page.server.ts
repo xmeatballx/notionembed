@@ -1,10 +1,7 @@
 import * as api from '../../lib/_api';
-import type { Load, RequestHandler } from './$types';
-import * as db from '../../lib/_db';
 import type { UserData } from './types';
-// import btoa from 'btoa';
 import { PrismaClient, type User } from '@prisma/client';
-import { PageServerLoad } from './$types';
+import type { PageServerLoad } from './$types';
 
 const prismaClient = new PrismaClient();
 

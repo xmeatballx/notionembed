@@ -1,10 +1,11 @@
+import { json } from '@sveltejs/kit';
 import type { RequestHandler } from './$types';
-import { PrismaClient, type User } from '@prisma/client';
-import type { Block } from 'src/types';
+import { PrismaClient } from '@prisma/client';
+import type { Block } from '../../../../types';
 
 const prismaClient = new PrismaClient();
 
-export const post: RequestHandler = async ({ params, request }: any) => {
+export async function post({ params, request }: any): RequestHandler {
 	const data = JSON.parse(await request.text());
 	const { databaseId, pageIds, blocks, name, autoplay, autoplayInterval, autoplayOrder } =
 		data;
@@ -35,7 +36,5 @@ export const post: RequestHandler = async ({ params, request }: any) => {
 				})
 		)
 	);
-	return {
-		embed
-	};
+	return json(embed);
 };

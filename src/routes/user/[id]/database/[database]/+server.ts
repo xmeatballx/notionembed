@@ -25,17 +25,17 @@ export const get: RequestHandler = async ({ params, url }: any) => {
 		const cachedPage = await db.get({ key: pageId });
 		if (!cachedPage) {
 			const page = await notion.pages.retrieve({ page_id: pageId });
-			return {
+			return new Response(JSON.stringify({
 				page
-			};
+			}));
 		} else {
-			return {
+			return new Response(JSON.stringify({
 				cachedPage
-			};
+			}));
 		}
 	}
 
-	return {
+	return new Response(JSON.stringify({ 
 		database
-	};
+	}));
 };

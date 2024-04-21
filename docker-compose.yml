@@ -34,7 +34,7 @@ services:
     build: .
     command: bash -c "npx prisma generate && npx prisma migrate deploy && npm run dev"
     ports:
-      - '3002:3002'
+      - '3000:5173'
     environment:
       DATABASE_URL: postgresql://postgres:postgres@192.168.1.74:5432/notionembed?schema=public&connect_timeout=300
       VITE_NOTION_CLIENT_ID: 882d6a58-d120-4254-bc23-5d0be961890e
