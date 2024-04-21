@@ -36,7 +36,7 @@ services:
     ports:
       - '3002:3002'
     environment:
-      DATABASE_URL: postgresql://postgres:postgres@postgres:5432/notionembed?schema=public&connect_timeout=300
+      DATABASE_URL: postgresql://postgres:postgres@192.168.1.74:5432/notionembed?schema=public&connect_timeout=300
       VITE_NOTION_CLIENT_ID: 882d6a58-d120-4254-bc23-5d0be961890e
       VITE_NOTION_CLIENT_SECRET: secret_REPNTY38OQvXFOThAnbTsnPHxBRmuABXJFEJ37iEa3M
       VITE_REDIS_PORT: 6379
@@ -60,7 +60,7 @@ services:
       dockerfile: ./Dockerfile
     command: bash -c "cd ./prisma && npx prisma studio"
     environment:
-      DATABASE_URL: postgresql://postgres:postgres@postgres:5432/notionembed?schema=public&connect_timeout=300
+      DATABASE_URL: postgresql://postgres:postgres@192.168.1.74:5432/notionembed?schema=public&connect_timeout=300
     ports:
       - '5555:5555'
     depends_on:
