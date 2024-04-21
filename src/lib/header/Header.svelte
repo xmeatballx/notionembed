@@ -11,7 +11,6 @@
 	let mobileNavOpen = false;
 
 	$: {
-		console.log('PAGE: ', $page);
 		currentPath = $page.url?.pathname;
 	}
 

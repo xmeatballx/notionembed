@@ -30,7 +30,6 @@
 	export let pages: any;
 	export let embed: Embed | undefined = undefined;
 	// console.log(pages)
-	$state.user_id = $page.params.id;
 	onMount(() => {
 		console.log("STATE: ", $state);
 		if ($state.database_id == "not set") {
@@ -38,6 +37,7 @@
 			$state.preview_as_id = pages[0].id;
 			$state.page_properties = pages[0].properties;
 			$state.blocks = [];
+			$state.user_id = $page.params.id;
 		}
 		addBlock();
 	});
