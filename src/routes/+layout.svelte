@@ -2,7 +2,7 @@
 	import Header from '$lib/header/Header.svelte';
 	import '../app.css';
 	import { page } from '$app/stores';
-	const hideHeader = $page.url.pathname.startsWith('/embed/');
+	const hideHeader = $page.url?.pathname.startsWith('/embed/');
 </script>
 
 {#if !hideHeader}
