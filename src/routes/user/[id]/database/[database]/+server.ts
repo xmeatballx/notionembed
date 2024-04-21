@@ -5,7 +5,7 @@ import { PrismaClient } from '@prisma/client';
 
 const prismaClient = new PrismaClient();
 
-export const get: RequestHandler = async ({ params, url }: any) => {
+export const GET: RequestHandler = async ({ params, url }: any) => {
 	const user = await prismaClient.user.findUnique({
 		where: {
 			id: params.id

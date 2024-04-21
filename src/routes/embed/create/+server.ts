@@ -3,7 +3,7 @@ import type { RequestHandler } from './$types';
 import { PrismaClient } from '@prisma/client';
 const prismaClient = new PrismaClient();
 
-export const post: RequestHandler = async ({ request }: any) => {
+export const POST: RequestHandler = async ({ request }: any) => {
 	const data = JSON.parse(await request.text());
 	const {
 		userId,

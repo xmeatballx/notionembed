@@ -5,7 +5,7 @@ import type { Block } from '../../../../types';
 
 const prismaClient = new PrismaClient();
 
-export async function post({ params, request }: any): RequestHandler {
+export async function POST({ params, request }: any): RequestHandler {
 	const data = JSON.parse(await request.text());
 	const { databaseId, pageIds, blocks, name, autoplay, autoplayInterval, autoplayOrder } =
 		data;
@@ -37,4 +37,5 @@ export async function post({ params, request }: any): RequestHandler {
 		)
 	);
 	return json(embed);
-};
+}
+
