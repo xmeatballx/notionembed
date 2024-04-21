@@ -34,7 +34,7 @@
 	</button>
 	<nav class={mobileNavOpen ? '' : 'hidden'}>
 		<ul>
-			{#if currentPath.startsWith('/user/') && !currentPath.includes('profile')}
+			{#if currentPath && currentPath.startsWith('/user/') && !currentPath.includes('profile')}
 				<li>
 					<button class="save" on:click={() => (saveFormOpen = true)}> Save </button>
 				</li>
