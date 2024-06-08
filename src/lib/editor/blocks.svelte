@@ -118,6 +118,7 @@
 					</select>
 				</div>
 			</div>
+			<button on:click={() => removeBlock(block)}><img src="/icons/trash.svg" width="16px"/></button>
 		</details>
 	</li>
 	<div class="controls">
@@ -170,10 +171,22 @@
 		border-radius: 0 0 var(--size-2) var(--size-2);
 	}
 
+	button {
+		width: 100%;
+		background-color: var(--surface-2-mid);
+		border: 0;
+	}
+	
+	button img {
+		filter: invert(0.8);
+	}
+
 	.select {
 		width: 100%;
 		background-color: var(--surface-1);
 		border: 1px solid var(--surface-3);
+		padding: var(--size-3);
+		font-weight: bold;
 	}
 
 	.block {

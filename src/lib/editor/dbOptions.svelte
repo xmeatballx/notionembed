@@ -22,7 +22,7 @@
 		$state.preview_as_id = pages[0].id;
 		$state.page_properties = pages[0].properties;
 		console.log(pages);
-		$state.page_ids = [pages[0].id];
+		$state.page_ids = pages.map((page: any) => page.id);
 		addBlock();
 	}
 
@@ -81,7 +81,7 @@
 			const newPageIdArray: string[] = [pages[0].id];
 			$state.preview_as_id = pages[0].id;
 			updateState('preview_as_id', pages[0].id);
-			updateState('page_ids', newPageIdArray as StateValue);
+			updateState('page_ids', pages.map((page: any) => page.id) as StateValue);
 			$state.database_name = databases[0]?.title[0]?.text?.content;
 			currentPageTitle = api.getTitle(pages[0].properties);
 		} else {
@@ -166,10 +166,10 @@
 		<div class="current_page--title">{currentPageTitle}</div>
 		<div class="page_controls">
 			<button class="page_controls--next" on:click={() => goToLastPage()}>
-				<div class="next" /></button
+				<div class="" />Prev</button
 			>
 			<button class="page_controls--last" on:click={() => goToNextPage()}>
-				<div class="last" /></button
+				<div class="" />Next</button
 			>
 			<button class="page_controls--random" on:click={randomizePage}>Random</button>
 		</div>
@@ -187,12 +187,18 @@
 		width: 100%;
 		background-color: var(--surface-1);
 		border: 1px solid var(--surface-3);
+		padding: var(--size-3);
+		font-weight: bold;
 	}
 	/* .preview_as {
 		display: flex;
 		flex-direction: column;
 		gap: 1em;
 	} */
+	.page_select--container {
+		display: none;
+	}
+
 	.page_select--label {
 		display: flex;
 		align-items: center;

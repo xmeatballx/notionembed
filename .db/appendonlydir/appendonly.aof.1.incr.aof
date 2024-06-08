@@ -190274,3 +190274,85 @@ $40
 ca915659-db56-43b9-bfd9-4adaa36a9803jzvR
 $200
 {"object":"property_item","type":"status","id":"jzvR","status":{"id":"364187e4-f700-48f9-8640-9f1aed843577","name":"Not started","color":"default"},"request_id":"35665805-b46f-47f6-a193-452d1f03544a"}
+*2
+$6
+SELECT
+$1
+0
+*3
+$3
+SET
+$59
+9f252df6-3277-4e3d-8182-23a436c5a1b0title-Reassess progress
+$503
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Reassess progress","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Reassess progress","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"42e437b1-0f7c-4f15-8833-4ca12bd17e91"}
+*3
+$3
+SET
+$65
+6f043e69-b5ee-4ce0-9a26-051a83470c47title-Distro new instrumental
+$501
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Create tauri app","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Create tauri app","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"80ed4bde-e049-48da-b049-c587f9746b69"}
+*3
+$3
+SET
+$65
+8980cc14-1788-42f9-9b82-51227c9b2d74title-Distro new instrumental
+$529
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Implement directory navigation","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Implement directory navigation","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"87fb4f3b-8d9a-4eb9-b039-a158167d785b"}
+*3
+$3
+SET
+$52
+1a4d1aee-8c8c-4e9a-9cda-3887006511b4title-Get chairs
+$489
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Get chairs","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Get chairs","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"c5093393-945d-44b8-8ca7-b888ad57915f"}
+*3
+$3
+SET
+$40
+1a4d1aee-8c8c-4e9a-9cda-3887006511b4jzvR
+$200
+{"object":"property_item","type":"status","id":"jzvR","status":{"id":"364187e4-f700-48f9-8640-9f1aed843577","name":"Not started","color":"default"},"request_id":"67af7bdf-02de-45aa-b612-16316a659226"}
+*3
+$3
+SET
+$72
+30ea4631-8529-4ee4-bd63-27603d15d83dtitle-Advanced react query use cases
+$529
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Advanced react query use cases","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Advanced react query use cases","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"96475050-dfd7-4471-ae7b-5aa064a74586"}
+*3
+$3
+SET
+$61
+cd275a43-04ee-42ae-9df1-6335d30135ebtitle-colorchords debrief
+$507
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"colorchords debrief","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"colorchords debrief","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"65c9f09c-4012-463f-8d1c-f5c689e53959"}
+*3
+$3
+SET
+$61
+6ea92caf-4d81-4948-9c92-ad4cb404f1abtitle-colorchords debrief
+$535
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"How I use NixOS as a daily driver","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"How I use NixOS as a daily driver","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"87abcd88-5dfb-4487-bdca-62d6129f6e04"}
+*3
+$3
+SET
+$61
+c802dcf0-5eea-4b55-9eb7-e68cde655022title-colorchords debrief
+$575
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"What you can learn from setting up your first HomeLab","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"What you can learn from setting up your first HomeLab","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"c13b082a-efe7-4608-bae9-e5e2775a1994"}
+*3
+$3
+SET
+$61
+f83686bf-6059-4943-9c1f-ecfce0f31268title-colorchords debrief
+$505
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"The No Code Dilema","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"The No Code Dilema","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"0482a06a-cc6b-486d-a7f5-8f0574d475ea"}
+*3
+$3
+SET
+$61
+b4afb0c8-7630-480d-a353-d5f87244210btitle-colorchords debrief
+$589
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Making a custom integration for your Notion workspace Part 1","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Making a custom integration for your Notion workspace Part 1","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"3ccc52c5-c2bc-4349-94a6-428cc9eba0f8"}
