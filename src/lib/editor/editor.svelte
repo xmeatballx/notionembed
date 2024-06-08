@@ -61,11 +61,11 @@
 	</div>
 	{#if blocksOpen}
 		<div class="blocks-scroll-container">
-			<div>
+			<ul>
 				{#each $state.blocks as block, i}
 					<BlockEditor {block} index={i} />
 				{/each}
-			</div>
+			</ul>
 		</div>
 	{/if}
 </div>
@@ -76,8 +76,14 @@
 {/if}
 
 <style>
+	ul {
+		list-style: none;
+		padding: 0;
+	}
+
+
 	.blocks-heading {
-		/* margin-bottom: var(--size-4); */
+		margin-bottom: var(--size-3);
 		/* padding-left: var(--size-2); */
 	}
 	.add_block_button--container {
@@ -92,7 +98,7 @@
 		border: 1px solid var(--surface-3);
 	}
 	.container {
-		padding: var(--size-4) var(--size-4) 0 var(--size-4);
+		padding: var(--size-2) var(--size-2) 0 var(--size-2);
 	}
 	.section--label {
 		display: flex;

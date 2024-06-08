@@ -61,9 +61,12 @@ iframe {
 
 @media (prefers-color-scheme: dark) {
 	html {
-		--surface-1: #181818;
-		--surface-2: #222;
+		--surface-1: rgb(24,24,24);
+		--surface-1-mid: rgba(24,24,24, 60%);
+		--surface-2: rgb(34,34,34);
+		--surface-2-mid: rgba(24,24,24, 50%);
+		--surface-3: rgba(73, 80, 87, 25%);
 		--text-1: rgba(255, 255, 255, 0.81);
-		--header: var(--gray-9);
+		--header: rgb(33, 37, 41);
 	}
 }
