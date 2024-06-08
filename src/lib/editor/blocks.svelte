@@ -8,6 +8,7 @@
 	let propertyType = block.propertyType;
 	let propertyId = decodeURI(block.propertyId);
 	const properties: any = Object.entries($state.page_properties);
+	let open = false;
 
 	function propertyHandler(e: any) {
 		const selectedOption = e.target.options[e.target.selectedIndex];
@@ -60,103 +61,145 @@
 </script>
 
 {#key properties}
-	<div class="block">
-		<div class="field property">
-			<label for="property" class="label">Property</label>
-			<select class="select" id="property" on:change={propertyHandler} bind:value={propertyId}>
-				{#each properties as [name, value]}
-					{#if value.type != 'formula'}
-						<option
-							value={value.id != 'title' ? value.id : 'title-' + value.title[0]?.text?.content}
-							data-type={value.type}
-							>{name ?? 'Untitled'}
-						</option>
-					{/if}
-				{/each}
-				<option value="cover" data-type="cover">Cover</option>
-				<option value="icon" data-type="icon">Icon</option>
-			</select>
-		</div>
-		<div class="field element">
-			<label class="label" for="element">As</label>
-			<select
-				class="select"
-				name="text"
-				id="element"
-				bind:value={$state.blocks[index].previewElement}
+	<li>
+		<details>
+			<summary>{propertyType} - {$state.blocks[index].previewElement}</summary>
+			<div class="block">
+				<div class="field property">
+					<label for="property" class="label">Property</label>
+					<select class="select" id="property" on:change={propertyHandler} bind:value={propertyId}>
+						{#each properties as [name, value]}
+							{#if value.type != 'formula'}
+								<option
+									value={value.id != 'title' ? value.id : 'title-' + value.title[0]?.text?.content}
+									data-type={value.type}
+									>{name ?? 'Untitled'}
+								</option>
+							{/if}
+						{/each}
+						<option value="cover" data-type="cover">Cover</option>
+						<option value="icon" data-type="icon">Icon</option>
+					</select>
+				</div>
+				<div class="field element">
+					<label class="label" for="element">As</label>
+					<select
+						class="select"
+						name="text"
+						id="element"
+						bind:value={$state.blocks[index].previewElement}
+					>
+						{#if propertyType == 'multi_select'}
+							<option value="ul">Bulleted List</option>
+							<option value="ol">Numbered List</option>
+						{:else if propertyType == 'url'}
+							<option value="a">Link</option>
+							<option value="object">Embed</option>
+						{:else if propertyType == 'relation' || propertyType == 'email'}
+							<option value="a">Link</option>
+						{:else if propertyType == 'cover' || propertyType == 'icon'}
+							<option value="img">Image</option>
+						{:else if propertyType == 'status'}
+							<option value="status">Badge</option>
+						{:else if propertyType == 'date' || propertyType == 'created_time' || propertyType == 'last_edited_time'}
+							<option value="short">Short</option>
+							<option value="medium">Medium</option>
+							<option value="long">Long</option>
+						{:else if propertyType == 'checkbox'}
+							<option value="checkbox">Checkbox</option>
+							<option value="emoji">Emoji</option>
+						{:else}
+							<option value="h1" selected>Heading 1</option>
+							<option value="h2">Heading 2</option>
+							<option value="h3">Heading 3</option>
+							<option value="p">Text</option>
+							<option value="blockquote">Blockquote</option>
+						{/if}
+					</select>
+				</div>
+			</div>
+			<button on:click={() => removeBlock(block)}><img src="/icons/trash.svg" width="16px"/></button>
+		</details>
+	</li>
+	<div class="controls">
+		{#if index == 0}
+			<button class="controls" disabled><div class="controls--up" /></button>
+		{:else}
+			<button class="controls" on:click={() => moveBlock($state.blocks[index], 'backward')}
+				><div class="controls--up" /></button
 			>
-				{#if propertyType == 'multi_select'}
-					<option value="ul">Bulleted List</option>
-					<option value="ol">Numbered List</option>
-				{:else if propertyType == 'url'}
-					<option value="a">Link</option>
-					<option value="object">Embed</option>
-				{:else if propertyType == 'relation' || propertyType == 'email'}
-					<option value="a">Link</option>
-				{:else if propertyType == 'cover' || propertyType == 'icon'}
-					<option value="img">Image</option>
-				{:else if propertyType == 'status'}
-					<option value="status">Badge</option>
-				{:else if propertyType == 'date' || propertyType == 'created_time' || propertyType == "last_edited_time"}
-					<option value="short">Short</option>
-					<option value="medium">Medium</option>
-					<option value="long">Long</option>
-				{:else if propertyType == 'checkbox'}
-					<option value="checkbox">Checkbox</option>
-					<option value="emoji">Emoji</option>
-				{:else}
-					<option value="h1" selected>Heading 1</option>
-					<option value="h2">Heading 2</option>
-					<option value="h3">Heading 3</option>
-					<option value="p">Text</option>
-					<option value="blockquote">Blockquote</option>
-				{/if}
-			</select>
-		</div>
-		<div class="controls">
-			{#if index == 0}
-				<button class="controls" disabled><div class="controls--up" /></button>
-			{:else}
-				<button class="controls" on:click={() => moveBlock($state.blocks[index], 'backward')}
-					><div class="controls--up" /></button
-				>
-			{/if}
-			{#if index == $state.blocks.length - 1}
-				<button class="controls" disabled><div class="controls--down" /></button>
-			{:else}
-				<button class="controls" on:click={() => moveBlock($state.blocks[index], 'forward')}
-					><div class="controls--down" /></button
-				>
-			{/if}
-
-			<button class="controls" on:click={() => removeBlock($state.blocks[index])}>
-				<div class="x x1" />
-				<div class="x x2" />
-			</button>
-		</div>
+		{/if}
+		{#if index == $state.blocks.length - 1}
+			<button class="controls" disabled><div class="controls--down" /></button>
+		{:else}
+			<button class="controls" on:click={() => moveBlock($state.blocks[index], 'forward')}
+				><div class="controls--down" /></button
+			>
+		{/if}
 	</div>
 {/key}
 
 <style>
+	li {
+		padding: 0;
+	}
+
+	summary {
+		border-radius: 0;
+		list-style: none;
+		background-color: var(--surface-1-mid);
+		padding: 10px;
+	}
+
+	summary:hover {
+		background-color: var(--surface-1);
+	}
+
+	summary::-webkit-details-marker {
+		display: none;
+	}
+
+	details {
+		background-color: var(--surface-2-mid);
+		border-radius: 0;
+	}
+	li:first-of-type details, li:first-of-type details summary {
+		border-radius: var(--size-2) var(--size-2) 0 0;
+	}
+
+	li:last-of-type details, li:last-of-type details summary {
+		border-radius: 0 0 var(--size-2) var(--size-2);
+	}
+
+	button {
+		width: 100%;
+		background-color: var(--surface-2-mid);
+		border: 0;
+	}
+	
+	button img {
+		filter: invert(0.8);
+	}
+
 	.select {
 		width: 100%;
 		background-color: var(--surface-1);
 		border: 1px solid var(--surface-3);
+		padding: var(--size-3);
+		font-weight: bold;
 	}
 
 	.block {
 		display: grid;
-		grid-template-areas:
-			'a b'
-			'c c';
-		grid-template-columns: repeat(2, 1fr);
 		gap: var(--size-2);
-		margin-bottom: var(--size-4);
-		margin-top: var(--size-4);
-		/* gap: 0.25em; */
+		margin-bottom: var(--size-2);
+		width: 100%;
+		/* margin-top: var(--size-4);
+		gap: 0.25em; */
 	}
 
 	.controls {
+		display: none !important;
 		grid-area: c;
 		width: 100%;
 		display: flex;
@@ -171,7 +214,7 @@
 		background-color: var(--surface-1);
 		border: none;
 		box-shadow: var(--shadow-2), 0 1px var(--surface-2),
-		0 0 0 var(--_highlight-size) var(--_highlight);
+			0 0 0 var(--_highlight-size) var(--_highlight);
 		border: 1px solid var(--surface-3);
 	}
 
@@ -239,15 +282,6 @@
 	.field {
 		display: grid;
 		/* gap: 8px; */
-		margin-bottom: 8px;
 		width: 100%;
-	}
-
-	.field.property {
-		grid-area: a;
-	}
-
-	.field.element {
-		grid-area: b;
 	}
 </style>
