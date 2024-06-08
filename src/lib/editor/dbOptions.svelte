@@ -85,7 +85,6 @@
 			$state.database_name = databases[0]?.title[0]?.text?.content;
 			currentPageTitle = api.getTitle(pages[0].properties);
 		} else {
-			
 			const blocks = embed.blocks.map((block: any) => {
 				const { propertyType, previewElement, propertyId, order } = block;
 				return {
@@ -166,12 +165,14 @@
 		<div class="current_page--title">{currentPageTitle}</div>
 		<div class="page_controls">
 			<button class="page_controls--next" on:click={() => goToLastPage()}>
-				<div class="" />Prev</button
-			>
+				<img src="/icons/next.svg" alt="next" width="12px" />
+			</button>
 			<button class="page_controls--last" on:click={() => goToNextPage()}>
-				<div class="" />Next</button
-			>
-			<button class="page_controls--random" on:click={randomizePage}>Random</button>
+				<img src="/icons/next.svg" alt="next" width="12px" />
+			</button>
+			<button class="page_controls--random" on:click={randomizePage}>
+				<img src="/icons/random.svg" alt="next" width="24px" />
+			</button>
 		</div>
 	</div>
 </div>
@@ -189,6 +190,7 @@
 		border: 1px solid var(--surface-3);
 		padding: var(--size-3);
 		font-weight: bold;
+		border-radius: var(--size-2);
 	}
 	/* .preview_as {
 		display: flex;
@@ -221,15 +223,24 @@
 
 	.page_controls {
 		display: flex;
-		gap: var(--size-1);
+		gap: var(--size-3);
 		margin-bottom: 1em;
 	}
 
 	.page_controls--next,
 	.page_controls--last,
 	.page_controls--random {
-		background-color: var(--surface-1);
-		border: 1px solid var(--surface-3);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: transparent;
+		border: 0;
+		box-shadow: none;
+		padding: 0;
+	}
+
+	.page_controls button img {
+		filter: invert(0.8);
 	}
 
 	.page_controls--next .next {
@@ -241,14 +252,8 @@
 		border-top: 8px solid var(--text-2);
 		rotate: 0.25turn;
 	}
-	.page_controls--last .last {
-		width: 0;
-		height: 0;
-		border-left: 8px solid transparent;
-		border-right: 8px solid transparent;
-
-		border-top: 8px solid var(--text-2);
-		rotate: -0.25turn;
+	.page_controls--next img {
+		rotate: -0.5turn;
 	}
 	.page_controls--random {
 		font-size: var(--font-size-0);
@@ -269,9 +274,9 @@
 		max-width: 25vw;
 	}
 
-	@media(max-width: 820px) {
+	@media (max-width: 820px) {
 		.current_page--title {
-			min-width: 100%;	
+			min-width: 100%;
 		}
 	}
 </style>

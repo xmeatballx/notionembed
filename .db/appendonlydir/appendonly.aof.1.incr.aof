@@ -190356,3 +190356,162 @@ $61
 b4afb0c8-7630-480d-a353-d5f87244210btitle-colorchords debrief
 $589
 {"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Making a custom integration for your Notion workspace Part 1","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Making a custom integration for your Notion workspace Part 1","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"3ccc52c5-c2bc-4349-94a6-428cc9eba0f8"}
+*2
+$6
+SELECT
+$1
+0
+*3
+$3
+SET
+$52
+aca79ff9-bc65-47f6-9520-beca4e0e54edtitle-add readme
+$507
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Create basic header","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Create basic header","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"d9803934-d838-4cc0-8dae-3dccf148977b"}
+*3
+$3
+SET
+$52
+641d908e-cb4c-4e0e-beaf-93e63118f89dtitle-add readme
+$529
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"delete files/folders from menu","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"delete files/folders from menu","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"093a1474-efcc-4e00-a954-4b3cfa8cc71f"}
+*3
+$3
+SET
+$52
+5a90cb90-bbc3-40f4-abed-f1165473523dtitle-add readme
+$503
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Implement caching","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Implement caching","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"2dbd58c0-cbb6-41f8-a9c5-f7b22fe1c09a"}
+*3
+$3
+SET
+$52
+feefcb99-f596-450b-94d0-7c2a0a564391title-add readme
+$517
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"create folders from menu","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"create folders from menu","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"416fa416-6dc1-43fa-a905-aebeafbae9a3"}
+*3
+$3
+SET
+$52
+cdba9b89-0245-4420-b5d1-d5af52cd8cd2title-add readme
+$513
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"create files from menu","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"create files from menu","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"ec4dc24c-4d65-40f4-aefa-cf86ea8cb819"}
+*3
+$3
+SET
+$52
+9bd30beb-931e-40fc-8508-5beb79e4188btitle-add readme
+$505
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Add tab navigation","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Add tab navigation","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"ab08652f-da0d-40c7-a35a-fcb430420f39"}
+*3
+$3
+SET
+$52
+06235508-6d87-45af-81dd-a4d1fec10ca0title-add readme
+$533
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"show file context in search mode","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"show file context in search mode","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"f7094354-af7b-4fed-9b92-5356e56ac337"}
+*3
+$3
+SET
+$52
+a3c30516-d082-45f2-b375-7904a66a46fatitle-add readme
+$519
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"add configurable settings","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"add configurable settings","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"2c6d8e76-6e48-4e3b-9ecf-99ad020008fe"}
+*3
+$3
+SET
+$52
+e01aa0ac-24bd-4e17-8259-95abadcd84catitle-add readme
+$513
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Scope out text support","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Scope out text support","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"fccbc04a-8dbd-487e-a993-cd29072c699b"}
+*3
+$3
+SET
+$52
+ea1b7a81-c93d-4661-b831-fbed2575625etitle-add readme
+$497
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Dynamic embeds","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Dynamic embeds","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"6da4a345-d38a-4df8-a083-eef37d45bbf6"}
+*3
+$3
+SET
+$52
+1ca58afa-b9b6-434c-a47f-5dfb11800278title-add readme
+$501
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Remove SMB share","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Remove SMB share","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"f57b2f52-164f-428d-b9b6-2cad3ab7a305"}
+*3
+$3
+SET
+$52
+a145e523-66d9-4653-83d1-c3cbc892351etitle-add readme
+$567
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Create users for gill and ryan on Homarr and ombi","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Create users for gill and ryan on Homarr and ombi","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"f0f67155-b953-4b5c-a160-a9d7ccf706f1"}
+*3
+$3
+SET
+$52
+7f456c4d-39bc-4e24-addf-163842f3f2f3title-add readme
+$529
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Submit tpainremix to playlists","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Submit tpainremix to playlists","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"dca46b65-23bd-4f1c-98a2-c4bfc6300639"}
+*3
+$3
+SET
+$52
+b05247d9-5e2f-4eed-a652-953bf2c262adtitle-add readme
+$507
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Integration testing","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Integration testing","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"70481032-39db-4ae8-9655-a6719930a2e0"}
+*3
+$3
+SET
+$61
+b05247d9-5e2f-4eed-a652-953bf2c262adtitle-Integration testing
+$507
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Integration testing","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Integration testing","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"67d23ea7-9a35-44a5-8b17-c9b0215dc24f"}
+*3
+$3
+SET
+$40
+b05247d9-5e2f-4eed-a652-953bf2c262adjzvR
+$165
+{"object":"property_item","type":"status","id":"jzvR","status":{"id":"UK\\k","name":"Wishlist","color":"purple"},"request_id":"267f3f9a-ba83-4b26-9b4b-d7e52d4c87e6"}
+*3
+$3
+SET
+$52
+b5392832-8213-46c6-abe2-65c0768a0134title-add readme
+$509
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Add support for file","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Add support for file","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"dab6807b-ad66-46ce-8899-5ea6477404b4"}
+*3
+$3
+SET
+$40
+b5392832-8213-46c6-abe2-65c0768a0134jzvR
+$191
+{"object":"property_item","type":"status","id":"jzvR","status":{"id":"e2d0237b-2118-4928-aa4e-7c9f61a33cbd","name":"Done","color":"green"},"request_id":"b33893d5-ca95-42f2-8c4e-1681a23e2b4d"}
+*3
+$3
+SET
+$40
+fb63906a-11a9-4d20-bc5a-c84242fcd636jzvR
+$200
+{"object":"property_item","type":"status","id":"jzvR","status":{"id":"364187e4-f700-48f9-8640-9f1aed843577","name":"Not started","color":"default"},"request_id":"f963669c-3976-410e-85e7-bc211d47b202"}
+*3
+$3
+SET
+$62
+fb63906a-11a9-4d20-bc5a-c84242fcd636title-Add support for file
+$489
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"add readme","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"add readme","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"4e5c14e9-b7d0-4ecd-98db-d3cc25262c61"}
+*3
+$3
+SET
+$52
+1df4b68d-1bd7-42fc-a761-ba2db1998fc1title-add readme
+$523
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Upgrade RAM in host machine","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Upgrade RAM in host machine","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"b7720139-4415-45d1-99dc-87fdba310776"}
+*3
+$3
+SET
+$40
+1df4b68d-1bd7-42fc-a761-ba2db1998fc1jzvR
+$165
+{"object":"property_item","type":"status","id":"jzvR","status":{"id":"UK\\k","name":"Wishlist","color":"purple"},"request_id":"1ca058ac-6557-4c91-959f-6eba163a9170"}

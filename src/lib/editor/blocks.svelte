@@ -187,6 +187,7 @@
 		border: 1px solid var(--surface-3);
 		padding: var(--size-3);
 		font-weight: bold;
+		border-radius: var(--size-2);
 	}
 
 	.block {

@@ -7,6 +7,7 @@
 	import { page } from '$app/stores';
 	import * as api from '../../lib/_api';
 	import ExpandButton from '$lib/expand button/ExpandButton.svelte';
+	import PlusIcon from '$lib/expand button/PlusIcon.svelte';
 	import { onMount } from 'svelte';
 
 	function addBlock() {
@@ -31,8 +32,8 @@
 	export let userId: string;
 	// console.log(pages)
 	onMount(() => {
-		console.log("STATE: ", $state);
-		if ($state.database_id == "not set") {
+		console.log('STATE: ', $state);
+		if ($state.database_id == 'not set') {
 			$state.database_id = databases[0].id;
 			$state.preview_as_id = pages[0].id;
 			$state.page_properties = pages[0].properties;
@@ -43,37 +44,44 @@
 	});
 	let dbOpen = true;
 	let blocksOpen = true;
+
+
+	function addFilter(): import("svelte/elements").MouseEventHandler<HTMLButtonElement> | null | undefined {
+		throw new Error('Function not implemented.');
+	}
 </script>
 
 <div class="container">
 	<div class="section--label">
-	<h3>Database</h3>
-		<ExpandButton clicked={() => (dbOpen = !dbOpen)} />
+		<h3>Database</h3>
 	</div>
 	{#if dbOpen}
-		<DbOptions databases={databases} pages={pages} embed={embed} />
+		<DbOptions {databases} {pages} {embed} />
 	{/if}
 </div>
 <div class="container">
 	<div class="section--label">
-		<h3 class="blocks-heading">Blocks</h3>
-		<ExpandButton clicked={() => (blocksOpen = !blocksOpen)} />
+		<h3 class="blocks-heading">Filters</h3>
+		<button on:click={addFilter}>
+			<PlusIcon />
+		</button>
 	</div>
-	{#if blocksOpen}
-		<div class="blocks-scroll-container">
-			<ul>
-				{#each $state.blocks as block, i}
-					<BlockEditor {block} index={i} />
-				{/each}
-			</ul>
-		</div>
-	{/if}
 </div>
-{#if blocksOpen}
-	<div class="add_block_button--container">
-		<button on:click={addBlock}>Add a Block</button>
+<div class="container">
+	<div class="section--label">
+		<h3 class="blocks-heading">Blocks</h3>
+		<button on:click={addBlock}>
+			<PlusIcon />
+		</button>
 	</div>
-{/if}
+	<div class="blocks-scroll-container">
+		<ul>
+			{#each $state.blocks as block, i}
+				<BlockEditor {block} index={i} />
+			{/each}
+		</ul>
+	</div>
+</div>
 
 <style>
 	ul {
@@ -81,11 +89,6 @@
 		padding: 0;
 	}
 
-
-	.blocks-heading {
-		margin-bottom: var(--size-3);
-		/* padding-left: var(--size-2); */
-	}
 	.add_block_button--container {
 		display: flex;
 		align-items: center;
@@ -103,6 +106,16 @@
 	.section--label {
 		display: flex;
 		justify-content: space-between;
+		margin-bottom: var(--size-3);
+	}
+
+	.section--label button {
+		width: 1.5em;
+		height: 1.5em;
+		background-color: transparent;
+		border: 0;
+		padding: 0;
+		box-shadow: none;
 	}
 
 	.plus {
