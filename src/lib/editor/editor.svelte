@@ -9,11 +9,12 @@
 	import ExpandButton from '$lib/expand button/ExpandButton.svelte';
 	import PlusIcon from '$lib/expand button/PlusIcon.svelte';
 	import { onMount } from 'svelte';
+	import Filters from './filters.svelte';
+	import type { MouseEventHandler } from 'svelte/elements';
 
 	function addBlock() {
 		let blocks = $state.blocks as Array<Block>;
 		const currentProp = $state.page_properties.Name ?? getFirstProp($state.page_properties);
-		console.log('PROP: ', $state.page_properties);
 		if (currentProp) {
 			let block: Block = {
 				propertyId: `title-${$state.page_properties.Name?.title[0].text.content}`,
@@ -32,8 +33,7 @@
 	export let userId: string;
 	// console.log(pages)
 	onMount(() => {
-		console.log('STATE: ', $state);
-		if ($state.database_id == 'not set') {
+		if ($state.database_id == 'not set' || !$state.database_id) {
 			$state.database_id = databases[0].id;
 			$state.preview_as_id = pages[0].id;
 			$state.page_properties = pages[0].properties;
@@ -41,13 +41,17 @@
 			$state.user_id = userId;
 			addBlock();
 		}
+		console.log('STATE: ', $state);
 	});
-	let dbOpen = true;
-	let blocksOpen = true;
 
-
-	function addFilter(): import("svelte/elements").MouseEventHandler<HTMLButtonElement> | null | undefined {
-		throw new Error('Function not implemented.');
+	function addFilter() {
+		const filters = $state.filters;
+		filters.push({
+			key: 'Name',
+			comparison: "doesn't equal",
+			value: 'empty'
+		});
+		$state.filters = filters;
 	}
 </script>
 
@@ -55,9 +59,7 @@
 	<div class="section--label">
 		<h3>Database</h3>
 	</div>
-	{#if dbOpen}
-		<DbOptions {databases} {pages} {embed} />
-	{/if}
+	<DbOptions {databases} {pages} {embed} />
 </div>
 <div class="container">
 	<div class="section--label">
@@ -66,6 +68,13 @@
 			<PlusIcon />
 		</button>
 	</div>
+	<ul>
+		{#each $state.filters as filter, index}
+			<li>
+				<Filters bind:filter={filter} {pages} {databases} {index} />
+			</li>
+		{/each}
+	</ul>
 </div>
 <div class="container">
 	<div class="section--label">
@@ -86,6 +95,10 @@
 <style>
 	ul {
 		list-style: none;
+		padding: 0;
+	}
+
+	li {
 		padding: 0;
 	}
 

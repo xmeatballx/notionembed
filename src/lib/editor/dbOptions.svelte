@@ -6,6 +6,7 @@
 	import type { Block, StateValue } from '../../types';
 	import { onMount } from 'svelte';
 	import { getDefaultBlockType, getFirstProp } from '$lib/utils';
+	import SelectMenu from '../selectMenu.svelte';
 	export let databases: any;
 	export let pages: any;
 	export let embed: any | undefined = undefined;
@@ -116,7 +117,7 @@
 <div class="db_options--container">
 	<div class="database_select--container">
 		<label for="database">Pick a database</label>
-		<select bind:value={$state.database_id} class="select" on:change={resetDB} name="database">
+		<SelectMenu bind:value={$state.database_id} onChange={resetDB} name="database" id="database">
 			{#await databases}
 				<!-- <option value="">loading</option> -->
 			{:then res}
@@ -130,7 +131,7 @@
 					</option>
 				{/each}
 			{/await}
-		</select>
+		</SelectMenu>
 	</div>
 	<div class="page_select--container">
 		<div class="page_select--label">
@@ -184,21 +185,13 @@
 		margin-bottom: 8px;
 	}
 
-	.select {
-		width: 100%;
-		background-color: var(--surface-1);
-		border: 1px solid var(--surface-3);
-		padding: var(--size-3);
-		font-weight: bold;
-		border-radius: var(--size-2);
-	}
 	/* .preview_as {
 		display: flex;
 		flex-direction: column;
 		gap: 1em;
 	} */
 	.page_select--container {
-		display: none;
+		/*	display: none;*/
 	}
 
 	.page_select--label {
@@ -272,6 +265,15 @@
 		text-overflow: ellipsis;
 		white-space: nowrap;
 		max-width: 25vw;
+	}
+	.page_controls button img {
+		filter: invert(0.3);
+	}
+
+	@media (prefers-color-scheme: dark) {
+		.page_controls button img {
+			filter: invert(0.8);
+		}
 	}
 
 	@media (max-width: 820px) {

@@ -190515,3 +190515,57 @@ $40
 1df4b68d-1bd7-42fc-a761-ba2db1998fc1jzvR
 $165
 {"object":"property_item","type":"status","id":"jzvR","status":{"id":"UK\\k","name":"Wishlist","color":"purple"},"request_id":"1ca058ac-6557-4c91-959f-6eba163a9170"}
+*2
+$6
+SELECT
+$1
+0
+*3
+$3
+SET
+$52
+593099a7-c542-43d0-8c37-f1d4915229e6title-add readme
+$497
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Get a notebook","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Get a notebook","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"0a31ec9a-86f2-48ce-af6d-b69a1c0e94d4"}
+*3
+$3
+SET
+$52
+19a53c49-1e79-4d65-94e1-d001a6b5ac37title-add readme
+$501
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Implement search","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Implement search","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"c7f8bdfd-a891-45e8-8d4c-0cf8f6d398ec"}
+*3
+$3
+SET
+$52
+9f252df6-3277-4e3d-8182-23a436c5a1b0title-add readme
+$503
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Reassess progress","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Reassess progress","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"0e5e5f84-af45-40b2-af94-a8bd16728da5"}
+*3
+$3
+SET
+$52
+1bcc5d77-2aef-417e-9d19-333b6aff0210title-add readme
+$541
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Set up a dashboard app for Arr suite","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Set up a dashboard app for Arr suite","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"e2c7bb15-190b-42f5-b018-8cf2c36474c5"}
+*3
+$3
+SET
+$52
+ceadab72-9472-4eab-84e9-e16b37c7e049title-add readme
+$503
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Implement fs read","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Implement fs read","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"e0e7040f-ff68-42d1-8e7e-1fd88987b319"}
+*3
+$3
+SET
+$52
+1ac2494d-1902-4337-aabd-916d7b96061etitle-add readme
+$501
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"Decorate bedroom","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Decorate bedroom","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"38788a6b-f4df-41e0-ab29-0334f185b5ff"}
+*3
+$3
+SET
+$58
+fb63906a-11a9-4d20-bc5a-c84242fcd636title-Decorate bedroom
+$489
+{"object":"list","results":[{"object":"property_item","type":"title","id":"title","title":{"type":"text","text":{"content":"add readme","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"add readme","href":null}}],"next_cursor":null,"has_more":false,"type":"property_item","property_item":{"id":"title","next_url":null,"type":"title","title":{}},"request_id":"8d33f417-c19a-435c-a84c-ff52e28b4563"}

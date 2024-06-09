@@ -5,6 +5,12 @@ export type Block = {
 	order: number;
 };
 
+export type Filter = {
+	key: string,
+	comparison: string,
+	value: any,
+}
+
 export interface State {
 	user_id: string;
 	database_id: string;
@@ -13,6 +19,7 @@ export interface State {
 	preview_as_id: string;
 	page_properties: any;
 	blocks: Array<Block> | [];
+	filters: Filter[];
 	deleteWarningOpen: boolean;
 }
 

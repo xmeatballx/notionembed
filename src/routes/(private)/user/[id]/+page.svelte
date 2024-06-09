@@ -18,7 +18,7 @@
 
 <style>
 	.preview-container {
-		background-color: var(--surface-1);
+		background-color: var(--preview-bg);
 		color: var(--text-1);
 		min-height: 20rem;
 		max-width: 100vw;

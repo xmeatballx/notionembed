@@ -2,6 +2,8 @@
 	import { state } from '../../stores';
 	import type { Block } from 'src/types';
 	import { getDefaultBlockType } from '$lib/utils';
+	import DropdownControls from './dropdownControls.svelte';
+	import SelectMenu from '../selectMenu.svelte';
 
 	export let block: Block;
 	export let index: number;
@@ -62,12 +64,11 @@
 
 {#key properties}
 	<li>
-		<details>
-			<summary>{propertyType} - {$state.blocks[index].previewElement}</summary>
+		<DropdownControls summary="{propertyType} - {$state.blocks[index].previewElement}">
 			<div class="block">
 				<div class="field property">
 					<label for="property" class="label">Property</label>
-					<select class="select" id="property" on:change={propertyHandler} bind:value={propertyId}>
+					<SelectMenu id="property" name="property" on:change={propertyHandler} bind:value={propertyId}>
 						{#each properties as [name, value]}
 							{#if value.type != 'formula'}
 								<option
@@ -79,12 +80,11 @@
 						{/each}
 						<option value="cover" data-type="cover">Cover</option>
 						<option value="icon" data-type="icon">Icon</option>
-					</select>
+					</SelectMenu>
 				</div>
 				<div class="field element">
 					<label class="label" for="element">As</label>
-					<select
-						class="select"
+					<SelectMenu
 						name="text"
 						id="element"
 						bind:value={$state.blocks[index].previewElement}
@@ -115,11 +115,11 @@
 							<option value="p">Text</option>
 							<option value="blockquote">Blockquote</option>
 						{/if}
-					</select>
+					</SelectMenu>
 				</div>
 			</div>
 			<button on:click={() => removeBlock(block)}><img src="/icons/trash.svg" width="16px"/></button>
-		</details>
+		</DropdownControls>
 	</li>
 	<div class="controls">
 		{#if index == 0}
@@ -144,32 +144,6 @@
 		padding: 0;
 	}
 
-	summary {
-		border-radius: 0;
-		list-style: none;
-		background-color: var(--surface-1-mid);
-		padding: 10px;
-	}
-
-	summary:hover {
-		background-color: var(--surface-1);
-	}
-
-	summary::-webkit-details-marker {
-		display: none;
-	}
-
-	details {
-		background-color: var(--surface-2-mid);
-		border-radius: 0;
-	}
-	li:first-of-type details, li:first-of-type details summary {
-		border-radius: var(--size-2) var(--size-2) 0 0;
-	}
-
-	li:last-of-type details, li:last-of-type details summary {
-		border-radius: 0 0 var(--size-2) var(--size-2);
-	}
 
 	button {
 		width: 100%;
@@ -178,16 +152,13 @@
 	}
 	
 	button img {
-		filter: invert(0.8);
+		filter: invert(0.3);
 	}
 
-	.select {
-		width: 100%;
-		background-color: var(--surface-1);
-		border: 1px solid var(--surface-3);
-		padding: var(--size-3);
-		font-weight: bold;
-		border-radius: var(--size-2);
+	@media (prefers-color-scheme: dark) {
+		button img {
+			filter: invert(0.8);
+		}
 	}
 
 	.block {
