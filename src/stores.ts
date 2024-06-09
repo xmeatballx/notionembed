@@ -9,7 +9,8 @@ const defaultState: State = {
 	preview_as_id: 'not set',
 	page_properties: [],
 	blocks: [] as Block[],
-	deleteWarningOpen: false
+	deleteWarningOpen: false,
+	filters: []
 };
 
 const state: Writable<State> = writable(defaultState);
