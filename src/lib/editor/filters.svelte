@@ -4,37 +4,40 @@
 	import type { Filter } from '_src/types';
 	import DropdownControls from './dropdownControls.svelte';
 	import SelectMenu from '../selectMenu.svelte';
-	import * as api from '../_api.ts';
+	import { debounce } from '../utils';
 
 	export let databases: any;
 	export let pages: any;
 	export let filter: Filter;
-	export let index: number;
 
 	let database: any;
 
-	function updatePageIds() {
-		if ($state.page_ids) {
-			$state.page_ids = pages
-				.filter((page: any) => {
-					let condition = true;
-					$state.filters.map((filter) => {
-						if (filter.key == 'Name') {
-							const title = api.getTitle(page.properties);
-							if (filter.comparison == 'equals') {
-								condition = title == filter.value;
-							}
-							if (filter.comparison == "doesn't equal") {
-								condition = title != filter.value;
-							}
-						}
-					});
-					return condition;
-				})
-				.map((page: any) => page.id);
-		}
+	async function updatePageIds(e?: any) {
+		if (e) filter.value = e.target.value;
+		const resource = `/user/${$state.user_id}/database/${$state.database_id}/filter`;
+		const data = {
+			filters: $state.filters.map((filter) => {
+				return { ...filter, accessor: getAccessor(filter) };
+			})
+		};
+		const response = await fetch(resource, { method: 'POST', body: JSON.stringify(data) });
+		const result = await response.json();
+		console.log("in update function");
+
+		$state.page_ids = result.map((page: any) => page.id);
+
 		if (!$state.page_ids.includes($state.preview_as_id)) {
 			$state.preview_as_id = $state.page_ids[0];
+		}
+	}
+
+	const debouncedUpdatePageIds = debounce(updatePageIds, 500);
+
+	function getAccessor(filter: Filter) {
+		let propertyType = pages[0].properties[filter.key].type;
+		switch (propertyType) {
+			case 'title':
+				return 'title';
 		}
 	}
 
@@ -45,6 +48,8 @@
 		console.log('DATABASES: ', databases);
 		console.log('DATABASE ID: ', $state.database_id);
 	});
+
+
 </script>
 
 <DropdownControls summary="{filter.key} {filter.comparison} {filter.value}">
@@ -76,8 +81,7 @@
 		<input
 			name="filter_value"
 			id="filter_value"
-			bind:value={filter.value}
-			on:input={() => updatePageIds()}
+			on:input={debouncedUpdatePageIds}
 			class="filter_value_input"
 		/>
 	</fieldset>

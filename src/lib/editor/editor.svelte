@@ -49,7 +49,8 @@
 		filters.push({
 			key: 'Name',
 			comparison: "doesn't equal",
-			value: 'empty'
+			value: 'empty',
+			accessor: "title"
 		});
 		$state.filters = filters;
 	}
@@ -69,9 +70,9 @@
 		</button>
 	</div>
 	<ul>
-		{#each $state.filters as filter, index}
+		{#each $state.filters as filter}
 			<li>
-				<Filters bind:filter={filter} {pages} {databases} {index} />
+				<Filters bind:filter={filter} {pages} {databases} />
 			</li>
 		{/each}
 	</ul>
@@ -107,6 +108,7 @@
 		align-items: center;
 		justify-content: center;
 	}
+	
 	.add_block_button--container button {
 		width: 100%;
 		margin: 0 var(--size-4);
@@ -116,6 +118,7 @@
 	.container {
 		padding: var(--size-2) var(--size-2) 0 var(--size-2);
 	}
+
 	.section--label {
 		display: flex;
 		justify-content: space-between;

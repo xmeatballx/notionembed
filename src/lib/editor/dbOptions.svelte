@@ -28,11 +28,12 @@
 	}
 
 	async function randomizePage() {
+		if ($state.page_ids.length == 1) return;
 		const randomIndex = Math.round(Math.random() * $state.page_ids.length);
 		$state.preview_as_id = $state.page_ids[randomIndex];
-		$state.page_properties = pages.filter(
+		$state.page_properties = pages.find(
 			(page: any) => page.id == $state.page_ids[randomIndex]
-		)[0].properties;
+		)?.properties ?? $state.page_properties;
 	}
 	let currentPageTitle: string = 'No pages selected';
 

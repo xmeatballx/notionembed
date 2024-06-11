@@ -1,20 +1,13 @@
 <script lang="ts">
 	import * as api from '../_api';
-	import { state } from '../../stores';
+	import { state, blocks } from '../../stores';
 	import Spinner from '$lib/spinner.svelte';
 	import { onDestroy } from 'svelte';
 	import PreviewBlock from './previewBlock.svelte';
-
-	let blocks: any;
-	const unsubscribe = state.subscribe((value) => {
-		// console.log(value.blocks)
-		blocks = value.blocks;
-	});
-	onDestroy(unsubscribe);
 </script>
 
 <div class="content">
-	{#each blocks as block, i (i)}
+	{#each $blocks as block}
 		<PreviewBlock {block} />
 	{/each}
 </div>

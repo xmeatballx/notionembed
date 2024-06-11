@@ -9,7 +9,7 @@
 <section class="page">
 	<!-- {JSON.stringify($state.blocks[0])} -->
 	<div class="controls">
-		<Editor databases={databases} pages={pages} {userId} />
+		<Editor {databases} {pages} {userId} />
 	</div>
 	<div class="preview-container">
 		<Preview />

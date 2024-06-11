@@ -38,3 +38,4 @@ export const GET: RequestHandler = async ({ params, url }: any) => {
 
 	return json(database);
 };
+
