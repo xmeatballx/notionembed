@@ -1,4 +1,4 @@
-import { get, writable, type Writable } from 'svelte/store';
+import { derived, get, writable, type Writable } from 'svelte/store';
 import type { Block, State, StateValue } from './types';
 
 const defaultState: State = {
@@ -14,6 +14,13 @@ const defaultState: State = {
 };
 
 const state: Writable<State> = writable(defaultState);
+const blocks = derived(state, ($state: State) => $state.blocks);
+const dbOptions = derived(state, ($state: State) => {
+	return {
+		database_id: $state.database_id,
+		preview_as_id: $state.preview_as_id
+	}
+});
 
 function updateState(key: keyof State, value: StateValue) {
 	const temp: State = get(state);
@@ -25,4 +32,4 @@ function updateState(key: keyof State, value: StateValue) {
 	state.set(temp);
 }
 
-export { state, updateState };
+export { state, blocks, dbOptions, updateState };

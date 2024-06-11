@@ -68,7 +68,7 @@
 			<div class="block">
 				<div class="field property">
 					<label for="property" class="label">Property</label>
-					<SelectMenu id="property" name="property" on:change={propertyHandler} bind:value={propertyId}>
+					<SelectMenu id="property" name="property" onChange={propertyHandler} bind:value={propertyId}>
 						{#each properties as [name, value]}
 							{#if value.type != 'formula'}
 								<option
@@ -118,7 +118,7 @@
 					</SelectMenu>
 				</div>
 			</div>
-			<button on:click={() => removeBlock(block)}><img src="/icons/trash.svg" width="16px"/></button>
+			<button on:click={() => removeBlock(block)}><img src="/icons/trash.svg" alt="delete" width="16px"/></button>
 		</DropdownControls>
 	</li>
 	<div class="controls">

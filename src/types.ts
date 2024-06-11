@@ -9,6 +9,7 @@ export type Filter = {
 	key: string,
 	comparison: string,
 	value: any,
+	accessor: string
 }
 
 export interface State {

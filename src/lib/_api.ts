@@ -83,7 +83,6 @@ async function getContent(userId: string, pageId: string, propertyId: string) {
 		}
 	);
 	const result = await response.json();
-	console.log(result);
 	// await db.set({ key: propertyId, value: result })
 	return result;
 	// } else {

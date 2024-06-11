@@ -44,4 +44,42 @@ function getDefaultBlockType(propertyType: string) {
 	}
 }
 
-export { getFirstProp, getDefaultBlockType };
+function throttleAsync(func: () => Promise<any>, limit: number): () => Promise<void> {
+    let inThrottle: boolean = false;
+    let pendingPromise: Promise<void> | null = null;
+
+    const invokeFunction = async () => {
+        inThrottle = true;
+        pendingPromise = func();
+        await pendingPromise;
+        pendingPromise = null;
+        setTimeout(() => {
+            inThrottle = false;
+        }, limit);
+    };
+
+    return async () => {
+        if (!inThrottle) {
+            await invokeFunction();
+        } else if (!pendingPromise) {
+            return new Promise<void>((resolve) => {
+                const check = setInterval(() => {
+                    if (!inThrottle) {
+                        clearInterval(check);
+                        resolve(invokeFunction());
+                    }
+                }, limit);
+            });
+        }
+    };
+}
+
+function debounce(func: any, timeout = 300){
+  let timer: any;
+  return (...args: any[]) => {
+    clearTimeout(timer);
+    timer = setTimeout(() => { func.apply(this, args); }, timeout);
+  };
+}
+
+export { getFirstProp, getDefaultBlockType, debounce, throttleAsync };

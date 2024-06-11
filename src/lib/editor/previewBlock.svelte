@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { state } from '../../stores';
+	import { dbOptions } from '../../stores';
 	import * as api from '../_api';
 	import PreviewBlocks from './preview_blocks/index.svelte';
 
@@ -51,30 +51,30 @@
 			} else {
 				switch (propertyType) {
 					default:
-						return await api.getContent(user.id, $state.preview_as_id, propertyId);
+						return await api.getContent(user.id, $dbOptions.preview_as_id, propertyId);
 					case 'cover':
 						return await api.getPageImage(
 							user.id,
-							$state.database_id,
-							$state.preview_as_id,
+							$dbOptions.database_id,
+							$dbOptions.preview_as_id,
 							'cover'
 						);
 					case 'icon':
 						return await api.getPageImage(
 							user.id,
-							$state.database_id,
-							$state.preview_as_id,
+							$dbOptions.database_id,
+							$dbOptions.preview_as_id,
 							'icon'
 						);
 					case 'relation':
 						return await api.getRelation(
 							user.id,
-							$state.database_id,
-							$state.preview_as_id,
+							$dbOptions.database_id,
+							$dbOptions.preview_as_id,
 							propertyId
 						);
 					case 'people':
-						return await api.getPerson(user.id, $state.preview_as_id, propertyId);
+						return await api.getPerson(user.id, $dbOptions.preview_as_id, propertyId);
 				}
 			}
 		} catch (error) {
@@ -86,12 +86,12 @@
 <!-- {#key block} -->
 {#await contentData}
 	{#if block.propertyType == 'cover'}
-		<div class="image-placeholder"></div>
+		<div class="image-placeholder" />
 	{:else}
-		<div class="text-placeholder"></div>
+		<div class="text-placeholder" />
 	{/if}
 {:then content}
-	<PreviewBlocks block={block} content={content} />
+	<PreviewBlocks {block} {content} />
 {/await}
 
 <!-- {/key} -->
@@ -116,7 +116,6 @@
 		background-color: var(--surface-2);
 		border-radius: var(--size-2);
 	}
-
 
 	@keyframes pulse {
 		0% {
