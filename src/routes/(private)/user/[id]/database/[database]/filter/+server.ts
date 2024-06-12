@@ -27,23 +27,13 @@ export const POST: RequestHandler = async ({ params, request, url }: any) => {
 };
 
 function filterComparison(acc: any, filter: Filter) {
-    switch (filter.comparison) {
-        case 'equals':
-            acc.and.push({
-                property: filter.key,
-                [filter.accessor]: {
-                    equals: filter.value
-                }
-            });
-            return acc;
-
-        case "doesn't equal":
-            acc.and.push({
-                property: filter.key,
-                [filter.accessor]: {
-                    does_not_equal: filter.value
-                }
-            });
-            return acc;
+    const comparison = {
+        property: filter.key,
+        [filter.accessor]: {
+            [filter.comparison]: filter.value
+        }
     }
+    console.log(comparison);
+    acc.and.push(comparison);
+    return acc;
 }

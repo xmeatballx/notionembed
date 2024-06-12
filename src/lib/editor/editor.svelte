@@ -48,7 +48,7 @@
 		const filters = $state.filters;
 		filters.push({
 			key: 'Name',
-			comparison: "doesn't equal",
+			comparison: "does_not_equal",
 			value: 'empty',
 			accessor: "title"
 		});
