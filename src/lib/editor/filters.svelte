@@ -11,18 +11,27 @@
 	export let filter: Filter;
 
 	let database: any;
+	let isTextField = true;
+	let isArrayField = false;
 
 	async function updatePageIds(e?: any) {
+		console.log(filter);
 		if (e) filter.value = e.target.value;
+		isArrayField = ['multi_select', 'people', 'relation'].includes(database.properties[filter.key].type);
+		isTextField = !isArrayField;
+		if (isArrayField && ['equals', 'does_not_equal'].includes(filter.comparison))
+			filter.comparison = 'does_not_contain';
+		if (isTextField && ['contains', 'does_not_contain'].includes(filter.comparison))
+			filter.comparison = 'does_not_equal';
 		const resource = `/user/${$state.user_id}/database/${$state.database_id}/filter`;
 		const data = {
 			filters: $state.filters.map((filter) => {
-				return { ...filter, accessor: getAccessor(filter) };
+			let propertyType = database.properties[filter.key].type;
+				return { ...filter, accessor: propertyType };
 			})
 		};
 		const response = await fetch(resource, { method: 'POST', body: JSON.stringify(data) });
 		const result = await response.json();
-		console.log("in update function");
 
 		$state.page_ids = result.map((page: any) => page.id);
 
@@ -33,26 +42,19 @@
 
 	const debouncedUpdatePageIds = debounce(updatePageIds, 500);
 
-	function getAccessor(filter: Filter) {
-		let propertyType = pages[0].properties[filter.key].type;
-		switch (propertyType) {
-			case 'title':
-				return 'title';
-		}
-	}
-
 	onMount(() => {
 		database = databases.find((db: any) => db.id == $state.database_id);
 		updatePageIds();
+		filter.comparison = "does_not_equal";
 		console.log('DATABASE: ', database);
 		console.log('DATABASES: ', databases);
 		console.log('DATABASE ID: ', $state.database_id);
 	});
 
-
+	console.log(isTextField, isArrayField);
 </script>
 
-<DropdownControls summary="{filter.key} {filter.comparison} {filter.value}">
+<DropdownControls summary="{filter.key} {filter.comparison.replace(/_/g, " ")} {filter.value}">
 	<label for="property">Property</label>
 	<SelectMenu
 		name="property"
@@ -71,10 +73,13 @@
 		bind:value={filter.comparison}
 		onChange={() => updatePageIds()}
 	>
-		<option value="equals">Equals</option>
-		<option value="doesn't equal">Doesn't equal</option>
-		<option value="in" disabled>In</option>
-		<option value="not in" disabled>Not in</option>
+		{#if isTextField}
+			<option value="equals">Equals</option>
+			<option value="does_not_equal">Doesn't equal</option>
+		{:else if isArrayField}
+			<option value="contains">Contains</option>
+			<option value="does_not_contain">Doesn't contain</option>
+		{/if}
 	</SelectMenu>
 	<fieldset>
 		<label for="filter_value">Value</label>
