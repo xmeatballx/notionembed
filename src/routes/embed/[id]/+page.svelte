@@ -3,6 +3,7 @@
 	import * as api from '../../../lib/_api';
 	import Spinner from '$lib/spinner.svelte';
 	import PreviewBlocks from '$lib/editor/preview_blocks/index.svelte';
+	import '_src/app.css';
 
 	export let data;
 	let embed: any = data.embed;
@@ -79,6 +80,7 @@
 		height: calc(100vh - 0px);
 		display: flex;
 		flex-direction: column;
+		background-color: var(--surface-1);
 		/* justify-content: center; */
 	}
 	.content {
