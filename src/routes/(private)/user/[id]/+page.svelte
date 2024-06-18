@@ -47,7 +47,7 @@
 
 	.controls {
 		background-color: var(--surface-2);
-		/* padding: var(--size-4); */
+		padding-top: var(--size-2);
 
 		display: flex;
 		flex-direction: column;

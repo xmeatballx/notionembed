@@ -1,6 +1,9 @@
 <script lang="ts">
 	import HeaderPrivate from '$lib/header/HeaderPrivate.svelte';
 	import '_src/app.css';
+	import '@fontsource/archivo/900.css';
+	import '@fontsource/archivo/500.css';
+	import '@fontsource/archivo/600.css';
 	import { page } from '$app/stores';
 </script>
 

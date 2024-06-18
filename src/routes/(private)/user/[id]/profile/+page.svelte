@@ -5,16 +5,21 @@
 
 	export let data;
 	let user: any = data.user;
-	let embeds: any[] = data.embeds
+	let embeds: any[] = data.embeds;
+	let selectedEmbedId: string | undefined;
 
-	async function deleteEmbed(id: string) {
-		await fetch(`/embed/${id}`, { method: 'DELETE' });
-		const embedIds = embeds.map((embed) => embed.id);
-		const indexToRemove = embedIds.indexOf(id);
-		const embedsCopy = [...embeds];
-		embedsCopy.splice(indexToRemove, 1);
-		embeds = embedsCopy;
-		$state.deleteWarningOpen = false;
+	function confirmDelete(id: string) {
+		$state.deleteWarningOpen = true;
+		selectedEmbedId = id;
+	}
+
+	async function deleteEmbed() {
+		if (selectedEmbedId) {
+			const response = await fetch(`/embed/${selectedEmbedId}/delete?user_id=${user.id}`);
+			const result = await response.json();
+			embeds = result.embeds;
+			$state.deleteWarningOpen = false;
+		}
 	}
 
 	function goToEditPage(id: string): void {
@@ -24,6 +29,15 @@
 	function logout() {
 		window.localStorage.removeItem('user');
 		window.location.replace(`/login`);
+	}
+
+	async function copyLinkToEmbed(id: string) {
+		try {
+			navigator.clipboard.writeText('https://notionembed.eerik.dev/embed/' + id);
+			alert("Link Copied");
+		} catch (error) {
+			console.log(error);
+		}
 	}
 </script>
 
@@ -35,20 +49,15 @@
 				<li class="embed">
 					<span>{embed.name}</span>
 					<div class="controls">
-						<button type="button">
+						<button type="button" on:click={() => copyLinkToEmbed(embed.id)}>
 							<img src="/icons/link.png" alt="copy link" />
 						</button>
 						<button type="button" on:click={() => goToEditPage(embed.id)}>
 							<img src="/icons/edit.png" alt="edit" />
 						</button>
-						<button type="button" on:click={() => ($state.deleteWarningOpen = true)}>
+						<button type="button" on:click={() => confirmDelete(embed.id)}>
 							<img src="/icons/trash.png" alt="delete" />
 						</button>
-						{#if $state.deleteWarningOpen}
-							<Modal>
-								<DeleteEmbedWarning onDelete={() => deleteEmbed(embed.id)} />
-							</Modal>
-						{/if}
 					</div>
 				</li>
 			{/each}
@@ -60,6 +69,11 @@
 <section class="logout">
 	<button class="" on:click={logout}>Log Out</button>
 </section>
+{#if $state.deleteWarningOpen}
+	<Modal>
+		<DeleteEmbedWarning onDelete={() => deleteEmbed()} />
+	</Modal>
+{/if}
 
 <style>
 	.embeds {

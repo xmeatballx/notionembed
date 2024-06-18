@@ -66,21 +66,23 @@
 	.site-header {
 		display: flex;
 		justify-content: space-between;
-		padding: var(--size-3);
+		padding: var(--size-2);
 		box-shadow: var(--shadow-2);
 		background-color: var(--header);
 	}
 
 	.site-header h1 {
-		font-size: var(--font-size-5);
+		font-family: 'Archivo';
+		font-size: var(--font-size-4);
 		text-shadow: 0 1px 0 var(--surface-1);
 		font-weight: bold;
 	}
 
 	.site-header button {
-		padding: 0.5em 1em;
-		line-height: 1em;
-		font-size: var(--font-size-3);
+		padding: 0;
+		font-family: 'Archivo';
+		font-size: var(--font-size-2);
+		font-weight: 600;
 		background-color: transparent;
 		box-shadow: none;
 		border: none;
@@ -94,14 +96,27 @@
 		height: 100%;
 		display: flex;
 		align-items: center;
-		gap: var(--size-2);
+		gap: var(--size-3);
 		list-style: none;
+		padding-right: var(--size-3);
+	}
+
+	.site-header nav ul a {
+		padding: 0;
+	}
+
+	.site-header nav ul li {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 0;
 	}
 
 	.site-header nav a:not(.home_link) {
-		font-size: var(--size-4);
-		color: var(--text-1);
+		font-family: 'Archivo';
+		font-size: var(--font-size-2);
 		font-weight: 600;
+		color: var(--text-1);
 	}
 
 	.home_link {
