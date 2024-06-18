@@ -80,11 +80,11 @@ li:last-of-type summary {
 	html {
 		--surface-1: rgb(24,24,24);
 		--surface-1-mid: rgba(24,24,24, 60%);
-		--surface-2: rgb(34,34,34);
+		--surface-2: rgb(26,28,28);
 		--surface-2-mid: rgba(24,24,24, 50%);
 		--surface-3: rgba(73, 80, 87, 25%);
 		--text-1: rgba(255, 255, 255, 0.81);
-		--header: rgb(33, 37, 41);
+		--header: rgb(25, 23, 23);
 		--preview-bg: var(--surface-1);
 	}
 }

@@ -68,6 +68,7 @@
 
 	function handleSubmit(e: SubmitEvent): any {
 		e.preventDefault();
+		console.log($page.params);
 		if ($page.params.embedId) {
 			updateEmbed();
 		} else {
