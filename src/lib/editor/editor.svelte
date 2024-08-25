@@ -17,7 +17,7 @@
 		const currentProp = $state.page_properties.Name ?? getFirstProp($state.page_properties);
 		if (currentProp) {
 			let block: Block = {
-				propertyId: `title-${$state.page_properties.Name?.title[0].text.content}`,
+				propertyId: `title-${$state.page_properties.Name?.title[0]?.text?.content ?? `untitled-${blocks.length}`}`,
 				propertyType: currentProp.type,
 				previewElement: getDefaultBlockType(currentProp.type),
 				order: blocks.length

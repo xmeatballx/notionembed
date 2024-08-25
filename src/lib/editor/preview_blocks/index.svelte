@@ -13,7 +13,7 @@
 </script>
 
 {#if block.propertyType == 'title'}
-	<Text element={block.previewElement}>{content.results[0].title.text.content}</Text>
+	<Text element={block.previewElement}>{content.results[0]?.title?.text?.content ?? "Untitled"}</Text>
 {/if}
 
 {#if block.propertyType == 'rich_text'}
