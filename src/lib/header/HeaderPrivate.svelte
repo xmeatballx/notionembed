@@ -30,12 +30,20 @@
 		<div class="2" />
 		<div class="3" />
 	</button>
-	<nav class={mobileNavOpen ? '' : 'hidden'}>
+	<nav class={mobileNavOpen ? 'mobile_nav' : 'hidden'}>
 		<ul>
 			{#if currentPath}
 				{#if !currentPath.includes('profile')}
 					<li>
-						<button class="save" on:click={() => (saveFormOpen = true)}> Save </button>
+						<button
+							class="save"
+							on:click={() => {
+								saveFormOpen = true;
+								mobileNavOpen = false;
+							}}
+						>
+							Save
+						</button>
 					</li>
 				{/if}
 				<li>
@@ -44,11 +52,17 @@
 				{#if user}
 					{#if currentPath.includes('profile')}
 						<li>
-							<a href={`/user/${user.id}`} data-sveltekit-reload>Create</a>
+							<a
+								href={`/user/${user.id}`}
+								on:click={() => (mobileNavOpen = false)}
+								data-sveltekit-reload>Create</a
+							>
 						</li>
 					{:else}
 						<li>
-							<a href={`/user/${user.id}/profile`}>Profile</a>
+							<a href={`/user/${user.id}/profile`} on:click={() => (mobileNavOpen = false)}
+								>Profile</a
+							>
 						</li>
 					{/if}
 				{/if}
@@ -79,7 +93,7 @@
 	}
 
 	.site-header button {
-		padding: 0;
+		padding: 0 !important;
 		font-family: 'Archivo';
 		font-size: var(--font-size-2);
 		font-weight: 600;
@@ -87,9 +101,6 @@
 		box-shadow: none;
 		border: none;
 		text-shadow: none;
-	}
-
-	.site-header nav {
 	}
 
 	.site-header nav ul {
@@ -102,6 +113,7 @@
 	}
 
 	.site-header nav ul a {
+		font-family: 'Archivo';
 		padding: 0;
 	}
 
@@ -136,7 +148,7 @@
 	@media (max-width: 740px) {
 		.site-header nav {
 			position: absolute;
-			top: 0;
+			top: 50px;
 			left: 0;
 			right: 0;
 			z-index: 10;
@@ -146,11 +158,26 @@
 		.site-header nav ul {
 			display: flex;
 			flex-direction: column;
-			padding-top: var(--size-8);
 			background-color: var(--header);
-			padding: var(--size-8) 0 var(--size-4) 0;
 			height: auto;
+			gap: 0;
+			padding: 0;
 		}
+
+		.site-header nav li {
+			border: 1px solid var(--surface-3);
+			padding: var(--size-2) !important;
+			width: 100%;
+		}
+
+		.site-header nav li:first-child {
+			border-bottom: none;
+		}
+
+		.site-header nav li:last-child {
+			border-top: none;
+		}
+
 		.site-header button.hamburger {
 			display: flex;
 			align-items: center;

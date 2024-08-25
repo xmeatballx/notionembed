@@ -22,7 +22,6 @@
 	}
 
 	.hero {
-		height: calc(100vh - 72px);
 		display: grid;
 		grid-template-columns: repeat(12, 1fr);
 		align-items: center;
@@ -82,5 +81,16 @@
 
 	.hero button a:visited {
 		color: inherit;
+	}
+
+	@media (max-width: 740px) {
+		.hero {
+			display: flex;
+			flex-direction: column;
+		}
+
+		.hero--content {
+			padding: var(--size-8) !important;
+		}
 	}
 </style>
