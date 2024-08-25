@@ -14,10 +14,10 @@
 	<nav class={mobileNavOpen ? '' : 'hidden'}>
 		<ul>
 			<li>
-				<a href="/">Home</a>
+				<a href="/" on:click={() => mobileNavOpen = false}>Home</a>
 			</li>
 			<li>
-				<a href="/login">Login</a>
+				<a href="/login" on:click={() => mobileNavOpen = false}>Login</a>
 			</li>
 		</ul>
 	</nav>
@@ -100,7 +100,7 @@
 	@media (max-width: 740px) {
 		.site-header nav {
 			position: absolute;
-			top: 0;
+			top: 50px;
 			left: 0;
 			right: 0;
 			z-index: 10;
@@ -110,11 +110,26 @@
 		.site-header nav ul {
 			display: flex;
 			flex-direction: column;
-			padding-top: var(--size-8);
 			background-color: var(--header);
-			padding: var(--size-8) 0 var(--size-4) 0;
 			height: auto;
+			gap: 0;
+			padding: 0;
 		}
+
+		.site-header nav li {
+			border: 1px solid var(--surface-3);
+			padding: var(--size-2) !important;
+			width: 100%;
+		}
+
+		.site-header nav li:first-child {
+			border-bottom: none;
+		}
+
+		.site-header nav li:last-child {
+			border-top: none;
+		}
+
 		.site-header button.hamburger {
 			display: flex;
 			align-items: center;

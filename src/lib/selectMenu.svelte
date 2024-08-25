@@ -13,7 +13,7 @@
 		width: 100%;
 		background-color: var(--surface-1);
 		border: 1px solid var(--surface-3);
-		padding: var(--size-3);
+		padding: var(--size-2) var(--size-2);
 		font-weight: bold;
 		border-radius: var(--size-2);
 	}
